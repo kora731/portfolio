@@ -1,37 +1,20 @@
-$(document).ready(function(){
-	
-	
-	/*============================================
-	Preloader
-	==============================================*/
-	if($('#preloader').length){
-		$(window).load(function(){
-			$('#preloader').addClass('fade-out').delay(600).fadeOut(600,function(){startAnimations();});
-		})
-	}
-	
-	else startAnimations();
-	
+const LoadingPage = function () {
+
 	/*============================================
 	Waypoints Animations
 	==============================================*/
-	function startAnimations(){
-		
-		$('.scrolling-animation').waypoint(function(){
-			$(this).addClass('in');
-		},{offset:'95%'});
-		
-	}
-	
-	/*============================================
-	Refresh waypoints function
-	==============================================*/
-	function waypointsRefresh(){
-		setTimeout(function(){
-			$.waypoints('refresh');
-		},1000);
-	}
-	
+  $('.scrolling-animation').waypoint(function(){
+    $(this).addClass('in');
+  },{offset:'95%'});
+
+  setTimeout((_) => {
+    $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.3});
+    $(document).on('mousedown','.twentytwenty-handle',function(){
+      $('.twentytwenty-handle').addClass('remove-poi');
+
+    });
+  }, 1000);
+  
 	/*==============================================
 	Transparent Navbar
 	=============================================== */
@@ -245,41 +228,6 @@ $(document).ready(function(){
 			$(window).stellar('refresh');
 		},1000);
 	}
-	
-	/*============================================
-	Isotope
-	==============================================*/
-	$(window).load(function(){
-		var $grid = $('.grid').isotope({
-			itemSelector: '.grid-item',
-			percentPosition: true,
-			masonry: {
-				columnWidth: '.grid-item'
-			  },
-			transitionDuration: '0.6s'
-		});
-		
-		$grid.on( 'arrangeComplete',
-		  function( event, filteredItems ) {
-			$(window).trigger('resize');
-		  }
-		);
-		
-	});
-	
-	/*============================================
-	Isotope Filters
-	==============================================*/
-	$('.filter-buttons').on( 'click', '.filter-button', function() {
-		
-		$('.filter-button').removeClass('active');
-		$(this).addClass('active');
-		
-		var filterValue = $(this).attr('data-filter'),
-			targetGrid = $(this).parents('.filter-buttons').data('target') ? $(this).parents('.filter-buttons').data('target') : '.grid';
-			
-		$(targetGrid).isotope({ filter: filterValue });
-	});
 
 	
 	/*============================================
@@ -338,20 +286,7 @@ $(document).ready(function(){
 			$(this).find('.countTo').removeClass('countTo').countTo();
 		}
 	});
-	
-	/*============================================
-	Twenty Twenty
-	==============================================*/
-	$(window).load(function(){
-	  $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.3});
-	  $(document).on('mousedown','.twentytwenty-handle',function(){
-		  $('.twentytwenty-handle').addClass('remove-poi');
-		  
-	  })
-	});
-	
-	
-	
+
 	/*============================================
 	Flexslider
 	==============================================*/
@@ -506,5 +441,6 @@ $(document).ready(function(){
 		
 		return false;	
 	});
-	
-})
+};
+
+module.exports = LoadingPage;

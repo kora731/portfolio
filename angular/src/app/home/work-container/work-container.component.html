@@ -1,0 +1,54 @@
+<!-- ==============================================
+    PORTFOLIO WORK
+    =============================================== -->
+
+<div id="work" class="bg-light pt-120">
+
+  <div class="container">
+    <div class="scrolling-animation fade-up">
+      <h2 class="text-lg text-center">Crafted <span class="text-color">Design Works</span></h2>
+      <hr class="hr-gray hr-center hr-sm hr-bold mb-20">
+      <p class="text-dark text-center mb-60 text-bold">During my six years working as a designer, I'm adaptive to wear multiple hats to make the team successful.
+        I lead designing complex systems from initial research and design concepts, to final mockups and prototype coding. Products I have shipped cover
+        retailing, architecture and film industries. I love working on innovative ideas, pushing the boundary to redefine UX vision and bring it into reality.</p>
+    </div>
+
+    <ul class="list-unstyled list-inline text-center mt-60 mb-40">
+      <li [ngClass]="{'filter-button scrolling-animation fade-right': true,
+                 'active': filter.active,
+                 'd4': i === 0,
+                 'd3': i === 1,
+                 'd2': i === 2,
+                 'd1': i === 3}"
+          (click)="onFilter(filter)"
+          *ngFor="let filter of filterList; let i = index">{{filter.text}}</li>
+    </ul>
+
+    <isotope-grid [options]="option" class="grid grid-gap-sm grid-3-cols fade-in">
+      <isotope-item class="grid-item" *ngFor="let work of filtedWorks">
+
+        <a [routerLink]="work.routerLink">
+
+          <figure class="hover-mask-parent img-hover-zoom">
+
+            <img class="img-responsive" [src]="work.image" alt="" />
+
+            <figcaption class="hover-mask hover-mask-color hover-mask-zoom-out">
+
+              <div class="hover-mask-content text-center">
+
+                <h3 class="mb-10 text-bold">{{work.title}}</h3>
+                <p class="">{{work.subTitle}}</p>
+
+              </div>
+
+            </figcaption>
+
+          </figure>
+
+        </a>
+
+      </isotope-item>
+    </isotope-grid>
+  </div>
+</div>

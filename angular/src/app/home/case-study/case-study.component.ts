@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-case-study',
@@ -10,6 +11,6 @@ export class CaseStudyComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
 
+  }
 }
