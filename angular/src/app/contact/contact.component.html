@@ -1,0 +1,55 @@
+<!-- ==============================================
+    CONTACT
+    =============================================== -->
+<div id="contact" class="bg-image pt-160 pb-120 fixed-bg" style="background-image:url('assets/images/contact.jpg')">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4 col-lg-5">
+        <div class="scrolling-animation fade-up pt-80">
+          <h2 class="text-lg text-center">Intrested in partnering on <br/><span class="text-color">freelance projets</span>? </h2>
+          <hr class="hr-gray hr-center hr-sm hr-bold mb-20">
+          <p class="text-gray text-center mb-80">I'm open to take on new design challenges and explore new territories. Feel free to contact me by dropping me a line on the right,
+            I'll try to get back to you asap.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-5 col-md-offset-1">
+
+        <h2 class="text-uppercase text-bold mb-40 scrolling-animation fade-up">Drop me a line</h2>
+
+        <form class="contact-form text-dark mb-120 scrolling-animation fade-up d1" action="assets/php/contact.php" method="post" novalidate>
+
+          <div class="form-i-right">
+            <input class="form-control input-rect input-solid-white mb-20 requiredField" placeholder="Your Name" type="text" name="name">
+            <i class="fa fa-user"></i>
+          </div>
+
+          <div class="form-i-right">
+            <input class="form-control input-rect input-solid-white mb-20 requiredField" placeholder="Your Email" type="email" name="email">
+            <i class="fa fa-envelope"></i>
+          </div>
+
+          <div class="form-i-right">
+            <textarea class="mb-20 form-control input-rect input-solid-white requiredField" rows="5" placeholder="Your Message" name="message"></textarea>
+            <i class="fa fa-comments"></i>
+          </div>
+
+          <button type="submit" class="btn btn-block btn-rect btn-3d">Send Message</button>
+          <input type="hidden" name="submitted" id="submitted" value="true" />
+
+          <p class="form-error empty-fields"><i class="fa fa-exclamation-triangle"></i>Please fill the required fields</p>
+          <p class="form-error email-error"><i class="fa fa-exclamation-triangle"></i>Email looks invalid</p>
+          <p class="form-success"><i class="fa fa-check"></i>Your message has been sent</p>
+
+        </form>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
