@@ -7,32 +7,11 @@ const LoadingPage = function () {
     $(this).addClass('in');
   },{offset:'95%'});
 
-  setTimeout((_) => {
-    $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.3});
-    $(document).on('mousedown','.twentytwenty-handle',function(){
-      $('.twentytwenty-handle').addClass('remove-poi');
+  $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.3});
+  $(document).on('mousedown','.twentytwenty-handle',function(){
+    $('.twentytwenty-handle').addClass('remove-poi');
 
-    });
-  }, 1000);
-  
-	/*==============================================
-	Transparent Navbar
-	=============================================== */
-	if($('.main-nav').is('.navbar-transparent')){
-		if($(window).scrollTop() > 10){
-				$('.main-nav').removeClass('navbar-transparent');
-			}else{
-				$('.main-nav').addClass('navbar-transparent');
-			}
-		$(window).scroll( function() {
-			if($(window).scrollTop() > 10){
-				$('.main-nav').removeClass('navbar-transparent');
-			}else{
-				$('.main-nav').addClass('navbar-transparent');
-			}
-			
-		});
-	}
+  });
 
 	/*==============================================
 	ScrollTo Links
@@ -40,10 +19,10 @@ const LoadingPage = function () {
 	$('a.scrollto').click(function(e){
 		e.preventDefault();
 		var target =$(this).attr('href');
-		
-		
+
+
 		$('html, body').stop().animate({scrollTop: $(target).offset().top}, 1600,'easeInOutCubic');
-		
+
 		if ($('.navbar-collapse').hasClass('in')){
 			$('.navbar-collapse').removeClass('in').addClass('collapse');
 		}
@@ -190,44 +169,28 @@ const LoadingPage = function () {
 	}else{
 		$('.overlay-on-scroll .overlay').hide();
 	}
+
+  if($('.parallax-zoom-out').length && ($('.parallax-zoom-out').outerHeight()+$('.parallax-zoom-out').offset().top < $(window).outerHeight())){
+
+    $(window).scroll( function() {
+      var st = $(window).scrollTop(),
+        wh = $(window).outerHeight(),
+        sf = Math.max((wh-st/1.5)/wh,0);
+
+      $('.no-touch .parallax-zoom-out').css({ 'transform' : 'translateY('+st/3+'px) scale('+sf+')','opacity':Math.max((wh-st*1.7)/wh,0)});
+
+    });
+
+  }
+
+  if((!Modernizr.touch) && ( $(window).width() > 1024) ){
+    $(window).stellar({
+      horizontalScrolling: false,
+      responsive:true
+    });
+  }
 	
-	$(window).load(function(){
-		if($('.parallax-zoom-out').length && ($('.parallax-zoom-out').outerHeight()+$('.parallax-zoom-out').offset().top < $(window).outerHeight())){
-		
-			$(window).scroll( function() {
-				var st = $(window).scrollTop(),
-					wh = $(window).outerHeight(),
-					sf = Math.max((wh-st/1.5)/wh,0);
-				
-				$('.no-touch .parallax-zoom-out').css({ 'transform' : 'translateY('+st/3+'px) scale('+sf+')','opacity':Math.max((wh-st*1.7)/wh,0)});
-				
-			});
-		
-		}
-	});
-	
-	$(window).load(function(){
-		
-		if((!Modernizr.touch) && ( $(window).width() > 1024) ){
-			$(window).stellar({
-				horizontalScrolling: false,
-				responsive:true
-			});
-		}
-	});
-	
-	$(window).resize(function(){
-		stellarRefresh();
-	})
-	
-	/*============================================
-	Refresh Parallax Backgrounds
-	==============================================*/
-	function stellarRefresh(){
-		setTimeout(function(){
-			$(window).stellar('refresh');
-		},1000);
-	}
+
 
 	
 	/*============================================

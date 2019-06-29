@@ -1,4 +1,4 @@
-import {AfterViewChecked, Component, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import * as Loading from '../../assets/js/scripts.js'
 
 @Component({
@@ -6,18 +6,13 @@ import * as Loading from '../../assets/js/scripts.js'
   templateUrl: './jaunt.component.html',
   styleUrls: ['./jaunt.component.less']
 })
-export class JauntComponent implements OnInit, AfterViewChecked {
+export class JauntComponent implements OnInit {
 
-  load = true;
   constructor() { }
 
   ngOnInit() {
-  }
-
-  ngAfterViewChecked() {
-    if(this.load) {
+    setTimeout((_) => {
       Loading();
-      this.load = false;
-    }
+    }, 200)
   }
 }

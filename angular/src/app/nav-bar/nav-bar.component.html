@@ -1,4 +1,4 @@
-<div class="main-nav navbar navbar-fixed-top navbar-transparent">
+<div [ngClass]="{'main-nav navbar navbar-fixed-top': true, 'navbar-transparent': transparentBar}">
   <div class="navbar-header">
 
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
@@ -6,13 +6,13 @@
     </button>
 
     <!-- ======= LOGO ========-->
-    <a *ngIf="isHomePage" class="navbar-brand scrollto" href="#home">
+    <a *ngIf="_isHomePage" class="navbar-brand scrollto" href="#home">
 
       <img class="site-logo transparent-logo" src="assets/images/logo-sr.png" alt="logo" />
       <img class="site-logo" src="assets/images/logo-sr-rev.png" alt="logo" />
     </a>
 
-    <a *ngIf="!isHomePage" class="navbar-brand" routerLink="">
+    <a *ngIf="!_isHomePage" class="navbar-brand" routerLink="">
 
       <img class="site-logo transparent-logo" src="assets/images/logo-sr.png" alt="logo" />
       <img class="site-logo" src="assets/images/logo-sr-rev.png" alt="logo" />
@@ -20,7 +20,7 @@
 
   </div>
 
-  <div id="site-nav" class="navbar-collapse collapse">
+  <div id="site-nav" *ngIf="_isHomePage" class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right">
       <li class="sr-only">
         <a href="#">Home</a>
