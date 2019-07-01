@@ -207,145 +207,14 @@
       </p>
 
       <isotope-grid [options]="option" class="grid grid-gap-sm grid-3-cols fade-in">
-        <!-- ==============================================
-                        PRJ 1 - PORTFOLIO WORK
-                        =============================================== -->
-        <isotope-item class="grid-item">
+        <isotope-item class="grid-item" *ngFor="let work of works">
+          <figure>
 
-
-
-          <figure class="">
-
-            <img class="img-responsive" src="assets/images/jcs-sg-1.png" alt="" />
-
-          </figure>
-
-
-
-        </isotope-item>
-        <!-- ==============================================
-                        PRJ 2 - PORTFOLIO WORK
-                        =============================================== -->
-        <isotope-item class="grid-item">
-
-
-
-          <figure class="">
-
-            <img class="img-responsive" src="assets/images/jcs-sg-2.png" alt="" />
-
-          </figure>
-
-
-        </isotope-item>
-
-        <!-- ==============================================
-                        PRJ 3 - PORTFOLIO WORK
-                        =============================================== -->
-        <isotope-item class="grid-item">
-
-          <figure class="">
-
-            <img class="img-responsive" src="assets/images/jcs-sg-3.png" alt="" />
-
-
+            <img class="img-responsive" [src]="work.image" alt="" />
 
           </figure>
 
         </isotope-item>
-
-        <!-- ==============================================
-                        PRJ 4 - PORTFOLIO WORK
-                        =============================================== -->
-        <isotope-item class="grid-item">
-
-          <figure class="">
-
-            <img class="img-responsive" src="assets/images/jcs-sg-4.png" alt="" />
-
-
-
-          </figure>
-
-        </isotope-item>
-
-        <!-- ==============================================
-                        PRJ 5 - PORTFOLIO WORK
-                        =============================================== -->
-        <isotope-item class="grid-item">
-
-
-          <figure class="">
-
-            <img class="img-responsive" src="assets/images/jcs-sg-5.png" alt="" />
-
-
-          </figure>
-
-
-        </isotope-item>
-
-        <!-- ==============================================
-                        PRJ 6 - PORTFOLIO WORK
-                        =============================================== -->
-
-        <isotope-item class="grid-item">
-
-
-          <figure class="">
-
-            <img class="img-responsive" src="assets/images/jcs-sg-6.png" alt="" />
-
-          </figure>
-
-
-        </isotope-item>
-        <!-- ==============================================
-                        PRJ 7 - PORTFOLIO WORK
-                        =============================================== -->
-
-        <isotope-item class="grid-item">
-
-
-          <figure class="">
-
-            <img class="img-responsive" src="assets/images/jcs-sg-7.png" alt="" />
-
-          </figure>
-
-
-        </isotope-item>
-        <!-- ==============================================
-                        PRJ 8 - PORTFOLIO WORK
-                        =============================================== -->
-
-        <isotope-item class="grid-item">
-
-
-          <figure class="">
-
-            <img class="img-responsive" src="assets/images/jcs-sg-8.png" alt="" />
-
-          </figure>
-
-
-        </isotope-item>
-        <!-- ==============================================
-                        PRJ 9 - PORTFOLIO WORK
-                        =============================================== -->
-
-        <isotope-item class="grid-item">
-
-
-          <figure class="">
-
-            <img class="img-responsive" src="assets/images/jcs-sg-9.png" alt="" />
-
-          </figure>
-
-
-        </isotope-item>
-
       </isotope-grid>
 
       <!-- ==============================================

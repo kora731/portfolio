@@ -15,6 +15,26 @@ export class GraphicComponent implements OnInit {
     }
   };
 
+  works = [
+    {
+      image: 'assets/images/graphic-logo.png'
+    },
+    {
+      image: 'assets/images/graphic-logo-2.png'
+    },
+    {
+      image: 'assets/images/3d-art.png'
+    },
+    {
+      image: 'assets/images/wc-1.png'
+    },
+    {
+      image: 'assets/images/wc-2.png'
+    },
+    {
+      image: 'assets/images/wc-3.png'
+    }
+  ];
   constructor() { }
 
   ngOnInit() {

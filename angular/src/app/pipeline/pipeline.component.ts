@@ -15,6 +15,36 @@ export class PipelineComponent implements OnInit {
     }
   };
 
+  works = [
+    {
+      image: 'assets/images/jcs-sg-1.png'
+    },
+    {
+      image: 'assets/images/jcs-sg-2.png'
+    },
+    {
+      image: 'assets/images/jcs-sg-3.png'
+    },
+    {
+      image: 'assets/images/jcs-sg-4.png'
+    },
+    {
+      image: 'assets/images/jcs-sg-5.png'
+    },
+    {
+      image: 'assets/images/jcs-sg-6.png'
+    },
+    {
+      image: 'assets/images/jcs-sg-7.png'
+    },
+    {
+      image: 'assets/images/jcs-sg-8.png'
+    },
+    {
+      image: 'assets/images/jcs-sg-9.png'
+    }
+  ];
+
   constructor() { }
 
   ngOnInit() {
