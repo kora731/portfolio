@@ -42,63 +42,63 @@ export class WorkContainerComponent implements OnInit {
 
   works = [
     {
-      routerLink: 'jaunt',
+      routerLink: 'pathFinder',
       image: 'assets/images/w1-q-pf.png',
       title: 'PathFinder',
       subTitle: '#design-system #web',
-      filter: 'cat-1 cat-4'
+      filter: 'cat-1 cat-2'
     },
     {
-      routerLink: 'jaunt',
+      routerLink: 'nudge',
       image: 'assets/images/w2-q-mobile.png',
       title: 'Mobile + Nudge',
       subTitle: '#journey #mobile',
       filter: 'cat-2'
     },
     {
-      routerLink: 'jaunt',
+      routerLink: 'pipeline',
       image: 'assets/images/w3-jaunt-cover.png',
       title: 'Video Production Pipeline',
       subTitle: '#3d #design-system #web',
-      filter: 'cat-1 cat-3'
+      filter: 'cat-1 cat-2 cat-3'
     },
     {
       routerLink: 'jaunt',
       image: 'assets/images/w4-jaunt-app.png',
       title: 'Camera Media Manager',
       subTitle: '#journey #desktop',
-      filter: 'cat-2'
+      filter: 'cat-3'
     },
     {
-      routerLink: 'jaunt',
+      routerLink: 'firstExperience',
       image: 'assets/images/w5-adsk.png',
       title: 'First Experience',
       subTitle: '#journey #desktop',
       filter: 'cat-2'
     },
     {
-      routerLink: 'jaunt',
-      image: 'assets/images/w6-web.png',
-      title: 'Website Designs',
-      subTitle: '#graphics #web',
-      filter: 'cat-4'
-    },
-    {
-      routerLink: 'jaunt',
+      routerLink: 'shopper',
       image: 'assets/images/w7-smx.png',
       title: 'ShopperMX',
       subTitle: '#design-system #3d #web',
       filter: 'cat-1 cat-2 cat-3'
     },
     {
-      routerLink: 'jaunt',
+      routerLink: 'webSite',
+      image: 'assets/images/w6-web.png',
+      title: 'Website Designs',
+      subTitle: '#graphics #web',
+      filter: 'cat-4'
+    },
+    {
+      routerLink: 'visualizations',
       image: 'assets/images/w8-dqs.png',
       title: 'Data Visualizations',
       subTitle: '#data-viz #graphics',
-      filter: 'cat-4 cat-2'
+      filter: 'cat-4'
     },
     {
-      routerLink: 'jaunt',
+      routerLink: 'graphic',
       image: 'assets/images/w9-wc.png',
       title: 'Graphic Design<',
       subTitle: '#3d #graphics',

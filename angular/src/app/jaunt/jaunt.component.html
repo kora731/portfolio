@@ -1,67 +1,55 @@
 <app-nav-bar ></app-nav-bar>
 
-<div id="jaunt" class="bg-gray pt-160 overflow-hidden">
+<div class="bg-gray pt-120 overflow-hidden">
 
   <div class="container">
 
     <div class="row">
 
-      <div class="col-sm-8 col-sm-offset-2">
+      <div class="col-sm-10 col-sm-offset-1">
 
-        <div class="multiple-devices synchronized-sliders parallax-zoom-out">
+        <!-- Tabs buttons  -->
+        <!--
+                    <div class="devices-tabs text-center mt-20">
 
-          <div class="macbook-mockup single-device">
+                        <ul class="list-unstyled list-inline">
+                            <li class="active device-button" data-toggle="tab" data-target="#desktop-view"><i class="fa fa-desktop"></i></li>
+                            <li class="device-button" data-toggle="tab" data-target="#laptop-view"><i class="fa fa-laptop"></i></li>
+                        </ul>
 
-            <img class="img-responsive img-center" src="assets/images/macbook-single.png" alt=""/>
+                    </div> -->
 
-            <div class="macbook-mockup-content flexslider controls-visible no-bullet-nav effect-slide" data-speed="2500">
-              <ul class="slides">
-                <li>
-                  <img src="assets/images/macbook-screen-1.jpg" />
-                </li>
-                <li>
-                  <img src="assets/images/macbook-screen-2.jpg" />
-                </li>
-              </ul>
+        <!-- Tabs content -->
+
+        <div class="tab-content devices-tab-content parallax-zoom-out">
+
+          <div id="desktop-view" class="tab-pane fade in active">
+
+            <div class="imac-mockup">
+
+              <img class="img-responsive img-center" src="assets/images/imac-screen-tabs.png" alt=""/>
+
+              <div class="imac-mockup-content flexslider no-bullet-nav effect-slide" data-speed="3000">
+                <ul class="slides">
+                  <li>
+                    <img class="img-responsive" src="assets/images/jaunt-camera.png" alt="" />
+                  </li>
+                  <li>
+                    <img class="img-responsive" src="assets/images/jaunt-media.png" alt="" />
+                  </li>
+                  <li>
+                    <img class="img-responsive" src="assets/images/jaunt-player.png" alt="" />
+                  </li>
+                </ul>
+
+              </div>
+
             </div>
+
           </div>
 
-          <div class="iphone-mockup single-device">
-
-            <img class="img-responsive img-center" src="assets/images/iphone-single.png" alt=""/>
-
-            <div class="iphone-mockup-content flexslider pause no-direction-nav no-bullet-nav effect-slide" data-speed="3000">
-              <ul class="slides">
-                <li>
-                  <img src="assets/images/iphone-screen-1.jpg" />
-                </li>
-                <li>
-                  <img src="assets/images/iphone-screen-2.jpg" />
-                </li>
-
-              </ul>
-            </div>
-          </div>
-
-          <div class="ipad-mockup single-device">
-
-            <img class="img-responsive img-center" src="assets/images/ipad-single.png" alt=""/>
-
-            <div class="ipad-mockup-content flexslider pause no-direction-nav no-bullet-nav effect-slide" data-speed="3000">
-              <ul class="slides">
-                <li>
-                  <img src="assets/images/ipad-screen-1.jpg" />
-                </li>
-                <li>
-                  <img src="assets/images/ipad-screen-2.jpg" />
-                </li>
-
-              </ul>
-            </div>
-          </div>
 
         </div>
-
 
       </div>
 
@@ -75,12 +63,12 @@
 
   <div class="container">
 
-    <div class="row">
+    <div class="row col-lg-8 col-lg-push-2">
 
       <div>  <!-- class="col-sm-8 col-sm-offset-2" -->
 
-        <h2 class="text-uppercase text-center mb-10"><span class="text-color">PathFinder</span>: Patient Board for Discharge Planning</h2>
-          <h3 class="text-gray text-center mb-60">Actionable Data Delivered in a Delightful Humane Way</h3>
+        <h2 class="text-uppercase text-center mb-10"><span class="text-color">Camera Controller and Media Manager</span>: <br/> Desktop App Design</h2>
+          <h3 class="text-gray text-center mb-60">How might we support VR creators to capture and manage their recording and cut media in a simple and reliable way?</h3>
 
       </div>
     </div>
@@ -92,58 +80,42 @@
 
   <div class="container">
 
-    <div class="row">
+    <div class="row col-lg-8 col-lg-push-2">
       <!-- ==============================================
                   Start Overview
                   =============================================== -->
 
       <h2 class="text-center text-gray text-bold text-uppercase">Overview</h2>
-      <!--<hr class="hr-color hr-bold hr-sm hr-center"></hr>-->
+      <hr class="hr-color hr-bold hr-sm hr-center"/>
 
       <!-- ==============================================
                     Screen of PF before and after
                     =============================================== -->
       <div class="row">
 
-        <div class="col-lg-8 col-lg-push-4 mt-40 mb-40  scrolling-animation fade-right">
+        <div class="mt-40 mb-40  scrolling-animation fade-right">
 
           <h3 class="text-bold mb-10">Intro</h3>
           <p class="">
-            <!-- <sup><i class="fa fa-quote-left fa-fw text-gray"></i></sup> -->
-            PathFinder is a patient board to facilitate discharge planning, presented on the TV while the care team huddles in the morning to help drive collaboration and proactive planning of patient discharge.
-            PathFinder by Qventus is a key offering to customers to streamline patient flow to reduce length of stay and improve flow efficiency.
+            11/2016 - 5/2017 | Jaunt flagship product Jaunt One camera is paired with the camera controller application to access a wide variety of features.
+            While connecting to the camera, users can adjust the camera exposure, capture preview and even get real time views.
+            Jaunt media manager is the gateway tool to transfer recordings between VR camera, cloud services and user local data. It organizes 24 camera footage into formats ready for ingestion, to upload and download from the cloud.
 
-            <!-- <sup><i class="fa fa-quote-right fa-fw text-gray"></i></sup> -->
+
+
           </p>
           <h3 class="text-bold mb-10">My Role</h3>
           <p class="">
-            I‘m the Lead designer to redesign patient board. From initial brainstorming to final specs, I worked along with the team of PM, engineers to deliver the product within 5 months,
-            which became top sale products and received a lot of positive feedback from customers.
+            I'm the lead designer to iterate controller UX/UI working along the tool software engineer, and designing download module and iterate solutions with the engineering team and customers.
+
+
           </p>
           <!-- <p class="text-gray text-right"><em>- Rahul Varshney</em></p> -->
 
+          <img src="assets/images/jaunt-pipeline.png" class="img-responsive" />
         </div>
 
-        <div class="col-lg-4 col-lg-pull-8 scrolling-animation fade-right d1">
 
-
-          <div class="imac-mockup single-device">
-
-            <img class="img-responsive" src="assets/images/imac-single.png" alt=""/>
-
-            <div class="imac-mockup-content">
-
-              <div class="twentytwenty-container">
-                <!-- The before image is first -->
-                <img class="img-responsive" src="assets/images/pf-before.png" alt="" />
-                <!-- The after image is last -->
-                <img class="img-responsive" src="assets/images/pf-after.png" alt="" />
-              </div>
-            </div>
-
-          </div>
-
-        </div>
 
       </div>
 
@@ -158,19 +130,24 @@
 
   <div class="container">
 
-    <div class="row">
+    <div class="row col-lg-8 col-lg-push-2">
       <!-- ==============================================
                   Start Exp Goal
                   =============================================== -->
 
       <h2 class="text-center text-gray text-bold text-uppercase">Experience Goals</h2>
-      <!--<hr class="hr-color hr-bold hr-sm hr-center"></hr>-->
-      <p>Business: Reduce LOS to lower cost</p>
-      <p>User Group: Improve efficiency and proactively address barriers, limited time for each patient, poor UX of EMR system</p>
-      <p>Product Strategy: stellar visual, scalable configuration
-        <!-- ==============================================
-                    End Exp Goal
-                    =============================================== -->
+      <hr class="hr-color hr-bold hr-sm hr-center"/>
+
+      <ul class="text-lg">
+        <li>	Alleviate the user burden - redesign configuration flow to make it much easier and automate unnecessary steps</li>
+        <li>	Transparent system status - monitor the system changes, visualize the progress up-front for the user</li>
+        <li>	Balance advanced powerful settings with simplicity to support various user needs</li>
+        <li> 	Fluid and scalable UI to support newly added features and long term vision</li>
+      </ul>
+
+      <!-- ==============================================
+                  End Exp Goal
+                  =============================================== -->
     </div>
   </div>
 </div>
@@ -179,30 +156,34 @@
 
   <div class="container">
 
-    <div class="row">
+    <div class="row col-lg-8 col-lg-push-2">
 
       <!-- ==============================================
                   Start Design Challenge
                   =============================================== -->
       <h2 class="text-center text-gray text-bold text-uppercase">Design Challenge</h2>
-      <!--<hr class="hr-color hr-bold hr-sm hr-center"></hr>-->
+      <hr class="hr-color hr-bold hr-sm hr-center"/>
+      <div class="text-lg">
+        <p>
 
-      <p>
-        How to redesign the patient board to enable proactive discharge planning and scalable to other use cases?
-      </p>
+          App is overloaded with lots of features and tangled camera statuses
+        </p>
+        <p>
+          VR video data size is very large at 50+ GB level sheer size with 4+ formats
 
+        </p>
+        <p>
 
-      <h6 class="text-uppercase text-lg">Exploration/Research</h6>
-      <p>
-        Use Case: How to support IDR rounding / CN to review patients, like daily standup on the TV and make a decision.
-        so that IP flow and discharge are streamlined and move patients forward in the care process. Reduce length of stay
-      </p>
-      <p>
-        IP Flow Diagram
-      </p>
-      <p>
-        What are the critical information to planning discharge process? EDD, Dispo, Barriers.
-      </p>
+          Long download time and internet connection stability are also challenging
+
+        </p>
+      </div>
+
+      <h2 class="text-center text-gray text-bold text-uppercase mt-120">Approaches</h2>
+      <hr class="hr-color hr-bold hr-sm hr-center"/>
+
+      <img src="assets/images/jaunt-ia.png" class="img-responsive mt-40 mb-40"/>
+      <img src="assets/images/dozer-ixd.png" class="img-responsive mt-40 mb-40"/>
 
       <!-- ==============================================
                   END Design Challenge
@@ -215,18 +196,29 @@
 
   <div class="container">
 
-    <div class="row">
+    <div class="row col-lg-8 col-lg-push-2">
       <!-- ==============================================
                   Start Solution
                   =============================================== -->
       <h2 class="text-center text-gray text-bold text-uppercase">Solution Framework</h2>
-      <!--<hr class="hr-color hr-bold hr-sm hr-center"></hr>-->
-      <p>
-        Experience Guidelines: Situational Awareness, Progressive Disclosure, Actionable
-      </p>
-      <p>
-        IxD: EDD Selection, Dispo, Barrier
-      </p>
+      <hr class="hr-color hr-bold hr-sm hr-center"/>
+
+      <h3>Camera Controller</h3>
+
+      <img src="assets/images/trinity-default.png" class="img-responsive mt-40 mb-40"/>
+
+      <img src="assets/images/trinity-wip.png" class="img-responsive mt-40 mb-40"/>
+
+      <img src="assets/images/trinity-hide.png" class="img-responsive mt-40 mb-40"/>
+
+      <img src="assets/images/trinity-timelapse.png" class="img-responsive mt-40 mb-40"/>
+
+
+      <h3>Media Manager</h3>
+
+      <img src="assets/images/dozerv1.png" class="img-responsive mt-40 mb-40"/>
+
+      <img src="assets/images/dozerv2.png" class="img-responsive mt-40 mb-40"/>
 
       <!-- ==============================================
                   END Solution
@@ -239,25 +231,23 @@
 
   <div class="container">
 
-    <div class="row">
+    <div class="row col-lg-8 col-lg-push-2">
       <!-- ==============================================
                   Start Outcome
                   =============================================== -->
 
 
-      <h2 class="text-center text-gray text-bold text-uppercase">Outcome</h2>
-      <!--<hr class="hr-color hr-bold hr-sm hr-center"></hr>-->
+      <h2 class="text-center text-gray text-bold text-uppercase">Takeaway</h2>
+      <hr class="hr-color hr-bold hr-sm hr-center"/>
       <p>
-        Final product to be popular, gain traction and drives a lot of follow-up sales conversation - currently used in NYP, Emory, PHS, Sutter, Dignity Fairview and more 20+ hospitals.
-        “Finally, I have a technology that makes my job easier.” Charge Nurse https://www.qventus.com/content/uploads/2019/05/Qventus-For-Nursing-Teams-More-Time-For-Patients.pdf
-        With Qventus you have a snapshot of a patient without digging through any charts and without having to ask a lot of questions. You know what the plan is, where they are going,
-        and what's keeping them here.” Registered Nurse at a large health system
+        Fast and slow:  During the first week of joining Jaunt, I was able to design the download module right away. However, in the following months, I start learning more about how users actually interact with the Media Manager, only to discover the initial download dialog is not addressing the key pain points. Then I started slow iteration of the download dialog, to craft each interaction to support the user tasks better. The easiest and most accessible, right at hand, solution always poses high risk to actually solving the problem. Because it mostly overlooks the factors and edge cases, and that's where UX matters most. It has to be thought through with all use cases, and test against all possible routes.
+
       </p>
 
-      <div class="text-center mt-80">
-        <a class="btn btn-lg btn-3d" href="#">View Prototype
-        </a>
-      </div>
+      <!-- <div class="text-center mt-80">
+                                <a class="btn btn-lg btn-3d" href="#">View Prototype
+                                </a>
+                    </div> -->
       <!-- ==============================================
                   END Outcome
                   =============================================== -->

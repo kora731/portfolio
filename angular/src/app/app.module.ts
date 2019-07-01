@@ -16,6 +16,14 @@ import { JauntComponent } from './jaunt/jaunt.component';
 import {WorkContainerComponent} from "./home/work-container/work-container.component";
 
 import { IsotopeModule } from 'ngx-isotope';
+import { PathFinderComponent } from './path-finder/path-finder.component';
+import { NudgeComponent } from './nudge/nudge.component';
+import { PipelineComponent } from './pipeline/pipeline.component';
+import { FirstExperienceComponent } from './first-experience/first-experience.component';
+import { ShopperMXComponent } from './shopper-mx/shopper-mx.component';
+import { WebSiteComponent } from './web-site/web-site.component';
+import { VisualizationsComponent } from './visualizations/visualizations.component';
+import { GraphicComponent } from './graphic/graphic.component';
 
 
 @NgModule({
@@ -31,7 +39,15 @@ import { IsotopeModule } from 'ngx-isotope';
     HeaderComponent,
     NavBarComponent,
     HomeComponent,
-    JauntComponent
+    JauntComponent,
+    PathFinderComponent,
+    NudgeComponent,
+    PipelineComponent,
+    FirstExperienceComponent,
+    ShopperMXComponent,
+    WebSiteComponent,
+    VisualizationsComponent,
+    GraphicComponent
   ],
   imports: [
     BrowserModule,
