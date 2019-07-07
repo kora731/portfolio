@@ -13,7 +13,7 @@ const ContentSection = ({ title, children, isSubTitle }) => {
             <div className="col-lg-3">
               <div className="col-lg-2 contentSubtitle"/>
               <div className="col-lg-10">
-                <h5 className="text-color text-bold">{title}</h5>
+                <span className="text-color text-bold">{title}</span>
               </div>
             </div>
             <div className="col-lg-9">
