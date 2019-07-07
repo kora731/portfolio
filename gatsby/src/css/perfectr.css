@@ -4237,3 +4237,13 @@ DEVICES STYLES
 .hidden {
   display: none;
 }
+
+.contentHeighlight {
+  padding: 1rem;
+  margin: 0 0 5px 0;
+  background: #f1fdff;
+}
+
+.contentSubtitle {
+  border-top: 3px solid #2997AB;
+}
