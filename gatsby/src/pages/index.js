@@ -7,8 +7,9 @@ import ContentSection from "../components/content-section"
 import Brief from "../components/brief"
 import Lock from "../components/lock"
 
-// import image from "../images/adsk-step-1.png"
-
+import Cover from "../images/pf-cs-cover.png"
+import Goal from "../images/pf-cs-goal.png"
+import User from "../images/pf-cs-user.png"
 const title = "PathFinder: patient board to facilitate discharge planning";
 const subTitle = "Actionable Data Delivered in a Delightful Humane Way";
 const briefAttribute = [
@@ -44,14 +45,17 @@ const IndexPage = () => (
     <ContentHeader title={title} subTitle={subTitle}/>
 
     <Lock/>
-    <div className="password-protected">
-      {/*<img className="img-responsive" src={image}/>*/}
+    <div>
 
-      <ContentSection title="BRIEF">
+      <ContentSection>
+        <img className="img-responsive" src={Cover}/>
+      </ContentSection>
+
+      <ContentSection title="Brief">
         <Brief attributes={briefAttribute}/>
       </ContentSection>
 
-      <ContentSection title="WHY PATHFINDER">
+      <ContentSection title="Why PathFinder">
         <span>Today’s health systems are increasingly focused on reducing inefficiencies of patient flows to reduce costs and capital spending. But the day to day responsibilities of managing patient flows are shouldered by frontline care teams, who are already overwhelmed with increasing patient demands, and complex dashboards and reports.</span>
         <p/>
         <span>Caregivers are burning out trying to operate in an intense, highly dynamic environment. Furthermore, patients are the ones who suffer the consequences.</span>
@@ -59,13 +63,17 @@ const IndexPage = () => (
         <span>Qventus offers PathFinder solution to optimize patient flow in realtime and reduce the cognitive burden of care team. It facilitates care team to plan discharge on day one and captures barriers to help prioritize work items. With a dedicated product focus on modern, user-centric design, PathFinder intends to engage the whole team to streamline the patient flow and reduce length of stay.</span>
       </ContentSection>
 
+      <ContentSection title="Product Goals">
+        <img className="img-responsive" src={Goal}/>
+
+      </ContentSection>
+
       <ContentSection title="UNDERSTAND USERS">
         <span>We shadowed multiple hospitals to observe how frontline nurses are handling the patient flow today. It helps uncover potential touchpoints where PathFinder could make an impact to improve discharge process. I consolidated our learnings into the persona and flow diagrams so that the whole team can leverage these user insights to solve problems.</span>
+        <h4 className="text-bold mt-20">Stakeholder mapping and key persona</h4>
+        <img className="img-responsive" src={User}/>
         <p/>
-        <span>Stakeholder mapping and key persona</span>
-
-        <p/>
-        <span>Patient Discharge Flow</span>
+        <h4 className="text-bold mt-20">Patient Discharge Flow</h4>
 
       </ContentSection>
 

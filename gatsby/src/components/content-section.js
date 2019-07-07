@@ -7,17 +7,17 @@ const ContentSection = ({ title, children }) => {
 
   return <div className="container bg-light pt-40 text-left content-section">
     <div className="row col-lg-8 col-lg-push-2">
+      {title ?
+      <>
       <div className="col-lg-3">
-        {title &&
-          <>
-            <h4 className="text-color text-bold text-lg mb-0">{title}</h4>
-            <hr className="hr-color hr-bold mt-0 mr-0"/>
-          </>
-        }
+        <h4 className="text-color text-bold text-lg mb-0">{title}</h4>
+        <hr className="hr-color hr-bold mt-0 mr-0"/>
       </div>
       <div className="col-lg-9">
         {children}
       </div>
+      </> : children
+      }
     </div>
   </div>;
 }
