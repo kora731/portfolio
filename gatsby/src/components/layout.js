@@ -16,7 +16,7 @@ const Layout = ({ pri, next, children }) => {
   return (
     <div>
       <Header pri={pri} next={next}/>
-      <div className="pt-120 pb-80">
+      <div className="pt-40 pb-80">
         <main>{children}</main>
       </div>
     </div>

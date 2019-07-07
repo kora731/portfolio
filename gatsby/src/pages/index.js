@@ -1,5 +1,7 @@
 import React from "react"
 
+import { Anchor } from 'antd';
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ContentHeader from "../components/content-header"
@@ -29,6 +31,8 @@ import Specs3 from "../images/pf-specs-3.png"
 import Specs4 from "../images/pf-specs-4.png"
 import RWD1 from "../images/pf-rwd-1.png"
 import RWD2 from "../images/pf-rwd-2.png"
+
+const { Link } = Anchor;
 
 const title = "PathFinder: patient board to facilitate discharge planning";
 const subTitle = "Actionable Data Delivered in a Delightful Humane Way";
@@ -71,9 +75,27 @@ const IndexPage = () => (
     <ContentHeader title={title} subTitle={subTitle}/>
 
     <Lock/>
-    <div>
 
-      <ContentSection>
+    <div className="password-protected">
+      <div className="AnchorPosition">
+        <Anchor>
+          <Link href="#top" title="Overview" />
+          <Link href="#Brief" title="Brief" />
+          <Link href="#Why PathFinder" title="Why PathFinder" />
+          <Link href="#Product Goals" title="Product Goals" />
+          <Link href="#UNDERSTAND USERS" title="Understand Users" />
+          <Link href="#DESIGN CHALLENGE" title="Design Challenge" />
+          <Link href="#SOLUTION FRAMEWORK" title="Solution Framework">
+            <Link href="#Modularize board and scale to support data" title="Modularize board and scale to support data" />
+            <Link href="#Actionable Component" title="Actionable Component" />
+            <Link href="#UI Exploration for Stellar UI" title="UI Exploration for Stellar UI" />
+            <Link href="#Final mockup and animation" title="Final mockup and animation" />
+          </Link>
+          <Link href="#UI DELIVERY" title="UI Delivery" />
+          <Link href="#OUTCOME" title="Outcome" />
+        </Anchor>
+      </div>
+      <ContentSection id="top">
         <img className="img-responsive" src={Cover}/>
       </ContentSection>
 

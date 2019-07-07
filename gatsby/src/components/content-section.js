@@ -5,7 +5,7 @@ import "./content-section.css"
 
 const ContentSection = ({ title, children, isSubTitle }) => {
 
-  return <div className="container bg-light pt-40 text-left content-section">
+  return <div id={title} className="container bg-light pt-40 text-left content-section">
     <div className="row col-lg-8 col-lg-push-2">
       {title ?
         (isSubTitle ? <>

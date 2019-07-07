@@ -6,7 +6,7 @@ import logo from "../images/logo-sr-rev.png"
 
 const Header = ({ pri, next }) => {
 
-  return <div className="main-nav navbar navbar-fixed-top">
+  return <div className="main-nav navbar">
     <div className="navbar-header">
       <a className="navbar-brand">
 

@@ -4247,3 +4247,8 @@ DEVICES STYLES
 .contentSubtitle {
   border-top: 3px solid #2997AB;
 }
+
+.AnchorPosition {
+  position: absolute;
+  margin-left: 2rem;
+}
