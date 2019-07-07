@@ -211,7 +211,7 @@ it will present data and support user interaction.</span>
 
       <ContentSection title="Final mockup and animation" isSubTitle={true}>
 
-        <video className="img-responsive">
+        <video className="img-responsive" controls>
           <source src={Demo} type="video/mp4"/>
         </video>
       </ContentSection>
