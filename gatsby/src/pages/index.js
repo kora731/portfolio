@@ -10,6 +10,7 @@ import Brief from "../components/brief"
 import Lock from "../components/lock"
 import ContentHeighlight from "../components/content-heighlight"
 
+/* Image Assets */
 import Cover from "../images/pf-cs-cover.png"
 import Goal from "../images/pf-cs-goal.png"
 import User from "../images/pf-cs-user.png"
@@ -20,6 +21,7 @@ import Wf1 from "../images/pf-6-wireframe.png"
 import Wf2 from "../images/pf-3-wireframe.png"
 import Ixd from "../images/pf-ixd.png"
 import Edd1 from "../images/pf-edd-1.png"
+import Edd2 from "../images/pf-edd-2.png"
 import Dispo from "../images/pf-dispo.png"
 import Barrier from "../images/pf-barrier.png"
 import UI1 from "../images/pf-ui-1.png"
@@ -196,6 +198,7 @@ it will present data and support user interaction.</span>
         <p/>
 
         <img className="img-responsive" src={Edd1}/>
+        <img className="img-responsive" src={Edd2}/>
 
         <h4 className="text-bold mt-20">Disposition flow indicator</h4>
         <span>Visualize the flow and order status up front for the care team</span>
@@ -226,8 +229,7 @@ it will present data and support user interaction.</span>
         <img className="img-responsive" src={UI2}/>
 
         <h4 className="text-bold mt-20">Review and feedback</h4>
-        <span>Why do we pick the wave header and the direction to go with list?</span>
-        <p/>
+
         <span>Along the visual exploration, our product team did a few rounds of reviews. The team arrived at the concensus that we want to convey intelligent and dynamic data feeling. Wave provides a lot of possibilities for data related animation</span>
       </ContentSection>
 
@@ -273,9 +275,9 @@ it will present data and support user interaction.</span>
 
         <h4 className="text-bold mt-20">- 20%+ increase in patient satisfaction</h4>
 
-        <h4 className="text-bold mt-60">Frontline User Feedback</h4>
+        <h4 className="text-bold mt-40">Frontline User Feedback</h4>
         <span>“With Qventus you have a snapshot of a patient without digging through any charts and without having to ask a lot of questions. You know what the plan is, where they are going, and what's keeping them here.”</span>
-        <p/>
+       
         <span>- Registered Nurse</span>
         <p/>
         <span>“Finally, I have a technology that makes my job easier.”    - Charge Nurse</span>
