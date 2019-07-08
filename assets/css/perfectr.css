@@ -458,6 +458,13 @@ BACKGROUNDS
   }
 }
 
+@media (max-width:450px){
+  .bg-image{
+    height:30em !important;
+  }
+  
+}
+
 .bg-image.parallax-bg.pattern-bg{
   background-size: auto !important;
   background-repeat: repeat !important;
@@ -631,7 +638,7 @@ h6.text-3x,.h6.text-3x{font-size: 2.25em;}
   h6,.h6{font-size: 0.75em;}
 
   .text-lg{
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .text-2x{
