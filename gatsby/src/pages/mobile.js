@@ -54,7 +54,7 @@ const data = {
 const title = "Qventus app: deliver real-time nudges to patient care team";
 const subTitle = "Right data for the right people at the right time";
 const highlight1 = ["How to reduce the mobile app usage friction and increase value delivered to ED nurses?"];
-const highlight2 = [ "- Enable collaboration and decision making", "- Pushed contextual and actionable data", "- Transparent outcome and motivate teams"];
+const highlight2 = [ "Enable collaboration and decision making", "Pushed contextual and actionable data", "Transparent outcome and motivate teams"];
 const highlight3 = ["How to come up with a nudge framework to enable and motivate care teams to improve healthcare operations?"];
 
 const briefAttribute = [
@@ -105,6 +105,7 @@ const IndexPage = () => (
           </Link>
           <Link href="#Design sprint" title="Design sprint" />
           <Link href="#Redesign concept" title="Redesign concept" />
+          <Link href="#Outcome" title="Outcome" />
     
         </Anchor>
       </div>
@@ -141,7 +142,7 @@ const IndexPage = () => (
         <span>Started from early 2018 Qventus set up the infrastructure to collect usage data and tracking funnels through Amplitude, and we found mobile usage dropped continuously to our surprise. After the app launched at the hospital site, less and less users came back after one month. </span>
         <p/>
         <span>To find out the root caues of the usage drop, we started setting up onsite interviews and partnered with customer success team to collect feedback from our users. There are a few consistent problems that surface: </span>
-        <div className="row">
+        <div className="row mt-20">
           <div className="col-lg-6">
               <h4 className="text-bold">Targeted Users - ED Nurses</h4>
               <span>Through talking to different ED nurses, we captured their characteristics and touchpoints with Qventus products in the persona format. It helps align the whole team on the user empathy and acts as a reference point when we’re talking about user problems. </span>
@@ -215,15 +216,15 @@ const IndexPage = () => (
       <div className="row">
         <div className="col-lg-4">
           <img className="img-responsive" src={Archive}/>
-          <h5 class="text-gray mt-12">Swiping to archive nudges helps clear up the feed to reduce information overload</h5>
+          <span class="text-gray mt-12">Swiping to archive nudges helps clear up the feed to reduce information overload</span>
         </div>
         <div className="col-lg-4">
           <img className="img-responsive" src={Mute}/>
-          <h5 class="text-gray mt-12">Ability to set mute schedule let the user control notifications when on/off shift</h5>
+          <span class="text-gray mt-12">Ability to set mute schedule let the user control notifications when on/off shift</span>
         </div>
         <div className="col-lg-4">
           <img className="img-responsive" src={Priority}/>
-          <h5 class="text-gray mt-12">Tagging the nudges makes scanning and prioiritization easy</h5>
+          <span class="text-gray mt-12">Tagging the nudges makes scanning and prioiritization easy</span>
         </div>
       </div>
       <h4 className="text-bold mt-20">Results</h4>
@@ -296,7 +297,7 @@ const IndexPage = () => (
       <p/>
       <span>As I read and learnt a lot of design sprint, I think it is a great design tool to help lay down the nudge framework foundation. So I proposed to facilitate 5-day design sprint session with the help from another designer and two other PMs. </span>
 
-        <h4 className="text-bold">Design sprint goal</h4>
+        <h4 className="text-bold mt-20">Design sprint goal</h4>
         <ContentHeighlight attributes={highlight3}/>
 
 
