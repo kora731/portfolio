@@ -44,7 +44,7 @@ const { Link } = Anchor;
 const data = {
   pri : {
     label: "PathFinder",
-    href: "/project"
+    href: "/project/index.html"
   },
   next: {
     label: "Jaunt",

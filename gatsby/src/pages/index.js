@@ -44,7 +44,7 @@ const data = {
   },
   next: {
     label: "mobile",
-    href: "/project/mobile"
+    href: "/project/mobile/index.html"
   },
   title: "PathFinder: patient board to facilitate discharge planning",
   subTitle: "Actionable Data Delivered in a Delightful Humane Way",
