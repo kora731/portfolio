@@ -8,7 +8,7 @@ import ContentHeader from "../components/content-header"
 import ContentSection from "../components/content-section"
 import Brief from "../components/brief"
 import Lock from "../components/lock"
-import ContentHeighlight from "../components/content-heighlight"
+import ContentHighlight from "../components/content-highlight"
 
 /* Image Assets */
 import Cover from "../images/pf-cs-cover.png"
@@ -47,8 +47,8 @@ const data = {
   },
   title: "PathFinder: patient board to facilitate discharge planning",
   subTitle: "Actionable Data Delivered in a Delightful Humane Way",
-  hightlight1: ["How to redesign the patient board to enable proactive discharge planning and a scalable solution to customers?"],
-  hightlight2: [
+  highlight1: ["How to redesign the patient board to enable proactive discharge planning and a scalable solution to customers?"],
+  highlight2: [
   "Easy to access data while scalable",
   "Actionable components",
   "Delightful and refreshing"],
@@ -137,7 +137,7 @@ const IndexPage = () => (
       </ContentSection>
 
       <ContentSection title="DESIGN CHALLENGE">
-        <ContentHeighlight attributes={data.hightlight1}/>
+        <ContentHighlight attributes={data.highlight1}/>
         <img className="img-responsive" src={Before}/>
 
         <p/>
@@ -160,7 +160,7 @@ const IndexPage = () => (
         <h4 className="text-bold mt-40">Experience Goals</h4>
         <span>As the lead designer, I started the design project by working with PM on the experience goals of this new patient board. </span>
         <p/>
-        <ContentHeighlight attributes={data.hightlight2}/>
+        <ContentHighlight attributes={data.highlight2}/>
       </ContentSection>
 
       <ContentSection title="SOLUTION FRAMEWORK">

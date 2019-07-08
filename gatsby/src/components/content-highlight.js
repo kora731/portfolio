@@ -2,7 +2,7 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const ContentHeighlight = ({ attributes }) => {
+const ContentHighlight = ({ attributes }) => {
 
   const count = Math.min(4, attributes.length);
   return <div className="row">
@@ -17,8 +17,8 @@ const ContentHeighlight = ({ attributes }) => {
   </div>;
 }
 
-ContentHeighlight.propTypes = {
+ContentHighlight.propTypes = {
   attributes: PropTypes.array
 }
 
-export default ContentHeighlight
+export default ContentHighlight

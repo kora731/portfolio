@@ -8,7 +8,7 @@ import ContentHeader from "../components/content-header"
 import ContentSection from "../components/content-section"
 import Brief from "../components/brief"
 import Lock from "../components/lock"
-import ContentHeighlight from "../components/content-heighlight"
+import ContentHighlight from "../components/content-highlight"
 
 /* Image Assets */
 import Cover from "../images/q-mobile-header.png"
@@ -166,7 +166,7 @@ const IndexPage = () => (
       </ContentSection>
 
       <ContentSection title="Design challenge">
-        <ContentHeighlight attributes={highlight1}/>
+        <ContentHighlight attributes={highlight1}/>
 
         <h4 className="text-bold mt-20">Experience Goals</h4>
         <span>- Delightful to engage users, helpful while not intrusive</span>
@@ -237,7 +237,7 @@ const IndexPage = () => (
       <ContentSection title="Increase value" isSubTitle={true}>
         <span>Aside from improving current mobile app usability, how might we augment mobile app to do more than chatting? Below are three areas that mobile team brainstormed together based on input from different stakeholders.</span>
         <p/>
-          <ContentHeighlight attributes={highlight2}/>
+          <ContentHighlight attributes={highlight2}/>
         <h4 className="text-bold mt-20">Enriched nudge detail</h4>
         <div className="row">
           <div className="col-lg-4">
@@ -298,7 +298,7 @@ const IndexPage = () => (
       <span>As I read and learnt a lot of design sprint, I think it is a great design tool to help lay down the nudge framework foundation. So I proposed to facilitate 5-day design sprint session with the help from another designer and two other PMs. </span>
 
         <h4 className="text-bold mt-20">Design sprint goal</h4>
-        <ContentHeighlight attributes={highlight3}/>
+        <ContentHighlight attributes={highlight3}/>
 
 
         <h4 className="text-bold mt-20">Special Sprint:  Hybrid Research + Design Sprint</h4>
