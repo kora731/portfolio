@@ -40,11 +40,11 @@ const { Link } = Anchor;
 const data = {
   pri : {
     label: "home",
-    herf: ""
+    herf: "/"
   },
   next: {
     label: "mobile",
-    herf: "mobile.html"
+    herf: "/public/mobile"
   },
   title: "PathFinder: patient board to facilitate discharge planning",
   subTitle: "Actionable Data Delivered in a Delightful Humane Way",
@@ -83,7 +83,7 @@ const data = {
 }
 const IndexPage = () => (
   <Layout pri={data.pri} next={data.next}>
-    <SEO title="PathFinder" />
+    <SEO title="Mobile" />
 
     <ContentHeader title={data.title} subTitle={data.subTitle}/>
 

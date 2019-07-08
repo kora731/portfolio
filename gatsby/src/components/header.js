@@ -10,7 +10,7 @@ const Header = ({ pri, next }) => {
     <div className="navbar-header">
       <a className="navbar-brand">
 
-        <img className="site-logo" src={logo} alt="logo"/>
+        <img className="site-logo" src={logo} alt="logo" href="/"/>
 
       </a>
 
