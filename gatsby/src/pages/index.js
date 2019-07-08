@@ -104,8 +104,8 @@ const IndexPage = () => (
             <Link href="#UI Exploration for Stellar UI" title="UI Exploration for Stellar UI" />
             <Link href="#Final Product UI" title="Final Product UI" />
           </Link>
-          <Link href="#UI DELIVERY" title="UI Delivery" />
-          <Link href="#OUTCOME" title="Outcome" />
+          <Link href="#UI Delivery" title="UI Delivery" />
+          <Link href="#Outcome" title="Outcome" />
         </Anchor>
       </div>
       <ContentSection id="top">
@@ -142,23 +142,23 @@ const IndexPage = () => (
         <img className="img-responsive" src={Before}/>
 
         <p/>
-        <h4 className="text-bold mt-20">Gap of the previous patient board</h4>
+        <h4 className="text-bold mt-40">Gap of the previous patient board</h4>
         <span>Before I joint the team, there is already a patient board for IDR. After taling to Qventus internal stakeholders, there are a few gaps we identified:</span>
         <p/>
 
-        <h4 className="text-bold mt-20">1. Not configurable</h4>
+        <p className="text-bold mt-20">1. Not configurable</p>
         <span>Data columns are manually written with SQL for every board and it takes a long time to configure every board.</span>
         <p/>
 
-        <h4 className="text-bold mt-20">2. Poor affordance</h4>
+        <p className="text-bold mt-20">2. Poor affordance</p>
         <span>Certain column data is editable and requires user entry. However the current UI doesn’t show clearly interactive fields.</span>
         <p/>
 
-        <h4 className="text-bold mt-20">3. How to differentiate</h4>
+        <p className="text-bold mt-20">3. How to differentiate</p>
         <span>Heathcare IT software all share a corporate blue hue which tends to look alike. How might we make PathFinder visually appealing and differentiate from other competitors?</span>
         <p/>
 
-        <h4 className="text-bold mt-20">Experience Goals</h4>
+        <h4 className="text-bold mt-40">Experience Goals</h4>
         <span>As the lead designer, I started the design project by working with PM on the experience goals of this new patient board. </span>
         <p/>
         <ContentHeighlight attributes={data.hightlight2}/>
@@ -168,9 +168,9 @@ const IndexPage = () => (
         <span>Our approaches to solve the design challenge and meet experience goals can be summarized in three themes:</span>
         <p/>
 
-        <h4 className="text-bold mt-20">1. Modularize and scalable board</h4>
-        <h4 className="text-bold mt-20">2. Actionable component</h4>
-        <h4 className="text-bold mt-20">3. UI Exploration for Stellar UI</h4>
+        <h4 className="text-bold">- Modularize and scalable board</h4>
+        <h4 className="text-bold">- Actionable component</h4>
+        <h4 className="text-bold">- UI Exploration for Stellar UI</h4>
       </ContentSection>
 
       <ContentSection title="Modularize and scalable board" isSubTitle={true}>
@@ -182,16 +182,16 @@ it will present data and support user interaction.</span>
 
         <img className="img-responsive" src={Idr}/>
 
-        <h4 className="text-bold mt-20">Board space for more data</h4>
-        <span>After the first iteration, we narrow down to three options because of the project timeline and technical constraints. The list view becomes the unification point where data is presented in a progressive way, and also has advantage to sort and filter. We also constructed the low fi mockup covering data structure, so that moving forward we can valid both layout and data with end users.</span>
+        <h4 className="text-bold mt-40">Board space for more data</h4>
+        <span>Current table UI is challenging for adding more columns. I started exploring different types of data layouts to expanad the horizontal space. </span>
         <p/>
         <img className="img-responsive" src={Wf1}/>
         <p/>
-        <span>After the first iteration, we narrow down to three options because of the project timeline and technical constraints. The list view becomes the unification point where data is presented in a progressive way, and also has advantage to sort and filter. We also constructed the low fi mockup covering data structure, so that moving forward we can valid both layout and data with end users.</span>
+        <span class="row">After the first iteration, we narrow down to three options because of the project timeline and technical constraints. The list view becomes the unification point where data is presented in a progressive way, and also has advantage to sort and filter. We also constructed the low fi mockup covering data structure, so that moving forward we can valid both layout and data with end users.</span>
         <p/>
         <img className="img-responsive" src={Wf2}/>
 
-        <h4 className="text-bold mt-20">User Testing Findings</h4>
+        <h4 className="text-bold mt-40">User Testing Findings</h4>
         <span>When we presented the three options to end users, 4 out of 5 users chose Option Two, commented on it being clean and familiar. Expanding the row data rather than replacing/relocating is also easier to scan and digest the information.</span>
         <p/>
         <span>After I brought these findings back to the team, we decided on constructing the list view first. Then we will investigate further into the expansion view to iterate the design. </span>
@@ -222,7 +222,7 @@ it will present data and support user interaction.</span>
 
         <img className="img-responsive" src={Barrier}/>
 
-        <h4 className="text-bold mt-20">OUTCOME</h4>
+        <h4 className="text-bold mt-20">Outcome</h4>
         <span>During our internal feedback with clinical team, we got a lot of positive feedback. Also from tracking usage data at Amplitude, we found completion rate of these fields general high along with increasing DAU. These indicators help show a more engaged user group.</span>
       </ContentSection>
 
@@ -250,7 +250,7 @@ it will present data and support user interaction.</span>
         </video>
       </ContentSection>
 
-      <ContentSection title="UI DELIVERY">
+      <ContentSection title="UI Delivery">
 
         <div className="col-lg-6">
           <img className="img-responsive" src={Specs1}/>
@@ -269,21 +269,21 @@ it will present data and support user interaction.</span>
         <h4 className="text-bold mt-20">Responsive design</h4>
 
         <img className="img-responsive" src={RWD1}/>
-        <img className="img-responsive" src={RWD2}/>
+        <img className="img-responsive mt-40" src={RWD2}/>
         <p/>
         <span>In the later stage of introducing PathFinder to more users and use cases, ability to view the list on the mobile devices becomes a prominent request. I started cataloging all the data by priority group, and designed the wireframes first. This approach makes sure important are consistantly emphasized across different channels. Next step is to validate with care team, and explore unique use cases for mobile usage.</span>
         <p/>
       </ContentSection>
 
-      <ContentSection title="OUTCOME">
+      <ContentSection title="Outcome">
         <h4 className="text-bold">Widely deployed at client hospitals </h4>
         <span>Since the new PathFinder was launched in June 2018, 20+ leading hospitals and health systems are streamlining patient flow with the product, achieving results including:</span>
-
-        <h4 className="text-bold mt-20">- 0.5+ day reduction in in-patient length of stay</h4>
-
-        <h4 className="text-bold mt-10">- 20%+ decrease in postop transfer delays</h4>
-
-        <h4 className="text-bold mt-10">- 20%+ increase in patient satisfaction</h4>
+        <p/>
+        <span className="mt-10">- 0.5+ day reduction in in-patient length of stay</span>
+        <p/>
+        <span className="">- 20%+ decrease in postop transfer delays</span>
+        <p/>
+        <span className="">- 20%+ increase in patient satisfaction</span>
 
         <h4 className="text-bold mt-40">Frontline user feedback</h4>
         <span>“With Qventus you have a snapshot of a patient without digging through any charts and without having to ask a lot of questions. You know what the plan is, where they are going, and what's keeping them here.”</span>

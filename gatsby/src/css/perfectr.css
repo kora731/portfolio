@@ -526,7 +526,7 @@ small,.small{
   color: inherit !important;
 }
 
-h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{margin:0 0 20px;font-weight:300;line-height: 1.25em;}
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{margin:0 0 20px;font-weight:400;line-height: 1.25em;}
 
 /*Font sizes*/
 
@@ -4240,8 +4240,10 @@ DEVICES STYLES
 
 .contentHeighlight {
   padding: 1rem;
-  margin: 0 0 5px 0;
+  margin: 0 0 2rem 0;
   background: #f1fdff;
+  font-weight:400;
+  color: #157182;
 }
 
 .contentSubtitle {
@@ -4304,7 +4306,7 @@ DEVICES STYLES
   width: 8px;
   height: 8px;
   background-color: #fff;
-  border: 2px solid #1890ff;
+  border: 2px solid #2997ab;
   border-radius: 8px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -4342,7 +4344,7 @@ DEVICES STYLES
 }
 
 .ant-anchor-link-active>.ant-anchor-link-title {
-  color: #1890ff
+  color: #2997ab;
 }
 
 .ant-anchor-link .ant-anchor-link {
