@@ -8,7 +8,7 @@ const Header = ({ pri, next }) => {
 
   return <div className="main-nav navbar">
     <div className="navbar-header">
-      <a className="navbar-brand" href="/">
+      <a className="navbar-brand" href="/portfolio/">
 
         <img className="site-logo" src={logo} alt="logo"/>
 

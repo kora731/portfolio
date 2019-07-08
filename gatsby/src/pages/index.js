@@ -40,11 +40,11 @@ const { Link } = Anchor;
 const data = {
   pri : {
     label: "home",
-    href: "/"
+    href: "/portfolio"
   },
   next: {
     label: "mobile",
-    href: "/public/mobile"
+    href: "/portfolio/public/mobile"
   },
   title: "PathFinder: patient board to facilitate discharge planning",
   subTitle: "Actionable Data Delivered in a Delightful Humane Way",

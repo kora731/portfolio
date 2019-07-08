@@ -44,11 +44,11 @@ const { Link } = Anchor;
 const data = {
   pri : {
     label: "PathFinder",
-    href: "public"
+    href: "/portfolio/public"
   },
   next: {
     label: "Jaunt",
-    href: "project-jcs.html"
+    href: "/portfolio/project-jcs.html"
   }
 }
 const title = "Qventus app: deliver real-time nudges to patient care team";
