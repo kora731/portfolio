@@ -51,7 +51,7 @@ const data = {
   hightlight1: ["How to redesign the patient board to enable proactive discharge planning and a scalable solution to customers?"],
   hightlight2: [
   "Easy to access data while scalable",
-  "Actionable",
+  "Actionable components",
   "Delightful and refreshing"],
 
   briefAttribute: [
@@ -118,7 +118,6 @@ const IndexPage = () => (
 
       <ContentSection title="Why PathFinder">
         <span>Today’s health systems are increasingly focused on reducing inefficiencies of patient flows to reduce costs and capital spending. But the day to day responsibilities of managing patient flows are shouldered by frontline care teams, who are already overwhelmed with increasing patient demands, and complex dashboards and reports.</span>
-        <p/>
         <span>Caregivers are burning out trying to operate in an intense, highly dynamic environment. Furthermore, patients are the ones who suffer the consequences.</span>
         <p/>
         <span>Qventus offers PathFinder solution to optimize patient flow in realtime and reduce the cognitive burden of care team. It facilitates care team to plan discharge on day one and captures barriers to help prioritize work items. With a dedicated product focus on modern, user-centric design, PathFinder intends to engage the whole team to streamline the patient flow and reduce length of stay.</span>
@@ -169,12 +168,12 @@ const IndexPage = () => (
         <span>Our approaches to solve the design challenge and meet experience goals can be summarized in three themes:</span>
         <p/>
 
-        <h4 className="text-bold mt-20">1. Modularize board and scalable to support more data</h4>
+        <h4 className="text-bold mt-20">1. Modularize and scalable board</h4>
         <h4 className="text-bold mt-20">2. Actionable component</h4>
         <h4 className="text-bold mt-20">3. UI Exploration for Stellar UI</h4>
       </ContentSection>
 
-      <ContentSection title="Modularize board and scale to support data" isSubTitle={true}>
+      <ContentSection title="Modularize and scalable board" isSubTitle={true}>
         <h4 className="text-bold">Patient Data Taxonomy - IA</h4>
         <span>The taxonomy helps understand different categories of data types, whether it needs user input or read only, or whether it supports special style or data validation.</span>
         <p/>
@@ -244,7 +243,7 @@ it will present data and support user interaction.</span>
         <span>Along the visual exploration, our product team did a few rounds of reviews. The team arrived at the concensus that we want to convey intelligent and dynamic data feeling. Wave provides a lot of possibilities for data related animation</span>
       </ContentSection>
 
-      <ContentSection title="Final mockup and animation" isSubTitle={true}>
+      <ContentSection title="Final Product UI" isSubTitle={true}>
 
         <video className="img-responsive" controls>
           <source src={Demo} type="video/mp4"/>
@@ -267,7 +266,7 @@ it will present data and support user interaction.</span>
           <img className="img-responsive" src={Specs4}/>
         </div>
 
-        <h4 className="text-bold mt-20">Style Guide and Design System</h4>
+        <h4 className="text-bold mt-20">Responsive design</h4>
 
         <img className="img-responsive" src={RWD1}/>
         <img className="img-responsive" src={RWD2}/>
@@ -282,11 +281,11 @@ it will present data and support user interaction.</span>
 
         <h4 className="text-bold mt-20">- 0.5+ day reduction in in-patient length of stay</h4>
 
-        <h4 className="text-bold mt-20">- 20%+ decrease in postop transfer delays</h4>
+        <h4 className="text-bold mt-10">- 20%+ decrease in postop transfer delays</h4>
 
-        <h4 className="text-bold mt-20">- 20%+ increase in patient satisfaction</h4>
+        <h4 className="text-bold mt-10">- 20%+ increase in patient satisfaction</h4>
 
-        <h4 className="text-bold mt-40">Frontline User Feedback</h4>
+        <h4 className="text-bold mt-40">Frontline user feedback</h4>
         <span>“With Qventus you have a snapshot of a patient without digging through any charts and without having to ask a lot of questions. You know what the plan is, where they are going, and what's keeping them here.”</span>
 
         <span>- Registered Nurse</span>
