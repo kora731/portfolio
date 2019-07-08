@@ -99,10 +99,10 @@ const IndexPage = () => (
           <Link href="#UNDERSTAND USERS" title="Understand Users" />
           <Link href="#DESIGN CHALLENGE" title="Design Challenge" />
           <Link href="#SOLUTION FRAMEWORK" title="Solution Framework">
-            <Link href="#Modularize board and scale to support data" title="Modularize board and scale to support data" />
+            <Link href="#Modularize and scalable board" title="Modularize and scalable board" />
             <Link href="#Actionable Component" title="Actionable Component" />
             <Link href="#UI Exploration for Stellar UI" title="UI Exploration for Stellar UI" />
-            <Link href="#Final mockup and animation" title="Final mockup and animation" />
+            <Link href="#Final Product UI" title="Final Product UI" />
           </Link>
           <Link href="#UI DELIVERY" title="UI Delivery" />
           <Link href="#OUTCOME" title="Outcome" />
