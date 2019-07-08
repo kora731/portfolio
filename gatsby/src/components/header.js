@@ -18,12 +18,12 @@ const Header = ({ pri, next }) => {
     <ul className="nav navbar-nav navbar-right">
       {pri &&
         <li>
-          <a>Pre: {pri}</a>
+          <a>Pre: {pri.label}</a>
         </li>
       }
       {next &&
       <li>
-        <a>Pre: {next}</a>
+        <a>Pre: {next.label}</a>
       </li>
       }
     </ul>
@@ -31,8 +31,8 @@ const Header = ({ pri, next }) => {
 }
 
 Header.propTypes = {
-  pri: PropTypes.string,
-  next: PropTypes.string
+  pri: PropTypes.object,
+  next: PropTypes.object
 }
 
 export default Header
