@@ -8,9 +8,9 @@ const Header = ({ pri, next }) => {
 
   return <div className="main-nav navbar">
     <div className="navbar-header">
-      <a className="navbar-brand">
+      <a className="navbar-brand" href="/">
 
-        <img className="site-logo" src={logo} alt="logo" href="/"/>
+        <img className="site-logo" src={logo} alt="logo"/>
 
       </a>
 
@@ -18,12 +18,12 @@ const Header = ({ pri, next }) => {
     <ul className="nav navbar-nav navbar-right">
       {pri &&
         <li>
-          <a>Pre: {pri.label}</a>
+          <a href={pri.href}>Pre: {pri.label}</a>
         </li>
       }
       {next &&
       <li>
-        <a>Pre: {next.label}</a>
+        <a href={next.href}>Pre: {next.label}</a>
       </li>
       }
     </ul>
