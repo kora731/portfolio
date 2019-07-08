@@ -33,48 +33,59 @@ import Specs3 from "../images/pf-specs-3.png"
 import Specs4 from "../images/pf-specs-4.png"
 import RWD1 from "../images/pf-rwd-1.png"
 import RWD2 from "../images/pf-rwd-2.png"
+import { homedir } from "os";
 
 const { Link } = Anchor;
 
-const title = "PathFinder: patient board to facilitate discharge planning";
-const subTitle = "Actionable Data Delivered in a Delightful Humane Way";
-const hightlight1 = ["How to redesign the patient board to enable proactive discharge planning and a scalable solution to customers?"];
-const hightlight2 = [
+const data = {
+  pri : {
+    label: "home",
+    herf: ""
+  },
+  next: {
+    label: "mobile",
+    herf: "mobile.html"
+  },
+  title: "PathFinder: patient board to facilitate discharge planning",
+  subTitle: "Actionable Data Delivered in a Delightful Humane Way",
+  hightlight1: ["How to redesign the patient board to enable proactive discharge planning and a scalable solution to customers?"],
+  hightlight2: [
   "Easy to access data while scalable",
   "Actionable",
-  "Delightful and refreshing"];
+  "Delightful and refreshing"],
 
-const briefAttribute = [
-  {
-    label: "Timeline",
-    value: "Jan. 2018 - Oct. 2018"
-  },
-  {
-    label: "Team",
-    value: "PM, FE, BE"
-  },
-  {
-    label: "Role",
-    value: "Lead UX/UI Designer"
-  },
-  {
-    label: "Targeted Users",
-    value: "Hospital in-patient care team"
-  },
-  {
-    label: "Design Scope",
-    value: "User Research   IA\nInteraction Design\nRedesign\nUI Specs"
-  },
-  {
-    label: "Outcome",
-    value: "Top sale product used at 20+ hospitals with wide positive feedback"
-  }
-];
+  briefAttribute: [
+    {
+      label: "Timeline",
+      value: "Jan. 2018 - Oct. 2018"
+    },
+    {
+      label: "Team",
+      value: "PM, FE, BE"
+    },
+    {
+      label: "Role",
+      value: "Lead UX/UI Designer"
+    },
+    {
+      label: "Targeted Users",
+      value: "Hospital in-patient care team"
+    },
+    {
+      label: "Design Scope",
+      value: "User Research   IA\nInteraction Design\nRedesign\nUI Specs"
+    },
+    {
+      label: "Outcome",
+      value: "Top sale product used at 20+ hospitals with wide positive feedback"
+    }
+  ]
+}
 const IndexPage = () => (
-  <Layout pri="home" next="new">
+  <Layout pri={data.pri} next={data.next}>
     <SEO title="PathFinder" />
 
-    <ContentHeader title={title} subTitle={subTitle}/>
+    <ContentHeader title={data.title} subTitle={data.subTitle}/>
 
     <Lock/>
 
@@ -102,7 +113,7 @@ const IndexPage = () => (
       </ContentSection>
 
       <ContentSection title="Brief">
-        <Brief attributes={briefAttribute}/>
+        <Brief attributes={data.briefAttribute}/>
       </ContentSection>
 
       <ContentSection title="Why PathFinder">
@@ -128,7 +139,7 @@ const IndexPage = () => (
       </ContentSection>
 
       <ContentSection title="DESIGN CHALLENGE">
-        <ContentHeighlight attributes={hightlight1}/>
+        <ContentHeighlight attributes={data.hightlight1}/>
         <img className="img-responsive" src={Before}/>
 
         <p/>
@@ -151,7 +162,7 @@ const IndexPage = () => (
         <h4 className="text-bold mt-20">Experience Goals</h4>
         <span>As the lead designer, I started the design project by working with PM on the experience goals of this new patient board. </span>
         <p/>
-        <ContentHeighlight attributes={hightlight2}/>
+        <ContentHeighlight attributes={data.hightlight2}/>
       </ContentSection>
 
       <ContentSection title="SOLUTION FRAMEWORK">
@@ -277,7 +288,7 @@ it will present data and support user interaction.</span>
 
         <h4 className="text-bold mt-40">Frontline User Feedback</h4>
         <span>“With Qventus you have a snapshot of a patient without digging through any charts and without having to ask a lot of questions. You know what the plan is, where they are going, and what's keeping them here.”</span>
-       
+
         <span>- Registered Nurse</span>
         <p/>
         <span>“Finally, I have a technology that makes my job easier.”    - Charge Nurse</span>

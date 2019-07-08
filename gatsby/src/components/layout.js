@@ -24,8 +24,8 @@ const Layout = ({ pri, next, children }) => {
 }
 
 Layout.propTypes = {
-  pri: PropTypes.string,
-  next: PropTypes.string,
+  pri: PropTypes.object,
+  next: PropTypes.object,
   children: PropTypes.node.isRequired,
 }
 
