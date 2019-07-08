@@ -16,10 +16,9 @@ import Soa from "../images/qm-soa.png"
 import Now1 from "../images/qm-notif.png"
 import Now2 from "../images/qm-list.png"
 import Now3 from "../images/qm-detail.png"
-import User from "../images/pf-cs-user.png"
-import flow from "../images/pf-ip-flow-web.png"
-import Before from "../images/pf-before.png"
-import Idr from "../images/pf-idr-data.png"
+import User from "../images/qm-user.png"
+import Login from "../images/qm-login.png"
+import Login2 from "../images/qm-login-2.png"
 import Wf1 from "../images/pf-6-wireframe.png"
 import Wf2 from "../images/pf-3-wireframe.png"
 import Ixd from "../images/pf-ixd.png"
@@ -124,68 +123,78 @@ const IndexPage = () => (
         </div>
       </ContentSection>
 
-      <ContentSection title="UNDERSTAND USERS">
-        <span>We shadowed multiple hospitals to observe how frontline nurses are handling the patient flow today. It helps uncover potential touchpoints where PathFinder could make an impact to improve discharge process. I consolidated our learnings into the persona and flow diagrams so that the whole team can leverage these user insights to solve problems.</span>
-        <h4 className="text-bold mt-20">Stakeholder mapping and key persona</h4>
-        <img className="img-responsive" src={User}/>
+      <ContentSection title="Engagement problems">
+        <span>Experience goals of the mobile app are to reduce cognitive burden and engage frontline care team. But data tells us another story.</span>
         <p/>
-        <h4 className="text-bold mt-20">Patient Discharge Flow</h4>
-        <img className="img-responsive" src={flow}/>
+        <span>Started from early 2018 Qventus set up the infrastructure to collect usage data and tracking funnels through Amplitude, and we found mobile usage dropped continuously to our surprise. After the app launched at the hospital site, less and less users came back after one month. </span>
+        <p/>
+        <span>To find out the root caues of the usage drop, we started setting up onsite interviews and partnered with customer success team to collect feedback from our users. There are a few consistent problems that surface: </span>
+        <div className="row">
+          <div className="col-lg-6">
+              <h4 className="text-bold mt-20">Targeted Users - ED Nurses</h4>
+              <span>Through talking to different ED nurses, we captured their characteristics and touchpoints with Qventus products in the persona format. It helps align the whole team on the user empathy and acts as a reference point when we’re talking about user problems. </span>
+              <p/>
+              <span>Below are the two main feedback themes in terms of using Qventus products.</span>
+              <p/>
+          </div>
+          <div className="col-lg-6">
+            <img className="img-responsive" src={User}/>
+          </div>
+        </div>
+        <h4 className="text-bold mt-20">- Friction through using the app</h4>
+        <span>During the interview, users shared that they’re having trouble logging into the app. Nurses are using all different information systems at work, and Qventus required them to remember another set of credentials which is quite challenging.</span>
+        <p/>
+        <span>Second, users got overwhelmed with all the notifications coming in, but no way to clear up the thread  or see which one is important. When they got off work, mobile app still buzzed with all notifications which then forced them to log out of the app. Then it circled back to the login problem. </span>
+  
+        <h4 className="text-bold mt-20">- “Now what?”</h4>
+        <span>Another important finding from the interviews is that care teams don’t know what to do with all the notifications. “I’ve got these alerts, but I don’t know what to do with them”, quoted from a charge nurse. We realized that prompts are not providing enough context or actinable items to solve the problem. Compared with what care team already know, it doesn’t add enough value to their operations. Nudges starts losing interests from the care team and thus less engaged users.</span>
+  
+       
       </ContentSection>
 
-      <ContentSection title="DESIGN CHALLENGE">
+      <ContentSection title="Design challenge">
         <ContentHeighlight attributes={hightlight1}/>
-        <img className="img-responsive" src={Before}/>
-
-        <p/>
-        <h4 className="text-bold mt-20">Gap of the previous patient board</h4>
-        <span>Before I joint the team, there is already a patient board for IDR. After taling to Qventus internal stakeholders, there are a few gaps we identified:</span>
-        <p/>
-
-        <h4 className="text-bold mt-20">1. Not configurable</h4>
-        <span>Data columns are manually written with SQL for every board and it takes a long time to configure every board.</span>
-        <p/>
-
-        <h4 className="text-bold mt-20">2. Poor affordance</h4>
-        <span>Certain column data is editable and requires user entry. However the current UI doesn’t show clearly interactive fields.</span>
-        <p/>
-
-        <h4 className="text-bold mt-20">3. How to differentiate</h4>
-        <span>Heathcare IT software all share a corporate blue hue which tends to look alike. How might we make PathFinder visually appealing and differentiate from other competitors?</span>
-        <p/>
 
         <h4 className="text-bold mt-20">Experience Goals</h4>
-        <span>As the lead designer, I started the design project by working with PM on the experience goals of this new patient board. </span>
+        <span>- Delightful to engage users, helpful while not intrusive</span>
         <p/>
-        <ContentHeighlight attributes={hightlight2}/>
+        <span>- Foster collaboration and positive mindset within the care team</span>
+        <p/>
+        <span>- Insightful and automated, push useful data to users rather than pull</span>
       </ContentSection>
 
-      <ContentSection title="SOLUTION FRAMEWORK">
-        <span>Our approaches to solve the design challenge and meet experience goals can be summarized in three themes:</span>
+      <ContentSection title="Solution framework">
+        <span>I worked closely with two mobile engineers, and also acted as the quasi PM role as the team is going through transitions. Through design workshop with the team and key stakeholders, we came up with the list of work items as our mobile roadmap. It’s targeted at delivering incremental improvements while setting up framework for long term redesign of the mobile app.O</span>
         <p/>
 
-        <h4 className="text-bold mt-20">1. Modularize board and scalable to support more data</h4>
-        <h4 className="text-bold mt-20">2. Actionable component</h4>
-        <h4 className="text-bold mt-20">3. UI Exploration for Stellar UI</h4>
+
       </ContentSection>
 
-      <ContentSection title="Modularize board and scale to support data" isSubTitle={true}>
-        <h4 className="text-bold">Patient Data Taxonomy - IA</h4>
-        <span>The taxonomy helps understand different categories of data types, whether it needs user input or read only, or whether it supports special style or data validation.</span>
+      <ContentSection title="Reduce friction" isSubTitle={true}>
+      <span>After reviewing the interview syntheses with the team, we identified a few key problems to improve the usability of the app. </span>
+      <p/>
+      <span>
+        1. Difficult login with URL and credential required
+        </span>
         <p/>
-        <span>To make sure the board design meets configuration requirements, I’m working closely with BE and FE to layout the information architecutre, so that each column and field is aligned with how
-it will present data and support user interaction.</span>
+        <span>
+        2. Overwhelmed notifications and home feed
+        </span>
+        <p/>
+        <span>
+        3. Not able to mute notifications even when off-shift
+        </span>
+        <p/>
+        <span>
+        4. Among hundreds of messages, Which one is important? 
+        </span>
 
-        <img className="img-responsive" src={Idr}/>
-
-        <h4 className="text-bold mt-20">Board space for more data</h4>
-        <span>After the first iteration, we narrow down to three options because of the project timeline and technical constraints. The list view becomes the unification point where data is presented in a progressive way, and also has advantage to sort and filter. We also constructed the low fi mockup covering data structure, so that moving forward we can valid both layout and data with end users.</span>
+        <h4 className="text-bold mt-20">Login Flow Diagram</h4>
+        <span>Current flow requires the user to enter hospital URL and then directs them to the login section. As the tracking data shows that more than half of users gave up at step one of entering URL, it’s a friction point that is removable by binding user email with the domain URL so that one step closer to login. </span>
         <p/>
-        <img className="img-responsive" src={Wf1}/>
-        <p/>
-        <span>After the first iteration, we narrow down to three options because of the project timeline and technical constraints. The list view becomes the unification point where data is presented in a progressive way, and also has advantage to sort and filter. We also constructed the low fi mockup covering data structure, so that moving forward we can valid both layout and data with end users.</span>
-        <p/>
-        <img className="img-responsive" src={Wf2}/>
+        <img className="img-responsive" src={Login}/>
+        <img className="img-responsive" src={Login2}/>
+        
 
         <h4 className="text-bold mt-20">User Testing Findings</h4>
         <span>When we presented the three options to end users, 4 out of 5 users chose Option Two, commented on it being clean and familiar. Expanding the row data rather than replacing/relocating is also easier to scan and digest the information.</span>
