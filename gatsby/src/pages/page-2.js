@@ -19,29 +19,43 @@ import Now3 from "../images/qm-detail.png"
 import User from "../images/qm-user.png"
 import Login from "../images/qm-login.png"
 import Login2 from "../images/qm-login-2.png"
-import Wf1 from "../images/pf-6-wireframe.png"
-import Wf2 from "../images/pf-3-wireframe.png"
-import Ixd from "../images/pf-ixd.png"
-import Edd1 from "../images/pf-edd-1.png"
-import Edd2 from "../images/pf-edd-2.png"
-import Dispo from "../images/pf-dispo.png"
-import Barrier from "../images/pf-barrier.png"
-import UI1 from "../images/pf-ui-1.png"
-import UI2 from "../images/pf-ui-2.png"
-import Demo from "../images/pf-demo.mp4"
-import Specs1 from "../images/pf-specs-1.png"
-import Specs2 from "../images/pf-specs-2.png"
-import Specs3 from "../images/pf-specs-3.png"
-import Specs4 from "../images/pf-specs-4.png"
-import RWD1 from "../images/pf-rwd-1.png"
-import RWD2 from "../images/pf-rwd-2.png"
-
+import Archive from "../images/archive.gif"
+import Mute from "../images/mute.gif"
+import Priority from "../images/qm-tag.png"
+import Enrich1 from "../images/qm-enrich-1.png"
+import Enrich2 from "../images/qm-enrich-2.png"
+import Enrich3 from "../images/qm-enrich-3.png"
+import Kudo1 from "../images/qm-kudo-1.png"
+import Kudo2 from "../images/qm-kudo-2.png"
+import Kudo3 from "../images/qm-kudo-3.png"
+import Manual1 from "../images/qm-man-1.png"
+import Manual2 from "../images/qm-man-2.png"
+import Manual3 from "../images/manual.gif"
+import Agenda from  "../images/qm-agenda.png"
+import Part1 from  "../images/qm-research.png"
+import Part2 from  "../images/qds-design.png"
+import Hook from  "../images/qm-hook.png"
+import RedesignIA from  "../images/qm-redesign-ia.png"
+import RedesignWire from  "../images/qm-research-wire.png"
+import Hifi from  "../images/qm-redesign-ui.png"
+import Demo from  "../images/qm-prototype.mp4"
 const { Link } = Anchor;
 
+const data = {
+  pri : {
+    label: "PathFinder",
+    herf: "pf.html"
+  },
+  next: {
+    label: "Jaunt",
+    herf: "jcs.html"
+  }
+}
 const title = "Qventus app: deliver real-time nudges to patient care team";
 const subTitle = "Right data for the right people at the right time";
-const hightlight1 = ["How to reduce the mobile app usage friction and increase value delivered to ED nurses?"];
-const hightlight2 = [ "How to come up with a nudge framework to enable and motivate care teams to improve healthcare operations?"];
+const highlight1 = ["How to reduce the mobile app usage friction and increase value delivered to ED nurses?"];
+const highlight2 = [ "- Enable collaboration and decision making", "- Pushed contextual and actionable data", "- Transparent outcome and motivate teams"];
+const highlight3 = ["How to come up with a nudge framework to enable and motivate care teams to improve healthcare operations?"];
 
 const briefAttribute = [
   {
@@ -70,8 +84,8 @@ const briefAttribute = [
   }
 ];
 const IndexPage = () => (
-  <Layout pri="home" next="new">
-    <SEO title="PathFinder" />
+  <Layout pri={data.pri} next={data.next}>
+    <SEO title="Mobile" />
 
     <ContentHeader title={title} subTitle={subTitle}/>
 
@@ -83,17 +97,15 @@ const IndexPage = () => (
           <Link href="#top" title="Overview" />
           <Link href="#Brief" title="Brief" />
           <Link href="#Product suite and mobile app" title="Product suite and mobile app" />
-          <Link href="#Product Goals" title="Product Goals" />
-          <Link href="#UNDERSTAND USERS" title="Understand Users" />
-          <Link href="#DESIGN CHALLENGE" title="Design Challenge" />
-          <Link href="#SOLUTION FRAMEWORK" title="Solution Framework">
-            <Link href="#Modularize board and scale to support data" title="Modularize board and scale to support data" />
-            <Link href="#Actionable Component" title="Actionable Component" />
-            <Link href="#UI Exploration for Stellar UI" title="UI Exploration for Stellar UI" />
-            <Link href="#Final mockup and animation" title="Final mockup and animation" />
+          <Link href="#Engagement problems" title="Engagement problems" />
+          <Link href="#Design challenge" title="Design challenge" />
+          <Link href="#Solution framework" title="Solution framework" >
+            <Link href="#Reduce friction" title="Reduce friction" />
+            <Link href="#Increase value" title="Increase value" />
           </Link>
-          <Link href="#UI DELIVERY" title="UI Delivery" />
-          <Link href="#OUTCOME" title="Outcome" />
+          <Link href="#Design sprint" title="Design sprint" />
+          <Link href="#Redesign concept" title="Redesign concept" />
+    
         </Anchor>
       </div>
       <ContentSection id="top">
@@ -131,7 +143,7 @@ const IndexPage = () => (
         <span>To find out the root caues of the usage drop, we started setting up onsite interviews and partnered with customer success team to collect feedback from our users. There are a few consistent problems that surface: </span>
         <div className="row">
           <div className="col-lg-6">
-              <h4 className="text-bold mt-20">Targeted Users - ED Nurses</h4>
+              <h4 className="text-bold">Targeted Users - ED Nurses</h4>
               <span>Through talking to different ED nurses, we captured their characteristics and touchpoints with Qventus products in the persona format. It helps align the whole team on the user empathy and acts as a reference point when we’re talking about user problems. </span>
               <p/>
               <span>Below are the two main feedback themes in terms of using Qventus products.</span>
@@ -153,7 +165,7 @@ const IndexPage = () => (
       </ContentSection>
 
       <ContentSection title="Design challenge">
-        <ContentHeighlight attributes={hightlight1}/>
+        <ContentHeighlight attributes={highlight1}/>
 
         <h4 className="text-bold mt-20">Experience Goals</h4>
         <span>- Delightful to engage users, helpful while not intrusive</span>
@@ -173,7 +185,7 @@ const IndexPage = () => (
       <ContentSection title="Reduce friction" isSubTitle={true}>
       <span>After reviewing the interview syntheses with the team, we identified a few key problems to improve the usability of the app. </span>
       <p/>
-      <span>
+        <span>
         1. Difficult login with URL and credential required
         </span>
         <p/>
@@ -193,109 +205,158 @@ const IndexPage = () => (
         <span>Current flow requires the user to enter hospital URL and then directs them to the login section. As the tracking data shows that more than half of users gave up at step one of entering URL, it’s a friction point that is removable by binding user email with the domain URL so that one step closer to login. </span>
         <p/>
         <img className="img-responsive" src={Login}/>
-        <img className="img-responsive" src={Login2}/>
+        <img className="img-responsive mt-40" src={Login2}/>
         
 
-        <h4 className="text-bold mt-20">User Testing Findings</h4>
-        <span>When we presented the three options to end users, 4 out of 5 users chose Option Two, commented on it being clean and familiar. Expanding the row data rather than replacing/relocating is also easier to scan and digest the information.</span>
-        <p/>
-        <span>After I brought these findings back to the team, we decided on constructing the list view first. Then we will investigate further into the expansion view to iterate the design. </span>
-      </ContentSection>
+        <h4 className="text-bold mt-20">User validation on login redesign</h4>
+        <span>We interviewed current users of mobile app remotely to validate the login flow, and got very positive feedback. Quote from a user, “When can we have this and what do you need me do to make it happen?” The SSO model got a lot of interest from across clients and it’s currently work in progress to generalize the capability to more clients. </span>
+        <h4 className="text-bold mt-20">Other feature design to reduce friction</h4>
 
-      <ContentSection title="Actionable Component" isSubTitle={true}>
-        <span>PathFinder boards serve as the data source to prompt care team to enter patient dicharge plan, and collaborate on resolving barriers. User-entry data on the board is the most valuable information set. How might we design the data columns to encourage user input?</span>
-        <p/>
-
-        <img className="img-responsive" src={Ixd}/>
-
-        <h4 className="text-bold mt-20">EDD (estimated discharge date): Deliver predictive date and status flags</h4>
-        <span>Qventus developed machine learning models to predict when patient is going to leave. We surface these prediction results next to EDD field for entry reference. Among these solutions, we choose Option D for the short term MVP solution based on the data availability.</span>
-        <p/>
-
-        <img className="img-responsive" src={Edd1}/>
-        <img className="img-responsive" src={Edd2}/>
-
-        <h4 className="text-bold mt-20">Disposition flow indicator</h4>
-        <span>Visualize the flow and order status up front for the care team</span>
-        <p/>
-
-        <img className="img-responsive" src={Dispo}/>
-
-        <h4 className="text-bold mt-20">Barrier design</h4>
-        <span>Design problem of managing barrier is: how could care teams quickly identify important barriers and easily manage an updating list? After I explored different barrier list UI, our team decided on the solution to combine Option B and C to show an easy-to-scan and scalable list.</span>
-        <p/>
-
-        <img className="img-responsive" src={Barrier}/>
-
-        <h4 className="text-bold mt-20">OUTCOME</h4>
-        <span>During our internal feedback with clinical team, we got a lot of positive feedback. Also from tracking usage data at Amplitude, we found completion rate of these fields general high along with increasing DAU. These indicators help show a more engaged user group.</span>
-      </ContentSection>
-
-      <ContentSection title="UI Exploration for Stellar UI" isSubTitle={true}>
-
-        <h4 className="text-bold">Visual identity Criteria</h4>
-        <span>We started exploring the visual redesign by construct the moodboard, identifying a few dimensions to push forward in the UI iteractions and finally converge to one design.</span>
-        <p/>
-        <img className="img-responsive" src={UI1}/>
-
-        <p/>
-        <span>Dimensions of visual divergence:  color, IA,</span>
-        <p/>
-        <img className="img-responsive" src={UI2}/>
-
-        <h4 className="text-bold mt-20">Review and feedback</h4>
-
-        <span>Along the visual exploration, our product team did a few rounds of reviews. The team arrived at the concensus that we want to convey intelligent and dynamic data feeling. Wave provides a lot of possibilities for data related animation</span>
-      </ContentSection>
-
-      <ContentSection title="Final mockup and animation" isSubTitle={true}>
-
-        <video className="img-responsive" controls>
-          <source src={Demo} type="video/mp4"/>
-        </video>
-      </ContentSection>
-
-      <ContentSection title="UI DELIVERY">
-
-        <div className="col-lg-6">
-          <img className="img-responsive" src={Specs1}/>
+      <div className="row">
+        <div className="col-lg-4">
+          <img className="img-responsive" src={Archive}/>
+          <h5 class="text-gray mt-12">Swiping to archive nudges helps clear up the feed to reduce information overload</h5>
         </div>
-        <div className="col-lg-6">
-          <img className="img-responsive" src={Specs2}/>
+        <div className="col-lg-4">
+          <img className="img-responsive" src={Mute}/>
+          <h5 class="text-gray mt-12">Ability to set mute schedule let the user control notifications when on/off shift</h5>
         </div>
-
-        <div className="col-lg-6">
-          <img className="img-responsive" src={Specs3}/>
+        <div className="col-lg-4">
+          <img className="img-responsive" src={Priority}/>
+          <h5 class="text-gray mt-12">Tagging the nudges makes scanning and prioiritization easy</h5>
         </div>
-        <div className="col-lg-6">
-          <img className="img-responsive" src={Specs4}/>
-        </div>
-
-        <h4 className="text-bold mt-20">Style Guide and Design System</h4>
-
-        <img className="img-responsive" src={RWD1}/>
-        <img className="img-responsive" src={RWD2}/>
-        <p/>
-        <span>In the later stage of introducing PathFinder to more users and use cases, ability to view the list on the mobile devices becomes a prominent request. I started cataloging all the data by priority group, and designed the wireframes first. This approach makes sure important are consistantly emphasized across different channels. Next step is to validate with care team, and explore unique use cases for mobile usage.</span>
+      </div>
+      <h4 className="text-bold mt-20">Results</h4>
+        <span>Most of these incremental changes got implemented by two mobile engineers and released to customers within 3 months. The archive feature is well received by end users and data indicates a growing number of users interacting with the feature on a daily basis. In addition, as I’m driving these changes to happen wearing the hat of both designer and PM, my coworkers from customer success team gave me “all about outcome” internal reward.</span>
         <p/>
       </ContentSection>
+      
+    
 
-      <ContentSection title="OUTCOME">
-        <h4 className="text-bold">Widely deployed at client hospitals </h4>
-        <span>Since the new PathFinder was launched in June 2018, 20+ leading hospitals and health systems are streamlining patient flow with the product, achieving results including:</span>
-
-        <h4 className="text-bold mt-20">- 0.5+ day reduction in in-patient length of stay</h4>
-
-        <h4 className="text-bold mt-20">- 20%+ decrease in postop transfer delays</h4>
-
-        <h4 className="text-bold mt-20">- 20%+ increase in patient satisfaction</h4>
-
-        <h4 className="text-bold mt-40">Frontline User Feedback</h4>
-        <span>“With Qventus you have a snapshot of a patient without digging through any charts and without having to ask a lot of questions. You know what the plan is, where they are going, and what's keeping them here.”</span>
+      <ContentSection title="Increase value" isSubTitle={true}>
+        <span>Aside from improving current mobile app usability, how might we augment mobile app to do more than chatting? Below are three areas that mobile team brainstormed together based on input from different stakeholders.</span>
+        <p/>
+          <ContentHeighlight attributes={highlight2}/>
+        <h4 className="text-bold mt-20">Enriched nudge detail</h4>
+        <div className="row">
+          <div className="col-lg-4">
+            <img className="img-responsive" src={Enrich1}/>
+            
+          </div>
+          <div className="col-lg-4">
+            <img className="img-responsive" src={Enrich2}/>
+            
+          </div>
+          <div className="col-lg-4">
+            <img className="img-responsive" src={Enrich3}/>
+            {/* <h5 class="text-gray mt-6">Tagging the nudges makes scanning and prioiritization easy</h5> */}
+          </div>
+        </div>
        
-        <span>- Registered Nurse</span>
-        <p/>
-        <span>“Finally, I have a technology that makes my job easier.”    - Charge Nurse</span>
+
+        <h4 className="text-bold mt-20">Kudos for outcome and motivation</h4>
+        <div className="row">
+          <div className="col-lg-4">
+            <img className="img-responsive" src={Kudo1}/>
+            
+          </div>
+          <div className="col-lg-4">
+            <img className="img-responsive" src={Kudo2}/>
+            
+          </div>
+          <div className="col-lg-4">
+            <img className="img-responsive" src={Kudo3}/>
+            {/* <h5 class="text-gray mt-6">Tagging the nudges makes scanning and prioiritization easy</h5> */}
+          </div>
+        </div>
+
+       
+
+        <h4 className="text-bold mt-20">Manual nudge to enable collaboration</h4>
+        <div className="row">
+          <div className="col-lg-4">
+            <img className="img-responsive" src={Manual1}/>
+            
+          </div>
+          <div className="col-lg-4">
+            <img className="img-responsive" src={Manual2}/>
+            
+          </div>
+          <div className="col-lg-4">
+            <img className="img-responsive" src={Manual3}/>
+            {/* <h5 class="text-gray mt-6">Tagging the nudges makes scanning and prioiritization easy</h5> */}
+          </div>
+        </div>
+        <h4 className="text-bold mt-20">Outcome</h4>
+        <span>These sections are in the concept and validated with clients. From interviews, they provided positive feedback and confirmed the use cases where mobile app would serve the value. However due to the mobile team engineering resources, it didn’t make into the development stage. </span>
+      </ContentSection>
+
+      <ContentSection title="Design sprint">
+      <span>Outside working on incremental changes to mobile app today, we started the nudge framework project, as the data to action is a company stratigic priority. It’s better to reimagine how nudge could have been done without limits and build the roadmap to get there later. </span>
+      <p/>
+      <span>As I read and learnt a lot of design sprint, I think it is a great design tool to help lay down the nudge framework foundation. So I proposed to facilitate 5-day design sprint session with the help from another designer and two other PMs. </span>
+
+        <h4 className="text-bold">Design sprint goal</h4>
+        <ContentHeighlight attributes={highlight3}/>
+
+
+        <h4 className="text-bold mt-20">Special Sprint:  Hybrid Research + Design Sprint</h4>
+        <span>Different from the standard design sprint, we designed the version of 2 day research plus 3 day sketch-build-test. Because it’s an important project but less urgent project, it’s challenging to run two separate sprints to ask for 10 days’ dedication from th team. Also we conducted the light and hybrid vesion so that everyone is onboard with the pain points directly heard from end users.</span>
+        <img className="img-responsive" src={Agenda}/>     
+      
+        <h4 className="text-bold mt-20">Part 1 - Research and Synthesis</h4>
+        <img className="img-responsive" src={Part1}/>     
+
+        <h4 className="text-bold mt-20">Part 2 - Design and Prototype</h4>
+        <img className="img-responsive" src={Part2}/>   
+
+
+        <h4 className="text-bold mt-20">Outcome: HOOK framework</h4>
+        <span>After one whole week’s workshops, the team came to one single framework to enable care team with a better designed nudge cycle. We also extend Hook Model from Nir Eyal to a sequential system that drives user to change behaviors and form routine habits. This proposal got highly recognized during customer conference, and leadership teams are excited to apply the nudge framework to their daily operations. Though not all the features and redesign make the way into production, it projects a clear and promising roadmap for the nudge framework.</span>
+
+        <img className="img-responsive" src={Hook}/>   
+      
+        <h4 className="text-bold mt-20">Key takeaways</h4>
+        <span>From coordinating the design sprint, I have learnt a lot about how to run design workshops to solve problems with the team, also the power of diverging and converging along the problem space. It also makes me believe creativity and the best solution comes from joint efforts of the team rather than any individual. I’m truly inspired to continue applying design sprint model to more collaborative design sessions. </span>
+
+      
+      </ContentSection>
+
+
+      <ContentSection title="Redesign concept">
+        <span>Why I initiated the mobile app redesign is that the current version has limited capabilities to be a core intervention delivery channel. Post the nudge design sprint, we found there are quite a few promising directions for mobile app to evolve into. My design process composes of four parts:  1) use case analysis, 2) information architecture, 3) wireframe, 4) hi-fi mockups and prototype for validation. After one month of completing these designs, I presented them to different stakeholders to get buy-in to include the redesign in the mobile app roadmap. </span>
+        <h4 className="text-bold mt-20">Targeted users and core use cases</h4>
+        <span>The four main uses cases for frontline nurses and leadership teams are: 
+          1. Getting alerted on upcoming crowding or problems
+          </span><p/><span>
+          2. Check real time census and status while being mobile
+          </span><p/><span>
+          3. Prompt to take actions based on contextual information
+          </span><p/><span>
+          4. Collaborate with the team about problems/requests
+          </span>
+
+
+        <h4 className="text-bold mt-20">Information architecture</h4>
+        <img className="img-responsive" src={RedesignIA}/>
+
+        <h4 className="text-bold mt-20">Wireframes</h4>
+        <img className="img-responsive" src={RedesignWire}/>
+        
+        <h4 className="text-bold mt-20">Hi-fi Mockups and Visual Exploration</h4>
+        <img className="img-responsive" src={Hifi}/>
+        
+        <h4 className="text-bold mt-20">Prototype</h4>
+        <div class="row">
+          <video className="img-responsive col-lg-4 col-lg-push-4" controls>
+            <source src={Demo} type="video/mp4"/>
+          </video>
+        </div>
+      </ContentSection>
+
+      <ContentSection title="Outcome">
+        <h4 className="text-bold"></h4>
+        <span>Redesign concept got a lot of great feedback both internally and externally. One nurse manager commented, "I really like how the app delivers the snapshot of the system status and make it very easy to access patient data.” Our mobile team is planning more extensive user testing sessions to prioritize all the use cases and features so that the team can start building towards the long term vision.</span>
       </ContentSection>
     </div>
 

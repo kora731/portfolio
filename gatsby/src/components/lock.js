@@ -23,7 +23,7 @@ const Lock = () => {
   }
 
   return   <div className="password">
-    <p>Please <a href="mailto:surong731@gmail.com" target="_blank">contact me</a>
+    <p>Please <a href="mailto:surong731@gmail.com" target="_blank">contact me </a>
       for the password to access project content.
     </p>
     <form>
