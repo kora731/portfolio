@@ -33,7 +33,6 @@ import Specs3 from "../images/pf-specs-3.png"
 import Specs4 from "../images/pf-specs-4.png"
 import RWD1 from "../images/pf-rwd-1.png"
 import RWD2 from "../images/pf-rwd-2.png"
-import { homedir } from "os";
 
 const { Link } = Anchor;
 
@@ -187,7 +186,7 @@ it will present data and support user interaction.</span>
         <p/>
         <img className="img-responsive" src={Wf1}/>
         <p/>
-        <span class="row">After the first iteration, we narrow down to three options because of the project timeline and technical constraints. The list view becomes the unification point where data is presented in a progressive way, and also has advantage to sort and filter. We also constructed the low fi mockup covering data structure, so that moving forward we can valid both layout and data with end users.</span>
+        <span className="row">After the first iteration, we narrow down to three options because of the project timeline and technical constraints. The list view becomes the unification point where data is presented in a progressive way, and also has advantage to sort and filter. We also constructed the low fi mockup covering data structure, so that moving forward we can valid both layout and data with end users.</span>
         <p/>
         <img className="img-responsive" src={Wf2}/>
 
