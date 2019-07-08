@@ -11,9 +11,11 @@ const ContentSection = ({ title, children, isSubTitle }) => {
         (isSubTitle ? <>
           <div className="row">
             <div className="col-lg-3">
-              <div className="col-lg-2 contentSubtitle"/>
-              <div className="col-lg-10">
-                <h4 className="text-color">{title}</h4>
+              <div className="row">
+                <div className="col-lg-2 contentSubtitle"/>
+                <div className="col-lg-10">
+                  <h4 className="text-color">{title}</h4>
+                </div>
               </div>
             </div>
             <div className="col-lg-9">
