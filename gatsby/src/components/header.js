@@ -22,7 +22,7 @@ const Header = ({ pri, next }) => {
       }
       {next &&
       <li>
-        <a href={next.href}>Pre: {next.label}</a>
+        <a href={next.href}>Next: {next.label}</a>
       </li>
       }
     </ul>
