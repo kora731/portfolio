@@ -32,6 +32,7 @@ import RWD1 from "../images/pf-rwd-1.png"
 import RWD2 from "../images/pf-rwd-2.png"
 
 const data = {
+    name: "Pipeline",
     pri : {
         label: "home",
         href: "/"

@@ -21,7 +21,7 @@ const Template = ({ data, renderSection, lock }) => {
 
     return (
         <Layout pri={data.pri} next={data.next}>
-            <SEO title="Mobile" />
+            <SEO title={data.name} />
 
             <ContentHeader title={data.title} subTitle={data.subTitle}/>
 
