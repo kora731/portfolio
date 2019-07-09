@@ -165,7 +165,7 @@ const renderSection= (oTitle, index) => {
           <p/>
 
           <img className="img-responsive" src={Cover}/>;
-          <h4 className="text-bold mt-40">Experience Map of today’s production</h4>
+          <h4 className="sectionTitle text-bold mt-40">Experience Map of today’s production</h4>
           <span>I started the project by interviewing in-house production team. Together we mapped out the full journey of creating videos, so that we could have a holistic view to prioritize breakdown points.</span>
           <p/>
 
@@ -217,38 +217,34 @@ const renderSection= (oTitle, index) => {
 };
 
 const IndexPage = () => (
-  <Layout pri={data.pri} next={data.next}>
-    <SEO title="Mobile" />
+    <Layout pri={data.pri} next={data.next}>
+        <SEO title="Mobile" />
 
-    <ContentHeader title={data.title} subTitle={data.subTitle}/>
+        <ContentHeader title={data.title} subTitle={data.subTitle}/>
 
-    <Lock/>
+        <div className="AnchorPosition">
+            <Anchor>
+                {
+                    data.aTitle.map((oTitle, index) => (
+                        (index ===0 || oTitle.label) && <Link href={index ===0 ? "#top" : ("#" + oTitle.label)} title={oTitle.label || "Overview"} key={index}>
+                            {oTitle.subTitle && oTitle.subTitle.map((subTitle, index2) => (
+                                <Link href={"#" + subTitle} title={subTitle} key={index2}/>
+                            ))}
+                        </Link>
+                    ))
+                }
+            </Anchor>
+        </div>
 
-    <div className="password-protected">
-      <div className="AnchorPosition">
-        <Anchor>
-          {
+        {
             data.aTitle.map((oTitle, index) => (
-                (index ===0 || oTitle.label) && <Link href={index ===0 ? "#top" : ("#" + oTitle.label)} title={oTitle.label || "Overview"} key={index}>
-                    {oTitle.subTitle && oTitle.subTitle.map((subTitle, index2) => (
-                        <Link href={"#" + subTitle} title={subTitle} key={index2}/>
-                    ))}
-                </Link>
+                <ContentSection title={oTitle.label} key={index}>
+                    {renderSection(oTitle, index)}
+                </ContentSection>
             ))
-          }
-        </Anchor>
-      </div>
+        }
 
-      {
-        data.aTitle.map((oTitle, index) => (
-          <ContentSection title={oTitle.label} key={index}>
-            {renderSection(oTitle, index)}
-          </ContentSection>
-        ))
-      }
-    </div>
-
-  </Layout>
+    </Layout>
 );
 
 export default IndexPage

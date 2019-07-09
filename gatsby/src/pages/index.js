@@ -37,48 +37,48 @@ import RWD2 from "../images/pf-rwd-2.png"
 const { Link } = Anchor;
 
 const data = {
-  pri : {
-    label: "home",
-    href: "/"
-  },
-  next: {
-    label: "mobile",
-    href: "/project/mobile/index.html"
-  },
-  title: "PathFinder: patient board to facilitate discharge planning",
-  subTitle: "Actionable Data Delivered in a Delightful Humane Way",
-  highlight1: ["How to redesign the patient board to enable proactive discharge planning and a scalable solution to customers?"],
-  highlight2: [
-  "Easy to access data while scalable",
-  "Actionable components",
-  "Delightful and refreshing"],
+    pri : {
+        label: "home",
+        href: "/"
+    },
+    next: {
+        label: "mobile",
+        href: "/project/mobile/index.html"
+    },
+    title: "PathFinder: patient board to facilitate discharge planning",
+    subTitle: "Actionable Data Delivered in a Delightful Humane Way",
+    highlight1: ["How to redesign the patient board to enable proactive discharge planning and a scalable solution to customers?"],
+    highlight2: [
+        "Easy to access data while scalable",
+        "Actionable components",
+        "Delightful and refreshing"],
 
-  briefAttribute: [
-    {
-      label: "Timeline",
-      value: "Jan. 2018 - Oct. 2018"
-    },
-    {
-      label: "Team",
-      value: "PM, FE, BE"
-    },
-    {
-      label: "Role",
-      value: "Lead UX/UI Designer"
-    },
-    {
-      label: "Targeted Users",
-      value: "Hospital in-patient care team"
-    },
-    {
-      label: "Design Scope",
-      value: "User Research   IA\nInteraction Design\nRedesign\nUI Specs"
-    },
-    {
-      label: "Outcome",
-      value: "Top sale product used at 20+ hospitals with wide positive feedback"
-    }
-  ],
+    briefAttribute: [
+        {
+            label: "Timeline",
+            value: "Jan. 2018 - Oct. 2018"
+        },
+        {
+            label: "Team",
+            value: "PM, FE, BE"
+        },
+        {
+            label: "Role",
+            value: "Lead UX/UI Designer"
+        },
+        {
+            label: "Targeted Users",
+            value: "Hospital in-patient care team"
+        },
+        {
+            label: "Design Scope",
+            value: "User Research   IA\nInteraction Design\nRedesign\nUI Specs"
+        },
+        {
+            label: "Outcome",
+            value: "Top sale product used at 20+ hospitals with wide positive feedback"
+        }
+    ],
     aTitle: [
         {
             key:  "Overview"
@@ -317,45 +317,45 @@ it will present data and support user interaction.</span>
 };
 
 const IndexPage = () => (
-  <Layout pri={data.pri} next={data.next}>
-    <SEO title="Mobile" />
+    <Layout pri={data.pri} next={data.next}>
+        <SEO title="Mobile" />
 
-    <ContentHeader title={data.title} subTitle={data.subTitle}/>
+        <ContentHeader title={data.title} subTitle={data.subTitle}/>
 
-    <Lock/>
+        <Lock/>
 
-    <div className="password-protected">
-        <div className="AnchorPosition">
-            <Anchor>
-                {
-                    data.aTitle.map((oTitle, index) => (
-                        (index ===0 || oTitle.label) && <Link href={index ===0 ? "#top" : ("#" + oTitle.label)} title={oTitle.label || "Overview"} key={index}>
-                            {oTitle.subTitle && oTitle.subTitle.map((subTitle, index2) => (
-                                <Link href={"#" + subTitle} title={subTitle} key={index2}/>
-                            ))}
-                        </Link>
-                    ))
-                }
-            </Anchor>
+        <div className="password-protected">
+            <div className="AnchorPosition">
+                <Anchor>
+                    {
+                        data.aTitle.map((oTitle, index) => (
+                            (index ===0 || oTitle.label) && <Link href={index ===0 ? "#top" : ("#" + oTitle.label)} title={oTitle.label || "Overview"} key={index}>
+                                {oTitle.subTitle && oTitle.subTitle.map((subTitle, index2) => (
+                                    <Link href={"#" + subTitle} title={subTitle} key={index2}/>
+                                ))}
+                            </Link>
+                        ))
+                    }
+                </Anchor>
+            </div>
+
+            {
+                data.aTitle.map((oTitle, index) => (
+                    <div  key={index}>
+                        <ContentSection title={oTitle.label}>
+                            {renderSection(oTitle.key, index)}
+                        </ContentSection>
+                        {oTitle.subTitle && oTitle.subTitle.map((subTitle, index2) => (
+                            <ContentSection title={subTitle} isSubTitle={true} key={index2}>
+                                {renderSection(subTitle, index)}
+                            </ContentSection>
+                        ))}
+                    </div>
+                ))
+            }
         </div>
 
-        {
-            data.aTitle.map((oTitle, index) => (
-                <div  key={index}>
-                    <ContentSection title={oTitle.label}>
-                        {renderSection(oTitle.key, index)}
-                    </ContentSection>
-                    {oTitle.subTitle && oTitle.subTitle.map((subTitle, index2) => (
-                        <ContentSection title={subTitle} isSubTitle={true} key={index2}>
-                            {renderSection(subTitle, index)}
-                        </ContentSection>
-                    ))}
-                </div>
-            ))
-        }
-    </div>
-
-  </Layout>
+    </Layout>
 );
 
 export default IndexPage
