@@ -5,12 +5,25 @@ import ContentHighlight from "../components/content-highlight"
 import Template from "../components/template";
 
 /* Image Assets */
-import Cover from "../images/pf-cs-cover.png"
+import Cover from "../images/smx/smx-cover.png"
+import Store from "../images/smx/smx-store.png"
+import Aisle from "../images/smx/smx-aisle.png"
+import Compete from "../images/smx/smx-compet.jpg"
+import Discover from "../images/smx/smx_discover1.jpg"
+import Nav1 from "../images/smx/smx-nav.jpg"
+import Nav2 from "../images/smx/smx-nav2.png"
+import Control1 from "../images/smx/navi-action.png"
+import Control2 from "../images/smx/control.png"
+import Control3 from "../images/smx/nav-control.png"
+import Help1 from "../images/smx/smx_help1.png"
+import Help2 from "../images/smx/smx_help2.png"
+import UI from "../images/smx/smx-ui.png"
+import Guide from "../images/smx/smx-guide.jpg"
 
 const data = {
     name: "ShopperMX",
     pri : {
-        label: "AutoDest",
+        label: "Autodesk",
         href: "/project/infraWork/index.html"
     },
     next: {
@@ -63,20 +76,21 @@ const data = {
             label: "Design Challenge",
             key:  "Design Challenge",
             subTitle: [
-                "Discovery:",
-                "Framework:"
+                "Discover",
+                "Framework"
             ],
         },
         {
-            label: "Navigation Control Panel UI Design",
-            key:  "Navigation Control Panel UI Design",
-            subTitle: [
-                "UX/UI Design:"
-            ],
+            label: "Navigation Design",
+            key:  "Navigation Design",
         },
         {
-            label: "Testing and Outcome",
-            key:  "Testing and Outcome"
+            label: "UX/UI Design",
+            key:  "UX/UI Design",
+        },
+        {
+            label: "Demo and Outcome",
+            key:  "Demo and Outcome"
         }
     ]
 };
@@ -92,8 +106,10 @@ const renderSection= (key) => {
             return <>
                 <span>ShopperMX is the first 3D simulation app to visualize shelves and stores on a web browser. Powered by game technologies like Unity Engine, ShopperMX drives innovative store designs and visual communication for retailers and manufacturers. ShopperMX was successfully launched in June 2013. It has a growing user base and recognized as a simple and powerful platform to drive innovation.</span>
                 <p/>
-
-                <img alt="" className="img-responsive" src={Cover}/>;
+            <div className="row">
+                    <img alt="" className="img-responsive col-lg-6" src={Store}/>
+                    <img alt="" className="img-responsive col-lg-6" src={Aisle}/>
+                </div>
             </>;
 
         case "Design Challenge":
@@ -103,39 +119,56 @@ const renderSection= (key) => {
                 <p/>
             </>;
 
-        case "Discovery":
+        case "Discover":
             return <>
                 <span>To stand in the shoes of users, I researched on canvas tools that our primary users interact with daily, like PowerPoint and Google map. It helps me understand their mental models and expectations for common controls in the 2D and 3D space. On the competitive landscape, I reviewed 3D model design applications like Tinkercad and Sketchfab, to get inspirations on interaction pattern design in 3D space.</span>
                 <p/>
                 <span>To fully understand the user behavior pattern, I created 2 personas to represent CPG industry common users. On the other hand, I approached the problem by analyzing primary task flows and user contextual tasks while in the virtual environment.</span>
-                <img alt="" className="img-responsive" src={Cover}/>;
+                <div className="row">
+                    <img alt="" className="img-responsive col-lg-6" src={Compete}/>
+                    <img alt="" className="img-responsive col-lg-6" src={Discover}/>
+                </div>
             </>;
 
         case "Framework":
             return <>
-                <img alt="" className="img-responsive" src={Cover}/>;
-                <img alt="" className="img-responsive" src={Cover}/>;
+                 <div className="row">
+                    <img alt="" className="img-responsive col-lg-6" src={Nav1}/>
+                    <img alt="" className="img-responsive col-lg-6" src={Nav2}/>
+                </div>
             </>;
 
-        case "Navigation Control Panel UI Design":
+        case "Navigation Design":
             return <>
                 <span>Under the guidelines of Simplicity and Easiness to Learn, I designed the navigation system and associated interaction patterns. In ShopperMX there are Walk, View and Design modes, and each has 4 control patterns to facilitate 3D interactions.</span>
                 <p/>
-                <img alt="" className="img-responsive" src={Cover}/>;
+                <div className="row">
+                    <img alt="" className="img-responsive col-lg-6" src={Control1}/>
+                    <img alt="" className="img-responsive col-lg-6" src={Control2}/>
+                </div>
+                <img alt="" className="img-responsive" src={Control3}/>
+                <div className="row">
+                    <img alt="" className="img-responsive col-lg-6" src={Help1}/>
+                    <img alt="" className="img-responsive col-lg-6" src={Help2}/>
+                </div>
             </>;
 
-        case "UX/UI Design:":
+        case "UX/UI Design":
             return <>
-                <img alt="" className="img-responsive" src={Cover}/>;
+                <img alt="" className="img-responsive" src={UI}/>
+                <img alt="" className="img-responsive" src={Guide}/>
             </>;
 
-        case "Testing and Outcome":
+        case "Demo and Outcome":
             return <>
                 <span>The feedback we got from client testing sessions reflected it was easy to navigate and design objects in the virtual environment, and the usage report showed increasing usage time on the platform per user. Based on the feedback, we iterated the navigation system to support power users with short cuts and personal configuration.</span>
                 <p/>
                 <h4 className="text-bold mt-20">Product Demo</h4>
 
-                <img alt="" className="img-responsive" src={Cover}/>;
+                <div className="embed-responsive embed-responsive-16by9 mt-20 mb-20">
+  							<iframe className="embed-responsive-item" src="https://player.vimeo.com/video/68538011?title=0&byline=0&portrait=0" allowfullscreen></iframe>
+
+							</div>
 
                 <span>1. Be Ready for Changes Along the Way</span>
                 <p/>

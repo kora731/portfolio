@@ -3,21 +3,24 @@ import React from "react"
 import Brief from "../components/brief"
 import ContentHighlight from "../components/content-highlight"
 import Template from "../components/template";
+import ImageGallery from 'react-image-gallery';
 
 /* Image Assets */
-import Cover from "../images/jcs/jcs-cover.png"
-import System from "../images/jcs/jcs-system.png"
-import User from "../images/jcs/jcs-persona.jpg"
-import ExMap from "../images/jcs/jaunt-expmap.png"
-import Service from "../images/jcs/jcs-services.png"
-import Wire from "../images/jcs/jcs-wire.png"
-import Tour from "../images/jcs/jcs-onboard.png"
-import Sketch from "../images/jcs/jcs-sketch.png"
-import Pub from "../images/jcs/jcs-pub.png"
-import StyleGuide from "../images/jcs/jcs-styleguide.png"
-import Robot from "../images/jcs/jcs_robot.jpg"
-import Timeline1 from "../images/jcs/P2 Recording Create Dis.png"
-import Timeline3 from "../images/jcs/P2 IxD.png"
+import Cover from "../images/fe/fe-cover.png"
+import Help from "../images/fe/fe-help.png"
+import Install from "../images/fe/adsk-install.png"
+import Flow from "../images/fe/adsk-flow.png"
+import Wire from "../images/fe/fe-wire.png"
+import Step1 from "../images/fe/adsk-step-1.png"
+import Step2 from "../images/fe/adsk-step-2.png"
+import Step3 from "../images/fe/adsk-step-3.png"
+import Step4 from "../images/fe/adsk-step-4.png"
+import Step5 from "../images/fe/adsk-step-5.png"
+import Step6 from "../images/fe/adsk-step-6.png"
+import Step7 from "../images/fe/adsk-step-7.png"
+import Step8 from "../images/fe/adsk-step-8.png"
+import Step9 from "../images/fe/adsk-step-9.png"
+import Step10 from "../images/fe/adsk-step-10.png"
 
 const data = {
     name: "InfraWork",
@@ -83,8 +86,51 @@ const data = {
         {
             label: "Outcome",
             key:  "Outcome"
-        }
-    ]
+        },
+    ],
+    images: [
+        {
+            original: Step1,
+            thumbnail: Step1,
+        },
+        {
+            original: Step2,
+            thumbnail: Step2,
+        },
+        {
+            original: Step3,
+            thumbnail: Step3,
+        },
+        {
+            original: Step4,
+            thumbnail: Step4,
+        },
+        {
+            original: Step5,
+            thumbnail: Step5,
+        },
+        {
+            original: Step6,
+            thumbnail: Step6,
+        },
+        {
+            original: Step7,
+            thumbnail: Step7,
+        },
+        {
+            original: Step8,
+            thumbnail: Step8,
+        },
+        {
+            original: Step9,
+            thumbnail: Step9,
+        },
+        {
+            original: Step10,
+            thumbnail: Step10,
+        },
+    ]    
+
 };
 
 const renderSection= (key) => {
@@ -131,12 +177,16 @@ const renderSection= (key) => {
 
         case "Contextual help":
             return <>
-                <img alt="" className="img-responsive" src={ExMap}/>
+                <img alt="" className="img-responsive" src={Help}/>
             </>;
 
         case "Installation Flow":
             return <>
-                <img alt="" className="img-responsive" src={ExMap}/>
+                <img alt="" className="img-responsive mt-20 mb-20" src={Install}/>
+                <img alt="" className="img-responsive mt-20 mb-20" src={Flow}/>
+                <img alt="" className="img-responsive mt-20 mb-20" src={Wire}/>
+
+                <ImageGallery items={data.images}/>
             </>;
 
         case "Outcome":
@@ -145,9 +195,6 @@ const renderSection= (key) => {
                 <p/>
                 <span>When I presented the installation flow to customers, they were very excited about the curated experience and proposed that if it could help personalize the product UI. Unfortunately the installation tool didn’t get built into product in the end, but there is a lot of learning for product feature development where we could onboard users with curated and personalized experiences. </span>
             </>;
-
-        case "Image":
-            return <img alt="" className="img-responsive" src={Robot}/>;
 
         default:
             return <></>;

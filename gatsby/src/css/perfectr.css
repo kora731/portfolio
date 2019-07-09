@@ -4352,7 +4352,12 @@ DEVICES STYLES
   padding-bottom: 5px
 }
 
-.sectionTitle
+.image-gallery-left-nav, .image-gallery-right-nav
 {
-  
+  font-size: 3em !important;
+
+}
+.image-gallery-fullscreen-button::before, .image-gallery-play-button::before
+{
+  font-size: 1.7em !important;
 }
