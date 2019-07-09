@@ -17,7 +17,6 @@ import Pub from "../images/jcs/jcs-pub.png"
 import StyleGuide from "../images/jcs/jcs-styleguide.png"
 import Robot from "../images/jcs/jcs_robot.jpg"
 import Timeline1 from "../images/jcs/P2 Recording Create Dis.png"
-import Timeline2 from "../images/jcs/P2 Timeline Flow.png"
 import Timeline3 from "../images/jcs/P2 IxD.png"
 
 const data = {
@@ -33,11 +32,6 @@ const data = {
     title: "Jaunt Cloud Services: Video Production Pipeline",
     subTitle: "Empower VR Media Creation and Distribution",
     highlight1: ["How to improve the video production pipeline to make it easy to onboard and manage media in a seamless and transparent way?"],
-    highlight2: [
-        "Easy to access data while scalable",
-        "Actionable components",
-        "Delightful and refreshing"],
-
     briefAttribute: [
         {
             label: "Timeline",
@@ -204,7 +198,7 @@ const renderSection= (key) => {
 
             <img alt="" className="img-responsive" src={StyleGuide}/>
             <p className="text-center mt-20">
-                <a className="btn btn-3d bt-lg" href="https://codepen.io/kora731/pen/dNdZgK" target="_blank">View Style Guide Online</a>
+                <a className="btn btn-3d bt-lg" href="https://codepen.io/kora731/pen/dNdZgK" target="_blank" rel="noopener noreferrer">View Style Guide Online</a>
             </p>
             </>;
 
