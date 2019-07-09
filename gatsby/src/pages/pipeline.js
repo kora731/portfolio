@@ -165,7 +165,7 @@ const renderSection= (oTitle, index) => {
           <p/>
 
           <img className="img-responsive" src={Cover}/>;
-          <h4 className="text-bold mt-40">Experience Map of today’s production</h4>
+          <h4 className="sectionTitle text-bold mt-40">Experience Map of today’s production</h4>
           <span>I started the project by interviewing in-house production team. Together we mapped out the full journey of creating videos, so that we could have a holistic view to prioritize breakdown points.</span>
           <p/>
 
@@ -222,10 +222,7 @@ const IndexPage = () => (
 
     <ContentHeader title={data.title} subTitle={data.subTitle}/>
 
-    <Lock/>
-
-    <div className="password-protected">
-      <div className="AnchorPosition">
+    <div className="AnchorPosition">
         <Anchor>
           {
             data.aTitle.map((oTitle, index) => (
@@ -246,7 +243,6 @@ const IndexPage = () => (
           </ContentSection>
         ))
       }
-    </div>
 
   </Layout>
 );
