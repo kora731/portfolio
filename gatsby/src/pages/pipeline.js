@@ -1,6 +1,7 @@
 import React from "react"
 
 import { Anchor } from 'antd';
+import ImageGallery from 'react-image-gallery';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -80,50 +81,78 @@ const data = {
     }
   ],
   aTitle: [
-    {
-      label: "Overview"
-    },
-    {
-      label: "Brief"
-    },
-    {
-      label: "VR Video Pipeline"
-    },
-    {
-      label: "Production Design Challenge"
-    },
-    {
-      label: "SOLUTION FRAMEWORK",
-      subTitle: [
-        "Redesign Service Structure",
-        "Improve video editing experience",
-        "User onboarding flow"
-      ]
-    },
-    {
-      label: "Post-production: publishing and analytics"
-    },
-    {
-      label: "Living style guide"
-    },
-    {
-      label: "Visualize the blackbox"
-    },
-    {
-      label: "Takeaway"
-    }
+      {
+          key:  "Overview"
+      },
+      {
+          label: "Brief",
+          key:  "Brief"
+      },
+      {
+          label: "VR Video Pipeline",
+          key:  "VR Video Pipeline"
+      },
+      {
+          label: "Production Design Challenge",
+          key:  "Production Design Challenge"
+      },
+      {
+          label: "SOLUTION FRAMEWORK",
+          subTitle: [
+              "Redesign Service Structure",
+              "Improve video editing experience",
+              "User onboarding flow"
+          ],
+          key:  "SOLUTION FRAMEWORK"
+      },
+      {
+          label: "Post-production: publishing and analytics",
+          key:  "Post-production: publishing and analytics"
+      },
+      {
+          label: "Living style guide",
+          key:  "Living style guide"
+      },
+      {
+          label: "Visualize the blackbox",
+          key:  "Visualize the blackbox"
+      },
+      {
+          label: "Takeaway",
+          key:  "Takeaway"
+      },
+      {
+          key:  "Image"
+      }
   ]
-}
+};
+
+const images = [
+    {
+        original: Specs1,
+        thumbnail: Specs1,
+    },
+    {
+        original: Specs2,
+        thumbnail: Specs2,
+    },
+    {
+        original: Specs3,
+        thumbnail: Specs3,
+    },
+    {
+        original: Specs4,
+        thumbnail: Specs4,
+    }
+];
 
 const renderSection= (oTitle, index) => {
-  switch (oTitle.label) {
+  switch (oTitle.key) {
     case "Overview":
       return <img className="img-responsive" src={Cover}/>;
-      break;
 
     case "Brief":
       return <Brief attributes={data.briefAttribute}/>;
-      break;
 
     case "VR Video Pipeline":
         return <>
@@ -181,8 +210,11 @@ const renderSection= (oTitle, index) => {
     case "Takeaway":
         return <>
         </>;
+
+     case "Image":
+       return <ImageGallery items={images}/>;
   }
-}
+};
 
 const IndexPage = () => (
   <Layout pri={data.pri} next={data.next}>
@@ -196,22 +228,20 @@ const IndexPage = () => (
       <div className="AnchorPosition">
         <Anchor>
           {
-            data.aTitle.map((oTitle, index) => {
-              return <>
-              <Link href={index ===0 ? "#top" : ("#" + oTitle.label)} title={oTitle.label} key={index}>
-              {oTitle.subTitle && oTitle.subTitle.map((subTitle, index2) => (
-                <Link href={"#" + subTitle} title={subTitle} key={index2}/>
-              ))}
-              </Link>
-              </>
-            })
+            data.aTitle.map((oTitle, index) => (
+                (index ===0 || oTitle.label) && <Link href={index ===0 ? "#top" : ("#" + oTitle.label)} title={oTitle.label || "Overview"} key={index}>
+                    {oTitle.subTitle && oTitle.subTitle.map((subTitle, index2) => (
+                        <Link href={"#" + subTitle} title={subTitle} key={index2}/>
+                    ))}
+                </Link>
+            ))
           }
         </Anchor>
       </div>
 
       {
         data.aTitle.map((oTitle, index) => (
-          <ContentSection title={oTitle.label === "Overview" ? null: oTitle.label}>
+          <ContentSection title={oTitle.label} key={index}>
             {renderSection(oTitle, index)}
           </ContentSection>
         ))
@@ -219,6 +249,6 @@ const IndexPage = () => (
     </div>
 
   </Layout>
-)
+);
 
 export default IndexPage

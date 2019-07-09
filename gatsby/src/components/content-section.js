@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import "./content-section.css"
 
-const ContentSection = ({ title, children, isSubTitle }) => {
+const ContentSection = ({ title, isSubTitle, children }) => {
 
   return <div id={title} className="container bg-light pt-40 text-left content-section">
     <div className="row col-lg-8 col-lg-push-2">
@@ -45,8 +45,8 @@ const ContentSection = ({ title, children, isSubTitle }) => {
 
 ContentSection.propTypes = {
   title: PropTypes.string,
-  children: PropTypes.node.isRequired,
   isSubTitle: PropTypes.bool,
+  children: PropTypes.node.isRequired
 }
 
 export default ContentSection
