@@ -153,7 +153,7 @@ const renderSection= (key) => {
 
         case "SOLUTION FRAMEWORK":
             return <>
-                
+
             </>;
 
         case "Redesign Service Structure":
@@ -165,7 +165,7 @@ const renderSection= (key) => {
 
         case "Improve video editing experience":
             return <>
-                <span>I lead the design of improving timeline editor where the users can quickly trim the video beginning and end points to reduce rendering cost. Below is the interaction diagram of time scrub and player handle to propose a simplified editing and saving process. 
+                <span>I lead the design of improving timeline editor where the users can quickly trim the video beginning and end points to reduce rendering cost. Below is the interaction diagram of time scrub and player handle to propose a simplified editing and saving process.
                 <p/>Once the feature is released to our users, they shared back that editing and saving clips have been much faster and they like the ability to easily modify the scrub and time handle.
                 </span>
                 <div class="row">
@@ -177,29 +177,29 @@ const renderSection= (key) => {
 
         case "User onboarding flow":
             return <>
-                
+
                 <img alt="" className="img-responsive" src={Tour}/>
             </>;
 
 
         case "Publishing and analytics":
-                return <>
-                     <img alt="" className="img-responsive" src={Sketch}/>
-                     <img alt="" className="img-responsive" src={Pub}/>
-                </>;
-            
+            return <>
+                <img alt="" className="img-responsive" src={Sketch}/>
+                <img alt="" className="img-responsive" src={Pub}/>
+            </>;
+
         case "Living style guide":
             return <>
-            <span>While I were producing more pages, the team feel we need a redesign of the whole product UI. 
-            To start I decided to catalog current design tokens and components used, as well as page layout. 
-            In addition, there is a growing request for dark themed UI because most video production software are in dark mode already. 
-            Dark theme is easier on the eyes while presenting rich media data. I lead the style guide design outside project work, and document the final style 
+                <span>While I were producing more pages, the team feel we need a redesign of the whole product UI.
+            To start I decided to catalog current design tokens and components used, as well as page layout.
+            In addition, there is a growing request for dark themed UI because most video production software are in dark mode already.
+            Dark theme is easier on the eyes while presenting rich media data. I lead the style guide design outside project work, and document the final style
             guide online. It leads to our frontend engineers complete the dark themed UI within two weeks. </span>
 
-            <img alt="" className="img-responsive" src={StyleGuide}/>
-            <p className="text-center mt-20">
-                <a className="btn btn-3d bt-lg" href="https://codepen.io/kora731/pen/dNdZgK" target="_blank" rel="noopener noreferrer">View Style Guide Online</a>
-            </p>
+                <img alt="" className="img-responsive" src={StyleGuide}/>
+                <p className="text-center mt-20">
+                    <a className="btn btn-3d bt-lg" href="https://codepen.io/kora731/pen/dNdZgK" target="_blank" rel="noopener noreferrer">View Style Guide Online</a>
+                </p>
             </>;
 
         case "Visualize the blackbox":
@@ -212,7 +212,7 @@ const renderSection= (key) => {
 
         case "Takeaway":
             return <>
-               <span>Design solution needs to balance between future long-term goal and current iterations, how to handle user feedback and understand the insights instead of only following features asked for. To come up with effective solutions, designers need to learn about and prepare for the big picture and understand the why better. For example, a large part of the system today is built upon request, but what turned out happening is that the features built are not used by the end user. 
+                <span>Design solution needs to balance between future long-term goal and current iterations, how to handle user feedback and understand the insights instead of only following features asked for. To come up with effective solutions, designers need to learn about and prepare for the big picture and understand the why better. For example, a large part of the system today is built upon request, but what turned out happening is that the features built are not used by the end user.
                  <p/>
                 When users ask for certain features, should we really follow the comments? or we need to rethink through the deeper reason and flow, why they are like this today. Remind me of Ford’s faster horse theory. Designers need to consolidate the insights, collaboratively define the vision we’re heading towards.
                </span>

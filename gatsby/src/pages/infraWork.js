@@ -46,15 +46,15 @@ const data = {
         },
         {
             label: "Targeted Users",
-            value: "Indie movie producers and creators"
+            value: "Infraworks users"
         },
         {
             label: "Design Scope",
-            value: "Full design lifecycle (UXR, UX/UI)\nExperience map\nLiving style guide"
+            value: "Pattern library\nPrototype\nUser Testing"
         },
         {
             label: "Outcome",
-            value: "Improved usability of video pipeline with released publishing and analytics modules and a validated JCS experience roadmap"
+            value: "Contextual help pattern library got recognition from peer Autodesk designers. Installation design received very positive feedback from external users."
         }
     ],
     aTitle: [
@@ -66,40 +66,23 @@ const data = {
             key:  "Brief"
         },
         {
-            label: "VR Video Pipeline",
-            key:  "VR Video Pipeline"
+            label: "First Experience",
+            key:  "First Experience"
         },
         {
-            label: "Production Design Challenge",
-            key:  "Production Design Challenge"
+            label: "Contextual help",
+            key:  "Contextual help"
         },
         {
-            label: "SOLUTION FRAMEWORK",
-            subTitle: [
-                "Redesign Service Structure",
-                "Improve video editing experience",
-                "User onboarding flow"
-            ],
-            key:  "SOLUTION FRAMEWORK"
-        },
-        {
-            label: "Publishing and analytics",
-            key:  "Publishing and analytics"
-        },
-        {
-            label: "Living style guide",
-            key:  "Living style guide"
-        },
-        {
-            label: "Visualize the blackbox",
-            key:  "Visualize the blackbox"
+            label: "Installation Flow",
+            key:  "Installation Flow"
         },
         {
             key:  "Image"
         },
         {
-            label: "Takeaway",
-            key:  "Takeaway"
+            label: "Outcome",
+            key:  "Outcome"
         }
     ]
 };
@@ -112,111 +95,59 @@ const renderSection= (key) => {
         case "Brief":
             return <Brief attributes={data.briefAttribute}/>;
 
-        case "VR Video Pipeline":
+        case "First Experience":
             return <>
-                <span>Current With Jaunt Cloud Services(JCS), users can apply cloud rendering to stitch 24 footage together, and transcode them into different formats. The cloud services help prepare video media for distribution on all VR platforms instead of managing files one by one. Along with the rendering, JCS also provides the service modules of Publishing and Analytics to help creators distribute videos and track the audience engagement.</span>
+                <span>The first project I lead designing at Autodesk is to deliver an engaging first experience to help users get started with InfraWorks 360, a civil engineering design software with data-rich 3D models. During the customer journey, First Experience covers multiple touch points where users get onboard with the product and develop design skills using InfraWorks 360. Its components consist of product installation & update, first product launch, trial experience and in-product help where the design helps a novice user become an expert.</span>
                 <p/>
 
-                <img alt="" className="img-responsive" src={System}/>
-
-                <h4 className="text-bold mt-40">Targeted Users</h4>
-                <span>JCS serves people who are working in VR movie production, including Editors, Producers and Jaunt internal people to trouble shoot. Utilizing VR as a new medium and territory to do storytelling and deliver cinematic VR experiences, JCS users try to focus on the creative side and make most of rendering platform and services.</span>
+                <h4 className="text-bold mt-40">First Experience Components</h4>
+                <span>Product Tour: curated learning contents during installation or first launch</span>
                 <p/>
-                <img alt="" className="img-responsive" src={User}/>
-
-                <h4 className="sectionTitle text-bold mt-40">Experience Map of today’s production</h4>
-                <span>I started the project by interviewing in-house production team. Together we mapped out the full journey of creating videos, so that we could have a holistic view to prioritize breakdown points.</span>
+                <span>Onboard help: coachmark and step-through to present new features</span>
+                <p/>
+                <span>Interactive dialog: bot initiated conversational walkthrough</span>
+                <p/>
+                <span>Contextual Callout: highlight certain elements while not blocking actions</span>
+                <p/>
+                <span>Trial experience: in-product messaging to introduce trial term and services</span>
                 <p/>
 
+                <h4 className="sectionTitle text-bold mt-40">Design Guidelines</h4>
+                <span>- Aware of user profile and provide curated and crafted onboard experiences</span>
+                <p/>
+                <span>- Build humane conversations and avoid software jargons, show more than tells</span>
+                <p/>
+                <span>- Showcase 3D visual capabilities early to engage userss</span>
+                <p/>
+                <span>- Learn through doing: provide contextual help right next to user taskss</span>
+                <p/>
+                <span>- Allow users to opt out of help mode at any times</span>
+                <p/>
+                <span>- Copywrite is about user benefits rather than product featuress</span>
+                <p/>
+                <span>- Reward users right in the context</span>
+                <p/>
+            </>;
+
+        case "Contextual help":
+            return <>
                 <img alt="" className="img-responsive" src={ExMap}/>
-                <h4 className="text-bold mt-40">Key problems of production pipelinet</h4>
-                <span>1. Media centric UI rather than project based. Users have a hard time managing media across projects and the naming of media is hard to manage and often lead to errors.</span>
+            </>;
+
+        case "Installation Flow":
+            return <>
+                <img alt="" className="img-responsive" src={ExMap}/>
+            </>;
+
+        case "Outcome":
+            return <>
+                <span>Through working with cross-function team, including content delelopers and installation team, we came up with three design deliverables: Contextual Help Patterns, Product Installation-Tour Design and Seamless Delivery Design.</span>
                 <p/>
-                <span>2. No transparency on the rendering status, and upload/download sessions are complicated.</span>
-                <p/>
-                <span>3. How to onboard new users who don’t have video editing or production experiences?</span>
-                <p/>
-            </>;
-
-        case "Production Design Challenge":
-            return <>
-                <ContentHighlight attributes={data.highlight1}/>
-                <h4 className="text-bold mt-40">Design Process</h4>
-                <span>I’m the only product designer working with a team of four engineers and two product managers. We’re moving fast on shipping incremental features. Meanwhile PM and I are working on the next version of the JCS platform to help prioritize features.</span>
-                <p/>
-                <span>When there is request or complaint from end users, we started by talking to our internal production team to understand the problem better. If we have enough confidence, then the team will sketch out various solutions and discuss their feasibility.</span>
-                <p/>
-                <span>I’ll lead the next step to visualize top two solutions with wireframes and flow charts. Then our team will share these two low-fi solutions with external users for feedback. Once we confirmed on the use case and solution, technical lead will start building the structure while I’m working on the UI delivery to ensure usability and quality of the solution design.</span>
-                <p/>
-            </>;
-
-        case "SOLUTION FRAMEWORK":
-            return <>
-
-            </>;
-
-        case "Redesign Service Structure":
-            return <>
-                <img alt="" className="img-responsive" src={Service}/>
-                <h4 className="text-bold mt-40">Wireframe of project oriented content management flow</h4>
-                <img alt="" className="img-responsive" src={Wire}/>
-            </>;
-
-        case "Improve video editing experience":
-            return <>
-                <span>I lead the design of improving timeline editor where the users can quickly trim the video beginning and end points to reduce rendering cost. Below is the interaction diagram of time scrub and player handle to propose a simplified editing and saving process.
-                <p/>Once the feature is released to our users, they shared back that editing and saving clips have been much faster and they like the ability to easily modify the scrub and time handle.
-                </span>
-                <div class="row">
-                    <img alt="" className="img-responsive col-lg-6 col-sm-12" src={Timeline1}/>
-                    <img alt="" className="img-responsive col-lg-6 col-sm-12" src={Timeline1}/>
-                </div>
-                <img alt="" className="img-responsive" src={Timeline3}/>
-            </>;
-
-        case "User onboarding flow":
-            return <>
-
-                <img alt="" className="img-responsive" src={Tour}/>
-            </>;
-
-
-        case "Publishing and analytics":
-            return <>
-                <img alt="" className="img-responsive" src={Sketch}/>
-                <img alt="" className="img-responsive" src={Pub}/>
-            </>;
-
-        case "Living style guide":
-            return <>
-                <span>While I were producing more pages, the team feel we need a redesign of the whole product UI.
-            To start I decided to catalog current design tokens and components used, as well as page layout.
-            In addition, there is a growing request for dark themed UI because most video production software are in dark mode already.
-            Dark theme is easier on the eyes while presenting rich media data. I lead the style guide design outside project work, and document the final style
-            guide online. It leads to our frontend engineers complete the dark themed UI within two weeks. </span>
-
-                <img alt="" className="img-responsive" src={StyleGuide}/>
-                <p className="text-center mt-20">
-                    <a className="btn btn-3d bt-lg" href="https://codepen.io/kora731/pen/dNdZgK" target="_blank">View Style Guide Online</a>
-                </p>
-            </>;
-
-        case "Visualize the blackbox":
-            return <>
-                <span>Having a super talented technical artist in the team (Rory), I invited him to collaborate on a hackathon project to visualize how the video were brought into final production ready. The robot metaphor helps onboard not only internal team but also external new users to understand the whole video pipeline.</span>
+                <span>When I presented the installation flow to customers, they were very excited about the curated experience and proposed that if it could help personalize the product UI. Unfortunately the installation tool didn’t get built into product in the end, but there is a lot of learning for product feature development where we could onboard users with curated and personalized experiences. </span>
             </>;
 
         case "Image":
             return <img alt="" className="img-responsive" src={Robot}/>;
-
-        case "Takeaway":
-            return <>
-                <span>Design solution needs to balance between future long-term goal and current iterations, how to handle user feedback and understand the insights instead of only following features asked for. To come up with effective solutions, designers need to learn about and prepare for the big picture and understand the why better. For example, a large part of the system today is built upon request, but what turned out happening is that the features built are not used by the end user.
-                 <p/>
-                When users ask for certain features, should we really follow the comments? or we need to rethink through the deeper reason and flow, why they are like this today. Remind me of Ford’s faster horse theory. Designers need to consolidate the insights, collaboratively define the vision we’re heading towards.
-               </span>
-
-            </>;
 
         default:
             return <></>;

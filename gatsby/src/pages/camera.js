@@ -88,6 +88,7 @@ const data = {
             ],
             key:  "Solution framework"
         },
+        {
             label: "Takeaway",
             key:  "Takeaway"
         },
