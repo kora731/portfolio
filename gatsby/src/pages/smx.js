@@ -20,10 +20,6 @@ const data = {
     title: "ShopperMX: 3D Virtual Store Navigation Experience",
     subTitle: "Design virtual store on the web app to drive innovative store design and market research insights",
     highlight1: ["How to enable non-gamers to navigate through the 3D store smoothly on the web browser?"],
-    highlight2: [
-        "Easy to access data while scalable",
-        "Actionable components",
-        "Delightful and refreshing"],
 
     briefAttribute: [
         {
