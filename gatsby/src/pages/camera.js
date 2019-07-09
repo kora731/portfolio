@@ -38,7 +38,7 @@ const data = {
     },
     next: {
         label: "Autodesk",
-        href: "/project/fe/index.html"
+        href: "/project/infraWork/index.html"
     },
     title: "Jaunt Desktop App: Camera Controller and Media Manager",
     subTitle: "Capture and manage media in a simply and reliable way",
