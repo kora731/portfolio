@@ -1,15 +1,11 @@
 import React from "react"
 
-import { Anchor } from 'antd';
 import ImageGallery from 'react-image-gallery';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import ContentHeader from "../components/content-header"
-import ContentSection from "../components/content-section"
+
 import Brief from "../components/brief"
-import Lock from "../components/lock"
 import ContentHighlight from "../components/content-highlight"
+import Template from "../components/template";
 
 /* Image Assets */
 import Cover from "../images/pf-cs-cover.png"
@@ -34,8 +30,6 @@ import Specs3 from "../images/pf-specs-3.png"
 import Specs4 from "../images/pf-specs-4.png"
 import RWD1 from "../images/pf-rwd-1.png"
 import RWD2 from "../images/pf-rwd-2.png"
-
-const { Link } = Anchor;
 
 const data = {
     pri : {
@@ -146,8 +140,8 @@ const images = [
     }
 ];
 
-const renderSection= (oTitle, index) => {
-    switch (oTitle.key) {
+const renderSection= (key) => {
+    switch (key) {
         case "Overview":
             return <img className="img-responsive" src={Cover}/>;
 
@@ -165,7 +159,7 @@ const renderSection= (oTitle, index) => {
                 <p/>
 
                 <img className="img-responsive" src={Cover}/>;
-                <h4 className="text-bold mt-40">Experience Map of today’s production</h4>
+                <h4 className="sectionTitle text-bold mt-40">Experience Map of today’s production</h4>
                 <span>I started the project by interviewing in-house production team. Together we mapped out the full journey of creating videos, so that we could have a holistic view to prioritize breakdown points.</span>
                 <p/>
 
@@ -217,38 +211,7 @@ const renderSection= (oTitle, index) => {
 };
 
 const IndexPage = () => (
-    <Layout pri={data.pri} next={data.next}>
-        <SEO title="Mobile" />
-
-        <ContentHeader title={data.title} subTitle={data.subTitle}/>
-
-        <Lock/>
-
-        <div className="password-protected">
-            <div className="AnchorPosition">
-                <Anchor>
-                    {
-                        data.aTitle.map((oTitle, index) => (
-                            (index ===0 || oTitle.label) && <Link href={index ===0 ? "#top" : ("#" + oTitle.label)} title={oTitle.label || "Overview"} key={index}>
-                                {oTitle.subTitle && oTitle.subTitle.map((subTitle, index2) => (
-                                    <Link href={"#" + subTitle} title={subTitle} key={index2}/>
-                                ))}
-                            </Link>
-                        ))
-                    }
-                </Anchor>
-            </div>
-
-            {
-                data.aTitle.map((oTitle, index) => (
-                    <ContentSection title={oTitle.label} key={index}>
-                        {renderSection(oTitle, index)}
-                    </ContentSection>
-                ))
-            }
-        </div>
-
-    </Layout>
+    <Template data={data} renderSection={renderSection} lock={false}/>
 );
 
 export default IndexPage

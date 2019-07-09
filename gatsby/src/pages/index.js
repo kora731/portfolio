@@ -1,13 +1,7 @@
 import React from "react"
 
-import { Anchor } from 'antd';
-
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import ContentHeader from "../components/content-header"
-import ContentSection from "../components/content-section"
 import Brief from "../components/brief"
-import Lock from "../components/lock"
+import Template from "../components/template"
 import ContentHighlight from "../components/content-highlight"
 
 /* Image Assets */
@@ -33,8 +27,6 @@ import Specs3 from "../images/pf-specs-3.png"
 import Specs4 from "../images/pf-specs-4.png"
 import RWD1 from "../images/pf-rwd-1.png"
 import RWD2 from "../images/pf-rwd-2.png"
-
-const { Link } = Anchor;
 
 const data = {
     pri : {
@@ -124,7 +116,7 @@ const data = {
     ]
 };
 
-const renderSection= (key, index) => {
+const renderSection= (key) => {
     switch (key) {
         case "Overview":
             return <img className="img-responsive" src={Cover}/>;
@@ -317,45 +309,7 @@ it will present data and support user interaction.</span>
 };
 
 const IndexPage = () => (
-    <Layout pri={data.pri} next={data.next}>
-        <SEO title="Mobile" />
-
-        <ContentHeader title={data.title} subTitle={data.subTitle}/>
-
-        <Lock/>
-
-        <div className="password-protected">
-            <div className="AnchorPosition">
-                <Anchor>
-                    {
-                        data.aTitle.map((oTitle, index) => (
-                            (index ===0 || oTitle.label) && <Link href={index ===0 ? "#top" : ("#" + oTitle.label)} title={oTitle.label || "Overview"} key={index}>
-                                {oTitle.subTitle && oTitle.subTitle.map((subTitle, index2) => (
-                                    <Link href={"#" + subTitle} title={subTitle} key={index2}/>
-                                ))}
-                            </Link>
-                        ))
-                    }
-                </Anchor>
-            </div>
-
-            {
-                data.aTitle.map((oTitle, index) => (
-                    <div  key={index}>
-                        <ContentSection title={oTitle.label}>
-                            {renderSection(oTitle.key, index)}
-                        </ContentSection>
-                        {oTitle.subTitle && oTitle.subTitle.map((subTitle, index2) => (
-                            <ContentSection title={subTitle} isSubTitle={true} key={index2}>
-                                {renderSection(subTitle, index)}
-                            </ContentSection>
-                        ))}
-                    </div>
-                ))
-            }
-        </div>
-
-    </Layout>
+    <Template data={data} renderSection={renderSection} lock={true}/>
 );
 
 export default IndexPage
