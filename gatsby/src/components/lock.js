@@ -6,7 +6,6 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
 
 import $ from 'jquery';
 
@@ -23,7 +22,7 @@ const Lock = () => {
   }
 
   return   <div className="password">
-    <p>Please <a href="mailto:surong731@gmail.com" target="_blank">contact me </a>
+    <p>Please <a href="mailto:surong731@gmail.com" target="_blank" rel="noopener noreferrer">contact me </a>
       for the password to access project content.
     </p>
     <form>

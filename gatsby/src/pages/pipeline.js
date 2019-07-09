@@ -9,27 +9,10 @@ import Template from "../components/template";
 
 /* Image Assets */
 import Cover from "../images/pf-cs-cover.png"
-import Goal from "../images/pf-cs-goal.png"
-import User from "../images/pf-cs-user.png"
-import flow from "../images/pf-ip-flow-web.png"
-import Before from "../images/pf-before.png"
-import Idr from "../images/pf-idr-data.png"
-import Wf1 from "../images/pf-6-wireframe.png"
-import Wf2 from "../images/pf-3-wireframe.png"
-import Ixd from "../images/pf-ixd.png"
-import Edd1 from "../images/pf-edd-1.png"
-import Edd2 from "../images/pf-edd-2.png"
-import Dispo from "../images/pf-dispo.png"
-import Barrier from "../images/pf-barrier.png"
-import UI1 from "../images/pf-ui-1.png"
-import UI2 from "../images/pf-ui-2.png"
-import Demo from "../images/pf-demo.mp4"
 import Specs1 from "../images/pf-specs-1.png"
 import Specs2 from "../images/pf-specs-2.png"
 import Specs3 from "../images/pf-specs-3.png"
 import Specs4 from "../images/pf-specs-4.png"
-import RWD1 from "../images/pf-rwd-1.png"
-import RWD2 from "../images/pf-rwd-2.png"
 
 const data = {
     name: "Pipeline",
@@ -144,7 +127,7 @@ const images = [
 const renderSection= (key) => {
     switch (key) {
         case "Overview":
-            return <img className="img-responsive" src={Cover}/>;
+            return <img alt="" className="img-responsive" src={Cover}/>;
 
         case "Brief":
             return <Brief attributes={data.briefAttribute}/>;
@@ -154,17 +137,17 @@ const renderSection= (key) => {
                 <span>Current With Jaunt Cloud Services(JCS), users can apply cloud rendering to stitch 24 footage together, and transcode them into different formats. The cloud services help prepare video media for distribution on all VR platforms instead of managing files one by one. Along with the rendering, JCS also provides the service modules of Publishing and Analytics to help creators distribute videos and track the audience engagement.</span>
                 <p/>
 
-                <img className="img-responsive" src={Cover}/>;
+                <img alt="" className="img-responsive" src={Cover}/>;
                 <h4 className="text-bold mt-40">Targeted Users</h4>
                 <span>JCS serves people who are working in VR movie production, including Editors, Producers and Jaunt internal people to trouble shoot. Utilizing VR as a new medium and territory to do storytelling and deliver cinematic VR experiences, JCS users try to focus on the creative side and make most of rendering platform and services.</span>
                 <p/>
 
-                <img className="img-responsive" src={Cover}/>;
+                <img alt="" className="img-responsive" src={Cover}/>;
                 <h4 className="sectionTitle text-bold mt-40">Experience Map of today’s production</h4>
                 <span>I started the project by interviewing in-house production team. Together we mapped out the full journey of creating videos, so that we could have a holistic view to prioritize breakdown points.</span>
                 <p/>
 
-                <img className="img-responsive" src={Cover}/>;
+                <img alt="" className="img-responsive" src={Cover}/>;
                 <h4 className="text-bold mt-40">Key problems of production pipelinet</h4>
                 <span>1. Media centric UI rather than project based. Users have a hard time managing media across projects and the naming of media is hard to manage and often lead to errors.</span>
                 <p/>
@@ -208,6 +191,9 @@ const renderSection= (key) => {
 
         case "Image":
             return <ImageGallery items={images}/>;
+
+        default:
+            return <></>;
     }
 };
 

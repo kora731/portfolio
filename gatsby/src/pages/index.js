@@ -120,7 +120,7 @@ const data = {
 const renderSection= (key) => {
     switch (key) {
         case "Overview":
-            return <img className="img-responsive" src={Cover}/>;
+            return <img alt="" className="img-responsive" src={Cover}/>;
 
         case "Brief":
             return <Brief attributes={data.briefAttribute}/>;
@@ -134,22 +134,22 @@ const renderSection= (key) => {
             </>;
 
         case "Product Goals":
-            return <img className="img-responsive" src={Goal}/>;
+            return <img alt="" className="img-responsive" src={Goal}/>;
 
         case "Understand Users":
             return <>
                 <span>We shadowed multiple hospitals to observe how frontline nurses are handling the patient flow today. It helps uncover potential touchpoints where PathFinder could make an impact to improve discharge process. I consolidated our learnings into the persona and flow diagrams so that the whole team can leverage these user insights to solve problems.</span>
                 <h4 className="text-bold mt-20">Stakeholder mapping and key persona</h4>
-                <img className="img-responsive" src={User}/>
+                <img alt="" className="img-responsive" src={User}/>
                 <p/>
                 <h4 className="text-bold mt-20">Patient Discharge Flow</h4>
-                <img className="img-responsive" src={flow}/>
+                <img alt="" className="img-responsive" src={flow}/>
             </>;
 
         case "Design Challenge":
             return <>
                 <ContentHighlight attributes={data.highlight1}/>
-                <img className="img-responsive" src={Before}/>
+                <img alt="" className="img-responsive" src={Before}/>
 
                 <p/>
                 <h4 className="text-bold mt-40">Gap of the previous patient board</h4>
@@ -192,16 +192,16 @@ const renderSection= (key) => {
                 <span>To make sure the board design meets configuration requirements, I’m working closely with BE and FE to layout the information architecutre, so that each column and field is aligned with how
 it will present data and support user interaction.</span>
 
-                <img className="img-responsive" src={Idr}/>
+                <img alt="" className="img-responsive" src={Idr}/>
 
                 <h4 className="text-bold mt-40">Board space for more data</h4>
                 <span>Current table UI is challenging for adding more columns. I started exploring different types of data layouts to expanad the horizontal space. </span>
                 <p/>
-                <img className="img-responsive" src={Wf1}/>
+                <img alt="" className="img-responsive" src={Wf1}/>
                 <p/>
                 <span className="row">After the first iteration, we narrow down to three options because of the project timeline and technical constraints. The list view becomes the unification point where data is presented in a progressive way, and also has advantage to sort and filter. We also constructed the low fi mockup covering data structure, so that moving forward we can valid both layout and data with end users.</span>
                 <p/>
-                <img className="img-responsive" src={Wf2}/>
+                <img alt="" className="img-responsive" src={Wf2}/>
 
                 <h4 className="text-bold mt-40">User Testing Findings</h4>
                 <span>When we presented the three options to end users, 4 out of 5 users chose Option Two, commented on it being clean and familiar. Expanding the row data rather than replacing/relocating is also easier to scan and digest the information.</span>
@@ -214,26 +214,26 @@ it will present data and support user interaction.</span>
                 <span>PathFinder boards serve as the data source to prompt care team to enter patient dicharge plan, and collaborate on resolving barriers. User-entry data on the board is the most valuable information set. How might we design the data columns to encourage user input?</span>
                 <p/>
 
-                <img className="img-responsive" src={Ixd}/>
+                <img alt="" className="img-responsive" src={Ixd}/>
 
                 <h4 className="text-bold mt-20">EDD (estimated discharge date): Deliver predictive date and status flags</h4>
                 <span>Qventus developed machine learning models to predict when patient is going to leave. We surface these prediction results next to EDD field for entry reference. Among these solutions, we choose Option D for the short term MVP solution based on the data availability.</span>
                 <p/>
 
-                <img className="img-responsive" src={Edd1}/>
-                <img className="img-responsive" src={Edd2}/>
+                <img alt="" className="img-responsive" src={Edd1}/>
+                <img alt="" className="img-responsive" src={Edd2}/>
 
                 <h4 className="text-bold mt-20">Disposition flow indicator</h4>
                 <span>Visualize the flow and order status up front for the care team</span>
                 <p/>
 
-                <img className="img-responsive" src={Dispo}/>
+                <img alt="" className="img-responsive" src={Dispo}/>
 
                 <h4 className="text-bold mt-20">Barrier design</h4>
                 <span>Design problem of managing barrier is: how could care teams quickly identify important barriers and easily manage an updating list? After I explored different barrier list UI, our team decided on the solution to combine Option B and C to show an easy-to-scan and scalable list.</span>
                 <p/>
 
-                <img className="img-responsive" src={Barrier}/>
+                <img alt="" className="img-responsive" src={Barrier}/>
 
                 <h4 className="text-bold mt-20">Outcome</h4>
                 <span>During our internal feedback with clinical team, we got a lot of positive feedback. Also from tracking usage data at Amplitude, we found completion rate of these fields general high along with increasing DAU. These indicators help show a more engaged user group.</span>
@@ -244,12 +244,12 @@ it will present data and support user interaction.</span>
                 <h4 className="text-bold">Visual identity Criteria</h4>
                 <span>We started exploring the visual redesign by construct the moodboard, identifying a few dimensions to push forward in the UI iteractions and finally converge to one design.</span>
                 <p/>
-                <img className="img-responsive" src={UI1}/>
+                <img alt="" className="img-responsive" src={UI1}/>
 
                 <p/>
                 <span>Dimensions of visual divergence:  color, IA,</span>
                 <p/>
-                <img className="img-responsive" src={UI2}/>
+                <img alt="" className="img-responsive" src={UI2}/>
 
                 <h4 className="text-bold mt-20">Review and feedback</h4>
 
@@ -266,23 +266,23 @@ it will present data and support user interaction.</span>
         case "UI Delivery":
             return <>
                 <div className="col-lg-6">
-                    <img className="img-responsive" src={Specs1}/>
+                    <img alt="" className="img-responsive" src={Specs1}/>
                 </div>
                 <div className="col-lg-6">
-                    <img className="img-responsive" src={Specs2}/>
+                    <img alt="" className="img-responsive" src={Specs2}/>
                 </div>
 
                 <div className="col-lg-6">
-                    <img className="img-responsive" src={Specs3}/>
+                    <img alt="" className="img-responsive" src={Specs3}/>
                 </div>
                 <div className="col-lg-6">
-                    <img className="img-responsive" src={Specs4}/>
+                    <img alt="" className="img-responsive" src={Specs4}/>
                 </div>
 
                 <h4 className="text-bold mt-20">Responsive design</h4>
 
-                <img className="img-responsive" src={RWD1}/>
-                <img className="img-responsive mt-40" src={RWD2}/>
+                <img alt="" className="img-responsive" src={RWD1}/>
+                <img alt="" className="img-responsive mt-40" src={RWD2}/>
                 <p/>
                 <span>In the later stage of introducing PathFinder to more users and use cases, ability to view the list on the mobile devices becomes a prominent request. I started cataloging all the data by priority group, and designed the wireframes first. This approach makes sure important are consistantly emphasized across different channels. Next step is to validate with care team, and explore unique use cases for mobile usage.</span>
                 <p/>
@@ -306,6 +306,8 @@ it will present data and support user interaction.</span>
                 <p/>
                 <span>“Finally, I have a technology that makes my job easier.”    - Charge Nurse</span>
             </>;
+        default:
+            return <></>;
     }
 };
 

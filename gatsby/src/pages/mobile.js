@@ -110,7 +110,7 @@ const IndexPage = () => (
         </Anchor>
       </div>
       <ContentSection id="top">
-        <img className="img-responsive" src={Cover}/>
+        <img alt="" className="img-responsive" src={Cover}/>
       </ContentSection>
 
       <ContentSection title="Brief">
@@ -119,20 +119,20 @@ const IndexPage = () => (
 
       <ContentSection title="Product suite and mobile app">
         <span>Qventus is the first system of action, from historic analytical data to predictive recipe, trying to simplify healthcare operations by empowering teams to excel in real-time. The solutions include dashboard for root cause analysis, patient board for proactive planning, system operational board for situational awareness, and mobile app to deliver real-time interventions. </span>
-        <img className="img-responsive" src={Soa}/>
+        <img alt="" className="img-responsive" src={Soa}/>
         <h4 className="text-bold mt-20">Mobile app for the care team in the ED</h4>
         <span>For most hospitals, the ED is the primary entry point for patients driving up to 70% of hospital admissions. But in this highly dynamic and variable environment, ED are normally overwhelmed with sudden patient influxes, long wait times, patients boarded in hallways and dissatisfied patients walking out. </span>
         <p/>
         <span>Qventus mobile app targets at solving ED problems by identify surges, delays, dissatisfied patients and push real time notifications to prompt preparations downstream. It also enables team collaboration across departments and functions to address problems in the same chat thread. Each chat thread is called a nudge quoted Richard Thaler’s behavior science concept.</span>
         <p/>
         <div className="col-lg-4">
-            <img className="img-responsive" src={Now1}/>
+            <img alt="" className="img-responsive" src={Now1}/>
         </div>
         <div className="col-lg-4">
-            <img className="img-responsive" src={Now2}/>
+            <img alt="" className="img-responsive" src={Now2}/>
         </div>
         <div className="col-lg-4">
-            <img className="img-responsive" src={Now3}/>
+            <img alt="" className="img-responsive" src={Now3}/>
         </div>
       </ContentSection>
 
@@ -151,7 +151,7 @@ const IndexPage = () => (
               <p/>
           </div>
           <div className="col-lg-6">
-            <img className="img-responsive" src={User}/>
+            <img alt="" className="img-responsive" src={User}/>
           </div>
         </div>
         <h4 className="text-bold mt-20">- Friction through using the app</h4>
@@ -205,8 +205,8 @@ const IndexPage = () => (
         <h4 className="text-bold mt-20">Login Flow Diagram</h4>
         <span>Current flow requires the user to enter hospital URL and then directs them to the login section. As the tracking data shows that more than half of users gave up at step one of entering URL, it’s a friction point that is removable by binding user email with the domain URL so that one step closer to login. </span>
         <p/>
-        <img className="img-responsive" src={Login}/>
-        <img className="img-responsive mt-40" src={Login2}/>
+        <img alt="" className="img-responsive" src={Login}/>
+        <img alt="" className="img-responsive mt-40" src={Login2}/>
         
 
         <h4 className="text-bold mt-20">User validation on login redesign</h4>
@@ -215,16 +215,16 @@ const IndexPage = () => (
 
       <div className="row">
         <div className="col-lg-4">
-          <img className="img-responsive" src={Archive}/>
-          <span class="text-gray mt-12">Swiping to archive nudges helps clear up the feed to reduce information overload</span>
+          <img alt="" className="img-responsive" src={Archive}/>
+          <span className="text-gray mt-12">Swiping to archive nudges helps clear up the feed to reduce information overload</span>
         </div>
         <div className="col-lg-4">
-          <img className="img-responsive" src={Mute}/>
-          <span class="text-gray mt-12">Ability to set mute schedule let the user control notifications when on/off shift</span>
+          <img alt="" className="img-responsive" src={Mute}/>
+          <span className="text-gray mt-12">Ability to set mute schedule let the user control notifications when on/off shift</span>
         </div>
         <div className="col-lg-4">
-          <img className="img-responsive" src={Priority}/>
-          <span class="text-gray mt-12">Tagging the nudges makes scanning and prioiritization easy</span>
+          <img alt="" className="img-responsive" src={Priority}/>
+          <span className="text-gray mt-12">Tagging the nudges makes scanning and prioiritization easy</span>
         </div>
       </div>
       <h4 className="text-bold mt-20">Results</h4>
@@ -241,16 +241,16 @@ const IndexPage = () => (
         <h4 className="text-bold mt-20">Enriched nudge detail</h4>
         <div className="row">
           <div className="col-lg-4">
-            <img className="img-responsive" src={Enrich1}/>
+            <img alt="" className="img-responsive" src={Enrich1}/>
             
           </div>
           <div className="col-lg-4">
-            <img className="img-responsive" src={Enrich2}/>
+            <img alt="" className="img-responsive" src={Enrich2}/>
             
           </div>
           <div className="col-lg-4">
-            <img className="img-responsive" src={Enrich3}/>
-            {/* <h5 class="text-gray mt-6">Tagging the nudges makes scanning and prioiritization easy</h5> */}
+            <img alt="" className="img-responsive" src={Enrich3}/>
+            {/* <h5 className="text-gray mt-6">Tagging the nudges makes scanning and prioiritization easy</h5> */}
           </div>
         </div>
        
@@ -258,16 +258,16 @@ const IndexPage = () => (
         <h4 className="text-bold mt-20">Kudos for outcome and motivation</h4>
         <div className="row">
           <div className="col-lg-4">
-            <img className="img-responsive" src={Kudo1}/>
+            <img alt="" className="img-responsive" src={Kudo1}/>
             
           </div>
           <div className="col-lg-4">
-            <img className="img-responsive" src={Kudo2}/>
+            <img alt="" className="img-responsive" src={Kudo2}/>
             
           </div>
           <div className="col-lg-4">
-            <img className="img-responsive" src={Kudo3}/>
-            {/* <h5 class="text-gray mt-6">Tagging the nudges makes scanning and prioiritization easy</h5> */}
+            <img alt="" className="img-responsive" src={Kudo3}/>
+            {/* <h5 className="text-gray mt-6">Tagging the nudges makes scanning and prioiritization easy</h5> */}
           </div>
         </div>
 
@@ -276,16 +276,16 @@ const IndexPage = () => (
         <h4 className="text-bold mt-20">Manual nudge to enable collaboration</h4>
         <div className="row">
           <div className="col-lg-4">
-            <img className="img-responsive" src={Manual1}/>
+            <img alt="" className="img-responsive" src={Manual1}/>
             
           </div>
           <div className="col-lg-4">
-            <img className="img-responsive" src={Manual2}/>
+            <img alt="" className="img-responsive" src={Manual2}/>
             
           </div>
           <div className="col-lg-4">
-            <img className="img-responsive" src={Manual3}/>
-            {/* <h5 class="text-gray mt-6">Tagging the nudges makes scanning and prioiritization easy</h5> */}
+            <img alt="" className="img-responsive" src={Manual3}/>
+            {/* <h5 className="text-gray mt-6">Tagging the nudges makes scanning and prioiritization easy</h5> */}
           </div>
         </div>
         <h4 className="text-bold mt-20">Outcome</h4>
@@ -303,19 +303,19 @@ const IndexPage = () => (
 
         <h4 className="text-bold mt-20">Special Sprint:  Hybrid Research + Design Sprint</h4>
         <span>Different from the standard design sprint, we designed the version of 2 day research plus 3 day sketch-build-test. Because it’s an important project but less urgent project, it’s challenging to run two separate sprints to ask for 10 days’ dedication from th team. Also we conducted the light and hybrid vesion so that everyone is onboard with the pain points directly heard from end users.</span>
-        <img className="img-responsive" src={Agenda}/>     
+        <img alt="" className="img-responsive" src={Agenda}/>
       
         <h4 className="text-bold mt-20">Part 1 - Research and Synthesis</h4>
-        <img className="img-responsive" src={Part1}/>     
+        <img alt="" className="img-responsive" src={Part1}/>
 
         <h4 className="text-bold mt-20">Part 2 - Design and Prototype</h4>
-        <img className="img-responsive" src={Part2}/>   
+        <img alt="" className="img-responsive" src={Part2}/>
 
 
         <h4 className="text-bold mt-20">Outcome: HOOK framework</h4>
         <span>After one whole week’s workshops, the team came to one single framework to enable care team with a better designed nudge cycle. We also extend Hook Model from Nir Eyal to a sequential system that drives user to change behaviors and form routine habits. This proposal got highly recognized during customer conference, and leadership teams are excited to apply the nudge framework to their daily operations. Though not all the features and redesign make the way into production, it projects a clear and promising roadmap for the nudge framework.</span>
 
-        <img className="img-responsive" src={Hook}/>   
+        <img alt="" className="img-responsive" src={Hook}/>
       
         <h4 className="text-bold mt-20">Key takeaways</h4>
         <span>From coordinating the design sprint, I have learnt a lot about how to run design workshops to solve problems with the team, also the power of diverging and converging along the problem space. It also makes me believe creativity and the best solution comes from joint efforts of the team rather than any individual. I’m truly inspired to continue applying design sprint model to more collaborative design sessions. </span>
@@ -339,16 +339,16 @@ const IndexPage = () => (
 
 
         <h4 className="text-bold mt-20">Information architecture</h4>
-        <img className="img-responsive" src={RedesignIA}/>
+        <img alt="" className="img-responsive" src={RedesignIA}/>
 
         <h4 className="text-bold mt-20">Wireframes</h4>
-        <img className="img-responsive" src={RedesignWire}/>
+        <img alt="" className="img-responsive" src={RedesignWire}/>
         
         <h4 className="text-bold mt-20">Hi-fi Mockups and Visual Exploration</h4>
-        <img className="img-responsive" src={Hifi}/>
+        <img alt="" className="img-responsive" src={Hifi}/>
         
         <h4 className="text-bold mt-20">Prototype</h4>
-        <div class="row">
+        <div className="row">
           <video className="img-responsive col-lg-4 col-lg-push-4" controls>
             <source src={Demo} type="video/mp4"/>
           </video>
