@@ -105,11 +105,11 @@ const data = {
             key:  "Visualize the blackbox"
         },
         {
-            label: "Takeaway",
-            key:  "Takeaway"
+            key:  "Image"
         },
         {
-            key:  "Image"
+            label: "Takeaway",
+            key:  "Takeaway"
         }
     ]
 };
@@ -213,13 +213,11 @@ const renderSection= (key) => {
 
         case "Visualize the blackbox":
             return <>
-                <span>Having a super talented technical artist in the team (Rory), I invited him to collaborate on a hackathon project to visualize how the video were brought into final production ready. The robot metaphor helps onboard not only internal team but also external new users to understand the whole video pipeline.
-                    </span>
-
-             <img alt="" className="img-responsive" src={Robot}/>
-
-
+                <span>Having a super talented technical artist in the team (Rory), I invited him to collaborate on a hackathon project to visualize how the video were brought into final production ready. The robot metaphor helps onboard not only internal team but also external new users to understand the whole video pipeline.</span>
             </>;
+
+        case "Image":
+            return <img alt="" className="img-responsive" src={Robot}/>;
 
         case "Takeaway":
             return <>
