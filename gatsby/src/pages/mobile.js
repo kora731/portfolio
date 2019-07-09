@@ -43,7 +43,7 @@ const data = {
     },
     next: {
         label: "Jaunt",
-        href: "/project-jcs.html"
+        href: "/project/pipeline/index.html"
     },
     title: "Qventus app: deliver real-time nudges to patient care team",
     subTitle: "Right data for the right people at the right time",
