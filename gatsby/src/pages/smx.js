@@ -27,8 +27,8 @@ const data = {
         href: "/project/infraWork/index.html"
     },
     next: {
-        label: "WebSite Design",
-        href: "https://surongdesign.com/project-webdesign.html"
+        label: "Data Viz",
+        href: "/project-data.html"
     },
     title: "ShopperMX: 3D Virtual Store Navigation Experience",
     subTitle: "Design virtual store on the web app to drive innovative store design and market research insights",

@@ -38,7 +38,7 @@ const data = {
     name: "mobile",
     pri: {
         label: "PathFinder",
-        href: "/project/index.html"
+        href: "/project/pf/index.html"
     },
     next: {
         label: "Jaunt",
