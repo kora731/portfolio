@@ -27,7 +27,7 @@ const data = {
         href: "/project/infraWork/index.html"
     },
     next: {
-        label: "WebSite Design",
+        label: "Data Viz",
         href: "/project-data.html"
     },
     title: "ShopperMX: 3D Virtual Store Navigation Experience",
