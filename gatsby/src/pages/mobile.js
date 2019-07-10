@@ -137,13 +137,13 @@ const renderSection= (key) => {
                 <span>Qventus mobile app targets at solving ED problems by identify surges, delays, dissatisfied patients and push real time notifications to prompt preparations downstream. It also enables team collaboration across departments and functions to address problems in the same chat thread. Each chat thread is called a nudge quoted Richard Thaler’s behavior science concept.</span>
                 <p/>
                 <div className="col-lg-4">
-                    <img alt="" className="img-responsive" src={Now1}/>
+                    <img alt="" className="img-responsive img-shadow" src={Now1}/>
                 </div>
                 <div className="col-lg-4">
-                    <img alt="" className="img-responsive" src={Now2}/>
+                    <img alt="" className="img-responsive img-shadow" src={Now2}/>
                 </div>
                 <div className="col-lg-4">
-                    <img alt="" className="img-responsive" src={Now3}/>
+                    <img alt="" className="img-responsive img-shadow" src={Now3}/>
                 </div>
             </>;
 
