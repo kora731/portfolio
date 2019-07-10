@@ -75,10 +75,15 @@ const data = {
         {
             label: "Design Challenge",
             key:  "Design Challenge",
-            subTitle: [
-                "Discover",
-                "Framework"
-            ],
+
+        },
+        {
+            label: "Discover",
+            key:  "Discover",
+        },
+        {
+            label: "Framework",
+            key:  "Framework",
         },
         {
             label: "Navigation Design",
@@ -89,8 +94,8 @@ const data = {
             key:  "UX/UI Design",
         },
         {
-            label: "Demo and Outcome",
-            key:  "Demo and Outcome"
+            label: "Demo and takeaways",
+            key:  "Demo and takeaways"
         }
     ]
 };
@@ -159,7 +164,7 @@ const renderSection= (key) => {
                 <img alt="" className="img-responsive" src={Guide}/>
             </>;
 
-        case "Demo and Outcome":
+        case "Demo and takeaways":
             return <>
                 <span>The feedback we got from client testing sessions reflected it was easy to navigate and design objects in the virtual environment, and the usage report showed increasing usage time on the platform per user. Based on the feedback, we iterated the navigation system to support power users with short cuts and personal configuration.</span>
                 <p/>
@@ -170,15 +175,15 @@ const renderSection= (key) => {
 
 							</div>
 
-                <span>1. Be Ready for Changes Along the Way</span>
+                <h4>1. Be Ready for Changes Along the Way</h4>
                 <p/>
                 <span>Since ShopperMX is the first web-based SaaS product for clients in CPG industry, we kept learning what the product would be like by working with clients side by side. The fact also leads to the UX/UI design getting updated very frequently. To cope with this challenge, I structures the feature documentation in a light-noted manner and keep developers and QA team in the loop. At the same time, I started building Pattern Library to save efforts on UI specs to focus on features and interaction flows more.</span>
                 <p/>
-                <span>2. Make Everyone's Voice Heard</span>
+                <h4>2. Make Everyone's Voice Heard</h4>
                 <p/>
                 <span>As the only designer, I always reach out to hear voices about ShopperMX from different teams: development, QA, customer service, marketing and etc. It helps me re-evaluate my design solutions from different perspectives, and also got inspired to find better solutions. I put all main UI on the lounge wall so that everyone in the company can view it and share with me their opinions. When they saw their suggestions being added to the new product release, people are very happy and more likely to help the product improve.</span>
                 <p/>
-                <span>3. Can I Do Better Next Time?</span>
+                <h4>3. Can I Do Better Next Time?</h4>
                 <p/>
                 <span>Though I have learnt most principles and methods from graduate school, I found there are more flexible UX practices to be mastered and executed in daily work. When I finished a feature design and delivery, I stopped to retrospect my process and researched on potential improvements. I appreciate great resources online shared by UX gurus. They help me broaden my UX toolkit and keep fresh with design trends.</span>
             </>;

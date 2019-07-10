@@ -67,21 +67,21 @@ const data = {
             key:  "Brief"
         },
         {
-            label: "VR Video Pipeline",
-            key:  "VR Video Pipeline"
+            label: "VR video pipeline",
+            key:  "VR video pipeline"
         },
         {
-            label: "Production Design Challenge",
-            key:  "Production Design Challenge"
+            label: "Design challenge",
+            key:  "Design challenge"
         },
         {
-            label: "SOLUTION FRAMEWORK",
+            label: "Solution framework",
             subTitle: [
-                "Redesign Service Structure",
+                "Redesign service structure",
                 "Improve video editing experience",
                 "User onboarding flow"
             ],
-            key:  "SOLUTION FRAMEWORK"
+            key:  "Solution framework"
         },
         {
             label: "Publishing and analytics",
@@ -113,7 +113,7 @@ const renderSection= (key) => {
         case "Brief":
             return <Brief attributes={data.briefAttribute}/>;
 
-        case "VR Video Pipeline":
+        case "VR video pipeline":
             return <>
                 <span>Current With Jaunt Cloud Services(JCS), users can apply cloud rendering to stitch 24 footage together, and transcode them into different formats. The cloud services help prepare video media for distribution on all VR platforms instead of managing files one by one. Along with the rendering, JCS also provides the service modules of Publishing and Analytics to help creators distribute videos and track the audience engagement.</span>
                 <p/>
@@ -139,7 +139,7 @@ const renderSection= (key) => {
                 <p/>
             </>;
 
-        case "Production Design Challenge":
+        case "Design challenge":
             return <>
                 <ContentHighlight attributes={data.highlight1}/>
                 <h4 className="text-bold mt-40">Design Process</h4>
@@ -151,12 +151,12 @@ const renderSection= (key) => {
                 <p/>
             </>;
 
-        case "SOLUTION FRAMEWORK":
+        case "Solution framework":
             return <>
 
             </>;
 
-        case "Redesign Service Structure":
+        case "Redesign service structure":
             return <>
                 <img alt="" className="img-responsive" src={Service}/>
                 <h4 className="text-bold mt-40">Wireframe of project oriented content management flow</h4>

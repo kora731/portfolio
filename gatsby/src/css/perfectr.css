@@ -528,12 +528,15 @@ small,.small{
 
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{margin:0 0 20px;font-weight:400;line-height: 1.25em;}
 
+h4,.h4{margin:12px 0 6px 0;}
+
+
 /*Font sizes*/
 
 h1,.h1{font-size: 2.25em;}
 h2,.h2{font-size: 1.875em;}
-h3,.h3{font-size: 1.25em;}
-h4,.h4{font-size: 1.125em;}
+h3,.h3{font-size: 1.3em; font-weight: 500;}
+h4,.h4{font-size: 1.25em;}
 h5,.h5{font-size: 0.875em;}
 h6,.h6{font-size: 0.75em;}
 
@@ -718,6 +721,10 @@ a.link-both-2:focus {
 }
 a.link-both-2:hover {
   color: inherit;
+}
+
+p{
+  margin-bottom: 6px;
 }
 
 /*Lists*/
@@ -4241,8 +4248,9 @@ DEVICES STYLES
 .contentHeighlight {
   padding: 1rem;
   margin: 0 0 2rem 0;
-  background: #f1fdff;
-  font-weight:400;
+  background: #E6FBFF;
+  font-weight:500;
+  font-size:1.125em;
   color: #157182;
 }
 
@@ -4265,7 +4273,7 @@ DEVICES STYLES
   box-sizing: border-box;
   margin: 0;
   color: rgba(0,0,0,.65);
-  font-size: 14px;
+  font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5;
   list-style: none;
@@ -4345,6 +4353,7 @@ DEVICES STYLES
 
 .ant-anchor-link-active>.ant-anchor-link-title {
   color: #2997ab;
+  font-weight: 500;
 }
 
 .ant-anchor-link .ant-anchor-link {

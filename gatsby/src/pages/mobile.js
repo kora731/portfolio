@@ -48,7 +48,7 @@ const data = {
     title: "Qventus app: deliver real-time nudges to patient care team",
     subTitle: "Right data for the right people at the right time",
     highlight1: ["How to reduce the mobile app usage friction and increase value delivered to ED nurses?"],
-    highlight2: [ "Enable collaboration and decision making", "Pushed contextual and actionable data", "Transparent outcome and motivate teams"],
+    highlight2: [ "Enable collaboration and decision making", "Deliver contextual and actionable data", "Transparent outcome and motivated teams"],
     highlight3: ["How to come up with a nudge framework to enable and motivate care teams to improve healthcare operations?"],
 
     briefAttribute: [
@@ -94,16 +94,16 @@ const data = {
             key:  "Engagement problems"
         },
         {
-            label: "Design Challenge",
-            key:  "Design Challenge"
+            label: "Design challenge",
+            key:  "Design challenge"
         },
         {
-            label: "Solution Framework",
+            label: "Solution framework",
             subTitle: [
                 "Reduce friction",
                 "Increase value"
             ],
-            key:  "Solution Framework"
+            key:  "Solution framework"
         },
         {
             label: "Design sprint",
@@ -167,12 +167,12 @@ const renderSection= (key) => {
                         <img alt="" className="img-responsive" src={User}/>
                     </div>
                 </div>
-                <h4 className="text-bold mt-20">- Friction through using the app</h4>
+                <h4 className="text-bold mt-20">Friction through using the app</h4>
                 <span>During the interview, users shared that they’re having trouble logging into the app. Nurses are using all different information systems at work, and Qventus required them to remember another set of credentials which is quite challenging.</span>
                 <p/>
                 <span>Second, users got overwhelmed with all the notifications coming in, but no way to clear up the thread  or see which one is important. When they got off work, mobile app still buzzed with all notifications which then forced them to log out of the app. Then it circled back to the login problem. </span>
 
-                <h4 className="text-bold mt-20">- “Now what?”</h4>
+                <h4 className="text-bold mt-20">“Now what?”</h4>
                 <span>Another important finding from the interviews is that care teams don’t know what to do with all the notifications. “I’ve got these alerts, but I don’t know what to do with them”, quoted from a charge nurse. We realized that prompts are not providing enough context or actinable items to solve the problem. Compared with what care team already know, it doesn’t add enough value to their operations. Nudges starts losing interests from the care team and thus less engaged users.</span>
             </>;
 
@@ -186,7 +186,7 @@ const renderSection= (key) => {
                 <img alt="" className="img-responsive" src={flow}/>
             </>;
 
-        case "Design Challenge":
+        case "Design challenge":
             return <>
                 <ContentHighlight attributes={data.highlight1}/>
 
@@ -198,15 +198,15 @@ const renderSection= (key) => {
                 <span>- Insightful and automated, push useful data to users rather than pull</span>
             </>;
 
-        case "Solution Framework":
+        case "Solution framework":
             return <>
-                <span>I worked closely with two mobile engineers, and also acted as the quasi PM role as the team is going through transitions. Through design workshop with the team and key stakeholders, we came up with the list of work items as our mobile roadmap. It’s targeted at delivering incremental improvements while setting up framework for long term redesign of the mobile app.O</span>
+                <span>I worked closely with two mobile engineers, and also acted as the quasi PM role as the team is going through transitions. Through design workshop with the team and key stakeholders, we came up with the list of work items as our mobile roadmap. It’s targeted at delivering incremental improvements while setting up framework for long term redesign of the mobile app.</span>
                 <p/>
             </>;
 
         case "Reduce friction":
             return <>
-                <span>After reviewing the interview syntheses with the team, we identified a few key problems to improve the usability of the app. </span>
+                <span>After reviewing customer interview notes with the team, we identified a few key areas to improve the app usability: </span>
                 <p/>
                 <span>1. Difficult login with URL and credential required</span>
                 <p/>
@@ -217,31 +217,32 @@ const renderSection= (key) => {
                 <span>4. Among hundreds of messages, Which one is important?</span>
 
                 <h4 className="text-bold mt-20">Login Flow Diagram</h4>
-                <span>Current flow requires the user to enter hospital URL and then directs them to the login section. As the tracking data shows that more than half of users gave up at step one of entering URL, it’s a friction point that is removable by binding user email with the domain URL so that one step closer to login. </span>
+                <span>Current flow requires the user to enter hospital URL and then directs them to the login section. As the tracking data shows that more than half of users gave up at step one of entering URL, it’s a friction point which is removable by binding user email with the domain URL so that it's more efficient to login. </span>
                 <p/>
                 <img alt="" className="img-responsive" src={Login}/>
-                <img alt="" className="img-responsive mt-40" src={Login2}/>
+                <img alt="" className="img-responsive mt-20" src={Login2}/>
 
 
                 <h4 className="text-bold mt-20">User validation on login redesign</h4>
                 <span>We interviewed current users of mobile app remotely to validate the login flow, and got very positive feedback. Quote from a user, “When can we have this and what do you need me do to make it happen?” The SSO model got a lot of interest from across clients and it’s currently work in progress to generalize the capability to more clients. </span>
-                <h4 className="text-bold mt-20">Other feature design to reduce friction</h4>
+                
+                <h4 className="text-bold mt-40 mb-20">Other feature design to reduce friction</h4>
 
                 <div className="row">
                     <div className="col-lg-4">
-                        <img alt="" className="img-responsive" src={Archive}/>
-                        <span className="text-gray mt-12">Swiping to archive nudges helps clear up the feed to reduce information overload</span>
+                        <img alt="" className="img-responsive mb-10" src={Archive}/>
+                        <span className="text-sm"><b>Archive</b>: Swiping to archive nudges helps clear up the feed to reduce information overload</span>
                     </div>
                     <div className="col-lg-4">
-                        <img alt="" className="img-responsive" src={Mute}/>
-                        <span className="text-gray mt-12">Ability to set mute schedule let the user control notifications when on/off shift</span>
+                        <img alt="" className="img-responsive mb-10" src={Mute}/>
+                        <span className="text-sm mt-12"><b>Mute</b>: Ability to set mute schedule lets users control notifications when on/off shift</span>
                     </div>
                     <div className="col-lg-4">
-                        <img alt="" className="img-responsive" src={Priority}/>
-                        <span className="text-gray mt-12">Tagging the nudges makes scanning and prioiritization easy</span>
+                        <img alt="" className="img-responsive mb-10" src={Priority}/>
+                        <span className="text-sm mt-12"><b>Tagging</b>: Prioritize data feed easily</span>
                     </div>
                 </div>
-                <h4 className="text-bold mt-20">Results</h4>
+                <h4 className="text-bold mt-20">Results of improved usability</h4>
                 <span>Most of these incremental changes got implemented by two mobile engineers and released to customers within 3 months. The archive feature is well received by end users and data indicates a growing number of users interacting with the feature on a daily basis. In addition, as I’m driving these changes to happen wearing the hat of both designer and PM, my coworkers from customer success team gave me “all about outcome” internal reward.</span>
                 <p/>
             </>;
@@ -312,8 +313,8 @@ const renderSection= (key) => {
                 <ContentHighlight attributes={data.highlight3}/>
 
 
-                <h4 className="text-bold mt-20">Special Sprint:  Hybrid Research + Design Sprint</h4>
-                <span>Different from the standard design sprint, we designed the version of 2 day research plus 3 day sketch-build-test. Because it’s an important project but less urgent project, it’s challenging to run two separate sprints to ask for 10 days’ dedication from th team. Also we conducted the light and hybrid vesion so that everyone is onboard with the pain points directly heard from end users.</span>
+                <h4 className="text-bold mt-20">Special Sprint:  Hybrid Research + Design</h4>
+                <span>Different from the standard design sprint, we designed the version of 2-day research plus 3-day sketch/build/test workshops. Because it’s an important project but less urgent project, it’s challenging to run two separate sprints to ask for 10 days’ dedication from th team. Also we conducted the light and hybrid vesion so that everyone is onboard with the pain points directly heard from end users.</span>
                 <img alt="" className="img-responsive" src={Agenda}/>
 
                 <h4 className="text-bold mt-20">Part 1 - Research and Synthesis</h4>

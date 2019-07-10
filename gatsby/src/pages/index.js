@@ -69,7 +69,7 @@ const data = {
         },
         {
             label: "Outcome",
-            value: "Top sale product used at 20+ hospitals with wide positive feedback"
+            value: "Top sale product used at 20+ hospitals with widely positive feedback"
         }
     ],
     aTitle: [
@@ -101,7 +101,7 @@ const data = {
             subTitle: [
                 "Modularize and scalable board",
                 "Actionable Component",
-                "UI Exploration for Stellar UI",
+                "UI Exploration",
                 "Final Product UI"
             ],
             key:  "Solution Framework"
@@ -239,16 +239,16 @@ it will present data and support user interaction.</span>
                 <span>During our internal feedback with clinical team, we got a lot of positive feedback. Also from tracking usage data at Amplitude, we found completion rate of these fields general high along with increasing DAU. These indicators help show a more engaged user group.</span>
             </>;
 
-        case "UI Exploration for Stellar UI":
+        case "UI Exploration":
             return <>
                 <h4 className="text-bold">Visual identity Criteria</h4>
-                <span>We started exploring the visual redesign by construct the moodboard, identifying a few dimensions to push forward in the UI iteractions and finally converge to one design.</span>
+                <span>We started exploring the visual redesign by construct the moodboard, identifying a few dimensions to push forward in the UI iteractions and finally converge to one design. Dimensions of visual divergence include color, layout and data highlight patterns.
+                <p/></span>
                 <p/>
                 <img alt="" className="img-responsive" src={UI1}/>
 
                 <p/>
-                <span>Dimensions of visual divergence:  color, IA,</span>
-                <p/>
+               
                 <img alt="" className="img-responsive" src={UI2}/>
 
                 <h4 className="text-bold mt-20">Review and feedback</h4>
@@ -279,13 +279,14 @@ it will present data and support user interaction.</span>
                     <img alt="" className="img-responsive" src={Specs4}/>
                 </div>
 
-                <h4 className="text-bold mt-20">Responsive design</h4>
-
-                <img alt="" className="img-responsive" src={RWD1}/>
-                <img alt="" className="img-responsive mt-40" src={RWD2}/>
-                <p/>
+                <h4 className="text-bold mt-40 mb-10">Responsive design</h4>
                 <span>In the later stage of introducing PathFinder to more users and use cases, ability to view the list on the mobile devices becomes a prominent request. I started cataloging all the data by priority group, and designed the wireframes first. This approach makes sure important are consistantly emphasized across different channels. Next step is to validate with care team, and explore unique use cases for mobile usage.</span>
                 <p/>
+
+                <img alt="" className="img-responsive" src={RWD1}/>
+                <img alt="" className="img-responsive mt-20" src={RWD2}/>
+                <p/>
+               
             </>;
 
         case "Outcome":
