@@ -219,15 +219,15 @@ const renderSection= (key) => {
 
                 <div className="row">
                     <div className="col-lg-4">
-                        <img alt="" className="img-responsive mb-10" src={Archive}/>
+                        <img alt="" className="img-responsive mb-10 img-shadow" src={Archive}/>
                         <span className="text-sm"><b>Archive</b>: Swiping to archive nudges helps clear up the feed to reduce information overload</span>
                     </div>
                     <div className="col-lg-4">
-                        <img alt="" className="img-responsive mb-10" src={Mute}/>
+                        <img alt="" className="img-responsive mb-10 img-shadow" src={Mute}/>
                         <span className="text-sm mt-12"><b>Mute</b>: Ability to set mute schedule lets users control notifications when on/off shift</span>
                     </div>
                     <div className="col-lg-4">
-                        <img alt="" className="img-responsive mb-10" src={Priority}/>
+                        <img alt="" className="img-responsive mb-10 img-shadow" src={Priority}/>
                         <span className="text-sm mt-12"><b>Tagging</b>: Prioritize data feed easily</span>
                     </div>
                 </div>
@@ -244,15 +244,15 @@ const renderSection= (key) => {
                 <h4 className="text-bold mt-20">Enriched nudge detail</h4>
                 <div className="row">
                     <div className="col-lg-4">
-                        <img alt="" className="img-responsive" src={Enrich1}/>
+                        <img alt="" className="img-responsive img-shadow" src={Enrich1}/>
 
                     </div>
                     <div className="col-lg-4">
-                        <img alt="" className="img-responsive" src={Enrich2}/>
+                        <img alt="" className="img-responsive img-shadow" src={Enrich2}/>
 
                     </div>
                     <div className="col-lg-4">
-                        <img alt="" className="img-responsive" src={Enrich3}/>
+                        <img alt="" className="img-responsive img-shadow" src={Enrich3}/>
                         {/* <h5 className="text-gray mt-6">Tagging the nudges makes scanning and prioiritization easy</h5> */}
                     </div>
                 </div>
@@ -260,15 +260,15 @@ const renderSection= (key) => {
                 <h4 className="text-bold mt-20">Kudos for outcome and motivation</h4>
                 <div className="row">
                     <div className="col-lg-4">
-                        <img alt="" className="img-responsive" src={Kudo1}/>
+                        <img alt="" className="img-responsive img-shadow" src={Kudo1}/>
 
                     </div>
                     <div className="col-lg-4">
-                        <img alt="" className="img-responsive" src={Kudo2}/>
+                        <img alt="" className="img-responsive img-shadow" src={Kudo2}/>
 
                     </div>
                     <div className="col-lg-4">
-                        <img alt="" className="img-responsive" src={Kudo3}/>
+                        <img alt="" className="img-responsive img-shadow" src={Kudo3}/>
                         {/* <h5 className="text-gray mt-6">Tagging the nudges makes scanning and prioiritization easy</h5> */}
                     </div>
                 </div>
@@ -276,15 +276,15 @@ const renderSection= (key) => {
                 <h4 className="text-bold mt-20">Manual nudge to enable collaboration</h4>
                 <div className="row">
                     <div className="col-lg-4">
-                        <img alt="" className="img-responsive" src={Manual1}/>
+                        <img alt="" className="img-responsive img-shadow" src={Manual1}/>
 
                     </div>
                     <div className="col-lg-4">
-                        <img alt="" className="img-responsive" src={Manual2}/>
+                        <img alt="" className="img-responsive img-shadow" src={Manual2}/>
 
                     </div>
                     <div className="col-lg-4">
-                        <img alt="" className="img-responsive" src={Manual3}/>
+                        <img alt="" className="img-responsive img-shadow" src={Manual3}/>
                         {/* <h5 className="text-gray mt-6">Tagging the nudges makes scanning and prioiritization easy</h5> */}
                     </div>
                 </div>

@@ -42,8 +42,8 @@ const data = {
     subTitle: "Actionable Data Delivered in a Delightful Humane Way",
     highlight1: ["How to redesign the patient board to enable proactive discharge planning and a scalable solution to customers?"],
     highlight2: [
-        "Easy to access data while scalable",
-        "Actionable components",
+        "Easy to configure and reuse",
+        "Actionable and transparent",
         "Delightful and refreshing"],
 
     briefAttribute: [
@@ -53,7 +53,7 @@ const data = {
         },
         {
             label: "Team",
-            value: "PM, FE, BE"
+            value: "PM, FE and BE"
         },
         {
             label: "Role",
@@ -65,11 +65,11 @@ const data = {
         },
         {
             label: "Design Scope",
-            value: "User Research   IA\nInteraction Design\nRedesign\nUI Specs"
+            value: "User Research   IA\nInteraction Design\nRedesign   UI Specs"
         },
         {
             label: "Outcome",
-            value: "Top sale product used at 20+ hospitals with widely positive feedback"
+            value: "Flagship product used at 20+ hospitals with widely positive feedback"
         }
     ],
     aTitle: [
@@ -130,7 +130,8 @@ const renderSection= (key) => {
                 <span>Today’s health systems are increasingly focused on reducing inefficiencies of patient flows to reduce costs and capital spending. But the day to day responsibilities of managing patient flows are shouldered by frontline care teams, who are already overwhelmed with increasing patient demands, and complex dashboards and reports.</span>
                 <span>Caregivers are burning out trying to operate in an intense, highly dynamic environment. Furthermore, patients are the ones who suffer the consequences.</span>
                 <p/>
-                <span>Qventus offers PathFinder solution to optimize patient flow in realtime and reduce the cognitive burden of care team. It facilitates care team to plan discharge on day one and captures barriers to help prioritize work items. With a dedicated product focus on modern, user-centric design, PathFinder intends to engage the whole team to streamline the patient flow and reduce length of stay.</span>
+                <span>Qventus offers <b>PathFinder solution to optimize patient flow in realtime and reduce the cognitive burden of care team</b>. It facilitates care team to plan discharge on day one and captures barriers to help prioritize work items. 
+                With a dedicated focus on modern, user-centric design, PathFinder intends to engage the whole team to streamline the patient flow and reduce length of stay.</span>
             </>;
 
         case "Product Goals":
@@ -144,32 +145,40 @@ const renderSection= (key) => {
                 <p/>
                 <h4 className="text-bold mt-20">Patient Discharge Flow</h4>
                 <img alt="" className="img-responsive" src={flow}/>
+
+
+                <h4 className="text-bold mt-20">Targeted Use Case: IDR (Interdisciplinary Rounding)</h4>
+                <span>How might we support IDR rounding / CN to review patients, like daily standup 
+                    by the TV and to make a decision, so that patient flow and discharge are streamlined and move patients 
+                    forward in the care process to drive the outcome of reducing length of stay.
+                    </span>
             </>;
 
         case "Design Challenge":
             return <>
                 <ContentHighlight attributes={data.highlight1}/>
-                <img alt="" className="img-responsive" src={Before}/>
+                
 
                 <p/>
-                <h4 className="text-bold mt-40">Gap of the previous patient board</h4>
-                <span>Before I joint the team, there is already a patient board for IDR. After taling to Qventus internal stakeholders, there are a few gaps we identified:</span>
+                <h4 className="text-bold mt-20">Gap of the previous patient board</h4>
+                <img alt="" className="img-responsive mb-20" src={Before}/>
+                <span>Before I joint the team, there was already a patient board for IDR use case. After talking to Qventus internal stakeholders, we identified a few gaps:</span>
+                <p/>
+                <p className="text-bold mt-10">1. Not configurable</p>
+                <span>Data columns on the board were manually written with SQL and it took a long time to configure every board and test the schemas.</span>
                 <p/>
 
-                <p className="text-bold mt-20">1. Not configurable</p>
-                <span>Data columns are manually written with SQL for every board and it takes a long time to configure every board.</span>
+                <p className="text-bold mt-10">2. Poor affordance</p>
+                <span>Some columns are editable and require user entry. However the previous UI didn't show clearly interactive fields and 
+                    users couldn't locate where they need to enter data.</span>
                 <p/>
 
-                <p className="text-bold mt-20">2. Poor affordance</p>
-                <span>Certain column data is editable and requires user entry. However the current UI doesn’t show clearly interactive fields.</span>
+                <p className="text-bold mt-10">3. How to differentiate from other healthcare products?</p>
+                <span>Heathcare IT software mostly share a corporate blue hue which tends to look alike. How might we make PathFinder visually appealing and differentiate from other competitors?</span>
                 <p/>
 
-                <p className="text-bold mt-20">3. How to differentiate</p>
-                <span>Heathcare IT software all share a corporate blue hue which tends to look alike. How might we make PathFinder visually appealing and differentiate from other competitors?</span>
-                <p/>
-
-                <h4 className="text-bold mt-40">Experience Goals</h4>
-                <span>As the lead designer, I started the design project by working with PM on the experience goals of this new patient board. </span>
+                <h4 className="text-bold mt-20">Experience Goals</h4>
+                <span>As the lead designer, I started the design project by working with PM on the experience goals for the new patient board. </span>
                 <p/>
                 <ContentHighlight attributes={data.highlight2}/>
             </>;
@@ -181,32 +190,35 @@ const renderSection= (key) => {
 
                 <h4 className="text-bold">- Modularize and scalable board</h4>
                 <h4 className="text-bold">- Actionable component</h4>
-                <h4 className="text-bold">- UI Exploration for Stellar UI</h4>
+                <h4 className="text-bold">- UI exploration for stellar visual</h4>
             </>;
 
         case "Modularize and scalable board":
             return <>
-                <h4 className="text-bold">Patient Data Taxonomy - IA</h4>
-                <span>The taxonomy helps understand different categories of data types, whether it needs user input or read only, or whether it supports special style or data validation.</span>
-                <p/>
+                <h4 className="text-bold mt-0">Patient Data Taxonomy - IA</h4>
+                
                 <span>To make sure the board design meets configuration requirements, I’m working closely with BE and FE to layout the information architecutre, so that each column and field is aligned with how
-it will present data and support user interaction.</span>
+ data is presented and to better support user interaction.</span>
+ <p/>
+ <span>The taxonomy table below helps the team understand different categories of data, whether it requires user input or read only, or whether it supports special style or data validation.</span>
+               
 
                 <img alt="" className="img-responsive" src={Idr}/>
 
-                <h4 className="text-bold mt-40">Board space for more data</h4>
-                <span>Current table UI is challenging for adding more columns. I started exploring different types of data layouts to expanad the horizontal space. </span>
+                <h4 className="text-bold mt-40">Expand board space for more data</h4>
+                <span>Previous table UI was challenging for adding more columns. I started exploring different board layouts to expand the horizontal space. </span>
                 <p/>
                 <img alt="" className="img-responsive" src={Wf1}/>
                 <p/>
-                <span className="row">After the first iteration, we narrow down to three options because of the project timeline and technical constraints. The list view becomes the unification point where data is presented in a progressive way, and also has advantage to sort and filter. We also constructed the low fi mockup covering data structure, so that moving forward we can valid both layout and data with end users.</span>
+                <span className="row">After the first iteration, we narrowed down to three options because of the project timeline and technical constraints. The list view became the unification point where data was presented in a progressive way, and also with the advantage to sort and filter. 
+                We also constructed the low-fi mockup covering data structure, so that moving forward we could valid both layout and data with end users.</span>
                 <p/>
                 <img alt="" className="img-responsive" src={Wf2}/>
 
-                <h4 className="text-bold mt-40">User Testing Findings</h4>
-                <span>When we presented the three options to end users, 4 out of 5 users chose Option Two, commented on it being clean and familiar. Expanding the row data rather than replacing/relocating is also easier to scan and digest the information.</span>
+                <h4 className="text-bold mt-40">User testing findings</h4>
+                <span>When we presented the three options to end users, 4 out of 5 users chose Option Two because of it being clean and familiar. Expanding the row rather than replacing/relocating information was preferred, which made it easy to scan and compare data across rows.</span>
                 <p/>
-                <span>After I brought these findings back to the team, we decided on constructing the list view first. Then we will investigate further into the expansion view to iterate the design. </span>
+                <span>After I brought these findings back to the team, we decided on constructing the list view first. Later we would investigate further into the expansion view as the version two. </span>
             </>;
 
         case "Actionable Component":
@@ -216,8 +228,9 @@ it will present data and support user interaction.</span>
 
                 <img alt="" className="img-responsive" src={Ixd}/>
 
-                <h4 className="text-bold mt-20">EDD (estimated discharge date): Deliver predictive date and status flags</h4>
-                <span>Qventus developed machine learning models to predict when patient is going to leave. We surface these prediction results next to EDD field for entry reference. Among these solutions, we choose Option D for the short term MVP solution based on the data availability.</span>
+                <h4 className="text-bold mt-20">EDD (estimated discharge date): deliver predictive leaving date</h4>
+                <span>Qventus developed machine learning models to predict when patient is going to leave. We surface these prediction results next to EDD field for entry reference. 
+                    Among the solutions I explored, we chose Option D for the short term MVP solution based on the data availability. </span>
                 <p/>
 
                 <img alt="" className="img-responsive" src={Edd1}/>
