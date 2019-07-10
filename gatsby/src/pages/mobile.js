@@ -33,7 +33,6 @@ import RedesignWire from  "../images/qm-research-wire.png"
 import Hifi from  "../images/qm-redesign-ui.png"
 import Demo from  "../images/qm-prototype.mp4"
 import Template from "../components/template";
-import flow from "../images/pf-ip-flow-web.png";
 
 const data = {
     name: "mobile",
@@ -174,16 +173,6 @@ const renderSection= (key) => {
 
                 <h4 className="text-bold mt-20">“Now what?”</h4>
                 <span>Another important finding from the interviews is that care teams don’t know what to do with all the notifications. “I’ve got these alerts, but I don’t know what to do with them”, quoted from a charge nurse. We realized that prompts are not providing enough context or actinable items to solve the problem. Compared with what care team already know, it doesn’t add enough value to their operations. Nudges starts losing interests from the care team and thus less engaged users.</span>
-            </>;
-
-        case "Design challenge":
-            return <>
-                <span>We shadowed multiple hospitals to observe how frontline nurses are handling the patient flow today. It helps uncover potential touchpoints where PathFinder could make an impact to improve discharge process. I consolidated our learnings into the persona and flow diagrams so that the whole team can leverage these user insights to solve problems.</span>
-                <h4 className="text-bold mt-20">Stakeholder mapping and key persona</h4>
-                <img alt="" className="img-responsive" src={User}/>
-                <p/>
-                <h4 className="text-bold mt-20">Patient Discharge Flow</h4>
-                <img alt="" className="img-responsive" src={flow}/>
             </>;
 
         case "Design challenge":
