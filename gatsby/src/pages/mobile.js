@@ -153,7 +153,7 @@ const renderSection= (key) => {
                 <p/>
                 <span>Started from early 2018 Qventus set up the infrastructure to collect usage data and tracking funnels through Amplitude, and we found mobile usage dropped continuously to our surprise. After the app launched at the hospital site, less and less users came back after one month. </span>
                 <p/>
-                <span>To find out the root caues of the usage drop, we started setting up onsite interviews and partnered with customer success team to collect feedback from our users. There are a few consistent problems that surface: </span>
+                <span>To find out the root caues of the usage drop, we started setting up onsite interviews and partnered with customer success team to collect feedback from our users. </span>
                 <div className="row mt-20">
                     <div className="col-lg-6">
                         <h4 className="text-bold">Targeted Users - ED Nurses</h4>

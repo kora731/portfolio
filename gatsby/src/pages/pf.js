@@ -237,7 +237,9 @@ const renderSection= (key) => {
                 <img alt="" className="img-responsive" src={Edd2}/>
 
                 <h4 className="text-bold mt-20">Disposition flow indicator</h4>
-                <span>Visualize the flow and order status up front for the care team</span>
+                <span>When the care team are trying to decide where the patient is going post hospital visit,
+                    there are usually dependency on the order status as required by disposition. To visualize order status up front for the care team, it could help prompt
+                    the care team to check for orders so that patients will not be delayed for disposition.</span>
                 <p/>
 
                 <img alt="" className="img-responsive" src={Dispo}/>
@@ -256,7 +258,7 @@ const renderSection= (key) => {
             return <>
                 <h4 className="text-bold">Visual identity Criteria</h4>
                 <span>We started exploring the visual redesign by construct the moodboard, identifying a few dimensions to push forward in the UI iteractions and finally converge to one design. Dimensions of visual divergence include color, layout and data highlight patterns.
-                <p/></span>
+                </span>
                 <p/>
                 <img alt="" className="img-responsive" src={UI1}/>
 
@@ -271,6 +273,10 @@ const renderSection= (key) => {
 
         case "Final Product UI":
             return <>
+                
+                <span>After three months of design work focusing on modular, actionable and aesthetic boards, we put together all the interaction and UI pattterns into one demo board. 
+                    Sales team have been able to leverage the board to introduce to potential clients as well. 
+                <p/></span>
                 <video className="img-responsive" controls>
                     <source src={Demo} type="video/mp4"/>
                 </video>
@@ -278,6 +284,11 @@ const renderSection= (key) => {
 
         case "UI Delivery":
             return <>
+
+                <span>During the PathFinder development, I was working closely with our frontend and backend engineers to deliver the UI specs and 
+                    get better understanding of technical constraints. Thanks to our closely collaborative team, I was able to do the design QA of the product
+                    early and get the final developed board aligned with the design proposal. 
+                <p/></span>
                 <div className="col-lg-6">
                     <img alt="" className="img-responsive" src={Specs1}/>
                 </div>
