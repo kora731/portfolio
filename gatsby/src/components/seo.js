@@ -73,15 +73,6 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
     >
       <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet"/>
-
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143750132-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-143750132-1');
-      </script>
     </Helmet>
   )
 }
