@@ -127,11 +127,9 @@ const renderSection= (key) => {
 
         case "Why PathFinder":
             return <>
-                <span>Today’s health systems are increasingly focused on reducing inefficiencies of patient flows to reduce costs and capital spending. But the day to day responsibilities of managing patient flows are shouldered by frontline care teams, who are already overwhelmed with increasing patient demands, and complex dashboards and reports.</span>
-                <span>Caregivers are burning out trying to operate in an intense, highly dynamic environment. Furthermore, patients are the ones who suffer the consequences.</span>
-                <p/>
-                <span>Qventus offers <b>PathFinder solution to optimize patient flow in realtime and reduce the cognitive burden of care team</b>. It facilitates care team to plan discharge on day one and captures barriers to help prioritize work items. 
-                With a dedicated focus on modern, user-centric design, PathFinder intends to engage the whole team to streamline the patient flow and reduce length of stay.</span>
+                <span>Today’s healthcare systems are increasingly focused on reducing patient flow efficiency to save costs and capital spending. Managing patient flows are shouldered by frontline care teams, who are already overwhelmed with increasing patient demands, and complex dashboards and reports. </span>
+                <p class="mt-6"/>
+                <span>Qventus offers PathFinder solution to optimize patient flow in realtime while reducing the cognitive burden of care team. With a dedicated product focus on modern, user-centric design, PathFinder intends to engage the whole team to streamline the patient flow and reduce length of stay.</span>
             </>;
 
         case "Product Goals":
