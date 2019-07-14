@@ -466,8 +466,9 @@ body{
   font-family: 'Barlow', sans-serif; /*'Roboto', sans-serif; "Merriweather", serif;  'Open Sans' , sans-serif;  */
   font-size:16px;
   font-weight: 300;
-  letter-spacing: -0.03rem;
+  letter-spacing: -0.02rem;
   color:#343536;
+  line-height: 1.5em;
 }
 
 .text-gray{

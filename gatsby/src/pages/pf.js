@@ -129,7 +129,7 @@ const renderSection= (key) => {
             return <>
                 <span>Today’s healthcare systems are increasingly focused on reducing patient flow efficiency to save costs and capital spending. Managing patient flows are shouldered by frontline care teams, who are already overwhelmed with increasing patient demands, and complex dashboards and reports. </span>
                 <p class="mt-6"/>
-                <span>Qventus offers PathFinder solution to optimize patient flow in realtime while reducing the cognitive burden of care team. With a dedicated product focus on modern, user-centric design, PathFinder intends to engage the whole team to streamline the patient flow and reduce length of stay.</span>
+                <span>Qventus offers <b>PathFinder solution to optimize patient flow in realtime while reducing the cognitive burden of care team</b>. With a dedicated product focus on modern, user-centric design, PathFinder intends to engage the whole team to streamline the patient flow and reduce length of stay.</span>
             </>;
 
         case "Product Goals":
@@ -138,14 +138,14 @@ const renderSection= (key) => {
         case "Understand Users":
             return <>
                 <span>We shadowed multiple hospitals to observe how frontline nurses are handling the patient flow today. It helps uncover potential touchpoints where PathFinder could make an impact to improve discharge process. I consolidated our learnings into the persona and flow diagrams so that the whole team can leverage these user insights to solve problems.</span>
-                <h4 className="text-bold mt-20">Stakeholder mapping and key persona</h4>
+                <h4 className="text-bold mt-40">Stakeholder mapping and key persona</h4>
                 <img alt="" className="img-responsive" src={User}/>
                 <p/>
-                <h4 className="text-bold mt-20">Patient Discharge Flow</h4>
+                <h4 className="text-bold mt-40">Patient Discharge Flow</h4>
                 <img alt="" className="img-responsive" src={flow}/>
 
 
-                <h4 className="text-bold mt-20">Targeted Use Case: IDR (Interdisciplinary Rounding)</h4>
+                <h4 className="text-bold mt-40">Targeted Use Case: IDR (Interdisciplinary Rounding)</h4>
                 <span>How might we support IDR rounding / CN to review patients, like daily standup 
                     by the TV and to make a decision, so that patient flow and discharge are streamlined and move patients 
                     forward in the care process to drive the outcome of reducing length of stay.
@@ -158,8 +158,8 @@ const renderSection= (key) => {
                 
 
                 <p/>
-                <h4 className="text-bold mt-20">Gap of the previous patient board</h4>
-                <img alt="" className="img-responsive mb-20" src={Before}/>
+                <h4 className="text-bold mt-40">Gap of the previous patient board</h4>
+                <img alt="" className="img-responsive mb-20 mt-10" src={Before}/>
                 <span>Before I joint the team, there was already a patient board for IDR use case. After talking to Qventus internal stakeholders, we identified a few gaps:</span>
                 <p/>
                 <p className="text-bold mt-10">1. Not configurable</p>
@@ -175,7 +175,7 @@ const renderSection= (key) => {
                 <span>Heathcare IT software mostly share a corporate blue hue which tends to look alike. How might we make PathFinder visually appealing and differentiate from other competitors?</span>
                 <p/>
 
-                <h4 className="text-bold mt-20">Experience Goals</h4>
+                <h4 className="text-bold mt-40">Experience Goals</h4>
                 <span>As the lead designer, I started the design project by working with PM on the experience goals for the new patient board. </span>
                 <p/>
                 <ContentHighlight attributes={data.highlight2}/>
@@ -208,6 +208,7 @@ const renderSection= (key) => {
                 <p/>
                 <img alt="" className="img-responsive" src={Wf1}/>
                 <p/>
+                <h4 className="text-bold mt-40">Focus on list view design</h4>
                 <span className="row">After the first iteration, we narrowed down to three options because of the project timeline and technical constraints. The list view became the unification point where data was presented in a progressive way, and also with the advantage to sort and filter. 
                 We also constructed the low-fi mockup covering data structure, so that moving forward we could valid both layout and data with end users.</span>
                 <p/>
@@ -226,7 +227,7 @@ const renderSection= (key) => {
 
                 <img alt="" className="img-responsive" src={Ixd}/>
 
-                <h4 className="text-bold mt-20">EDD (estimated discharge date): deliver predictive leaving date</h4>
+                <h4 className="text-bold mt-40">EDD (estimated discharge date): deliver predictive leaving date</h4>
                 <span>Qventus developed machine learning models to predict when patient is going to leave. We surface these prediction results next to EDD field for entry reference. 
                     Among the solutions I explored, we chose Option D for the short term MVP solution based on the data availability. </span>
                 <p/>
@@ -234,7 +235,7 @@ const renderSection= (key) => {
                 <img alt="" className="img-responsive" src={Edd1}/>
                 <img alt="" className="img-responsive" src={Edd2}/>
 
-                <h4 className="text-bold mt-20">Disposition flow indicator</h4>
+                <h4 className="text-bold mt-40">Disposition flow indicator</h4>
                 <span>When the care team are trying to decide where the patient is going post hospital visit,
                     there are usually dependency on the order status as required by disposition. To visualize order status up front for the care team, it could help prompt
                     the care team to check for orders so that patients will not be delayed for disposition.</span>
@@ -242,19 +243,19 @@ const renderSection= (key) => {
 
                 <img alt="" className="img-responsive" src={Dispo}/>
 
-                <h4 className="text-bold mt-20">Barrier design</h4>
+                <h4 className="text-bold mt-40">Barrier design</h4>
                 <span>Design problem of managing barrier is: how could care teams quickly identify important barriers and easily manage an updating list? After I explored different barrier list UI, our team decided on the solution to combine Option B and C to show an easy-to-scan and scalable list.</span>
                 <p/>
 
                 <img alt="" className="img-responsive" src={Barrier}/>
 
-                <h4 className="text-bold mt-20">Outcome</h4>
+                <h4 className="text-bold mt-40">Outcome</h4>
                 <span>During our internal feedback with clinical team, we got a lot of positive feedback. Also from tracking usage data at Amplitude, we found completion rate of these fields general high along with increasing DAU. These indicators help show a more engaged user group.</span>
             </>;
 
         case "UI Exploration":
             return <>
-                <h4 className="text-bold">Visual identity Criteria</h4>
+                <h4 className="text-bold mt-0">Visual identity Criteria</h4>
                 <span>We started exploring the visual redesign by construct the moodboard, identifying a few dimensions to push forward in the UI iteractions and finally converge to one design. Dimensions of visual divergence include color, layout and data highlight patterns.
                 </span>
                 <p/>
@@ -264,7 +265,7 @@ const renderSection= (key) => {
                
                 <img alt="" className="img-responsive" src={UI2}/>
 
-                <h4 className="text-bold mt-20">Review and feedback</h4>
+                <h4 className="text-bold mt-40">Review and feedback</h4>
 
                 <span>Along the visual exploration, our product team did a few rounds of reviews. The team arrived at the concensus that we want to convey intelligent and dynamic data feeling. Wave provides a lot of possibilities for data related animation</span>
             </>;
