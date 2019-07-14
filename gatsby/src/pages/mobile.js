@@ -304,6 +304,8 @@ const renderSection= (key) => {
 
                 <h4 className="text-bold mt-20">Special Sprint:  Hybrid Research + Design</h4>
                 <span>Different from the standard design sprint, we designed the version of 2-day research plus 3-day sketch/build/test workshops. Because it’s an important project but less urgent project, it’s challenging to run two separate sprints to ask for 10 days’ dedication from th team. Also we conducted the light and hybrid vesion so that everyone is onboard with the pain points directly heard from end users.</span>
+                <p/>
+                
                 <img alt="" className="img-responsive" src={Agenda}/>
 
                 <h4 className="text-bold mt-20">Part 1 - Research and Synthesis</h4>
