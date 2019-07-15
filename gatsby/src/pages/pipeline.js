@@ -16,8 +16,10 @@ import Sketch from "../images/jcs/jcs-sketch.png"
 import Pub from "../images/jcs/jcs-pub.png"
 import StyleGuide from "../images/jcs/jcs-styleguide.png"
 import Robot from "../images/jcs/jcs_robot.jpg"
-import Timeline1 from "../images/jcs/P2 Recording Create Dis.png"
-import Timeline3 from "../images/jcs/P2 IxD.png"
+import Timeline1 from "../images/jcs/jcs-record.png"
+import Timeline2 from "../images/jcs/jcs-ixd-small.png"
+import Timeline3 from "../images/jcs/jcs-ixd.png"
+import VR from "../images/jcs/jaunt-vr.png"
 
 const data = {
     name: "Pipeline",
@@ -86,6 +88,10 @@ const data = {
         {
             label: "Publishing and analytics",
             key:  "Publishing and analytics"
+        },
+        {
+            label: "Jaunt VR Player",
+            key:  "Jaunt VR Player"
         },
         {
             label: "Living style guide",
@@ -170,7 +176,7 @@ const renderSection= (key) => {
                 </span>
                 <div class="row">
                     <img alt="" className="img-responsive col-lg-6 col-sm-12" src={Timeline1}/>
-                    <img alt="" className="img-responsive col-lg-6 col-sm-12" src={Timeline1}/>
+                    <img alt="" className="img-responsive col-lg-6 col-sm-12" src={Timeline2}/>
                 </div>
                 <img alt="" className="img-responsive" src={Timeline3}/>
             </>;
@@ -186,6 +192,11 @@ const renderSection= (key) => {
             return <>
                 <img alt="" className="img-responsive" src={Sketch}/>
                 <img alt="" className="img-responsive" src={Pub}/>
+            </>;
+
+        case "Jaunt VR Player":
+            return <>
+                <img alt="" className="img-responsive" src={VR}/>
             </>;
 
         case "Living style guide":

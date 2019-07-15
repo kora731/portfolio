@@ -27,6 +27,7 @@ import Specs3 from "../images/pf-specs-3.png"
 import Specs4 from "../images/pf-specs-4.png"
 import RWD1 from "../images/pf-rwd-1.png"
 import RWD2 from "../images/pf-rwd-2.png"
+import DSM from "../images/dsm.png"
 
 const data = {
     name: "PathFinder",
@@ -329,6 +330,16 @@ const renderSection= (key) => {
                 <span>- Registered Nurse</span>
                 <p/>
                 <span>“Finally, I have a technology that makes my job easier.”    - Charge Nurse</span>
+
+                <h4 className="text-bold mt-40">Design System Development</h4>
+
+                <span>Because PathFinder UX/UI received a lot of positive feedback, our design team proposed to 
+                    establish the design system to generalize the stellar UX across products and provide an enterprise suite experience. 
+                    Below is the diagram representing our approaches to design system, which includes cycles of auditing, unification and inspiration. 
+                </span>
+                <p class="mt-20"/>
+                <img alt="" className="img-responsive" src={DSM}/>
+
             </>;
         default:
             return <></>;
