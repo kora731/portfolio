@@ -8,3 +8,4 @@
 import "./src/css/bootstrap.css";
 import "./src/css/perfectr.css";
 import "react-image-gallery/styles/css/image-gallery.css";
+import 'react-image-lightbox/style.css';
