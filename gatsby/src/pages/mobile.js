@@ -28,6 +28,8 @@ import Agenda from  "../images/qm-agenda.png"
 import Part1 from  "../images/qm-research.png"
 import Part2 from  "../images/qds-design.png"
 import Hook from  "../images/qm-hook.png"
+import NFFlow from  "../images/qds-flow.png"
+import NFMock from  "../images/qds-flow-mock.png"
 import RedesignIA from  "../images/qm-redesign-ia.png"
 import RedesignWire from  "../images/qm-research-wire.png"
 import Hifi from  "../images/qm-redesign-ui.png"
@@ -320,6 +322,10 @@ const renderSection= (key) => {
 
                 <img alt="" className="img-responsive" src={Hook}/>
 
+            <div class="row mt-40">
+                <img alt="" className="img-responsive col-lg-6" src={NFFlow}/>
+                <img alt="" className="img-responsive col-lg-6" src={NFMock}/>
+            </div>
                 <h4 className="text-bold mt-40">Key takeaways</h4>
                 <span>From coordinating the design sprint, I have learnt a lot about how to run design workshops to solve problems with the team, also the power of diverging and converging along the problem space. It also makes me believe creativity and the best solution comes from joint efforts of the team rather than any individual. I’m truly inspired to continue applying design sprint model to more collaborative design sessions. </span>
 
