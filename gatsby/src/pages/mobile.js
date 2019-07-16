@@ -133,7 +133,7 @@ const renderSection= (key) => {
         case "Product suite and mobile app":
             return <>
                 <span>Qventus is the first system of action, from historic analytical data to predictive recipe, trying to simplify healthcare operations by empowering teams to excel in real-time. The solutions include dashboard for root cause analysis, patient board for proactive planning, system operational board for situational awareness, and mobile app to deliver real-time interventions. </span>
-                <LightboxImage src={Soa}/>
+                <img alt="" className="img-responsive" src={Soa}/>
 
                 <h4 className="text-bold mt-40">Mobile app for the care team in the ED</h4>
                 <span>For most hospitals, the ED is the primary entry point for patients driving up to 70% of hospital admissions. But in this highly dynamic and variable environment, ED are normally overwhelmed with sudden patient influxes, long wait times, patients boarded in hallways and dissatisfied patients walking out. </span>
