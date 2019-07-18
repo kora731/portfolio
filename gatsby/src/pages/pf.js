@@ -41,7 +41,7 @@ const data = {
     },
     title: "PathFinder: patient board to facilitate discharge planning",
     subTitle: "Actionable Data Delivered in a Delightful Humane Way",
-    highlight1: ["How to redesign the patient board to enable proactive discharge planning and a scalable solution to customers?"],
+    highlight1: ["Redesign the patient board to enable proactive discharge planning"],
     highlight2: [
         "Easy to configure and reuse",
         "Actionable and transparent",
@@ -100,7 +100,7 @@ const data = {
         {
             label: "Solution Framework",
             subTitle: [
-                "Modularize and scalable board",
+                "Modularized and scalable board",
                 "Actionable Component",
                 "UI Exploration",
                 "Final Product UI"
@@ -138,7 +138,8 @@ const renderSection= (key) => {
 
         case "Understand Users":
             return <>
-                <span>We shadowed multiple hospitals to observe how frontline nurses are handling the patient flow today. It helps uncover potential touchpoints where PathFinder could make an impact to improve discharge process. I consolidated our learnings into the persona and flow diagrams so that the whole team can leverage these user insights to solve problems.</span>
+                <span>We shadowed multiple hospitals to observe how frontline nurses handled the patient flow in their day to day job. It helps uncover potential touchpoints where PathFinder could facilitate care teams to improve discharge process. 
+                    I consolidated our learnings into the persona and flow diagram so that the whole team can leverage these user insights to understand problems better.</span>
                 <h4 className="text-bold mt-40">Stakeholder mapping and key persona</h4>
                 <img alt="" className="img-responsive" src={User}/>
                 <p/>
@@ -147,9 +148,9 @@ const renderSection= (key) => {
 
 
                 <h4 className="text-bold mt-40">Targeted Use Case: IDR (Interdisciplinary Rounding)</h4>
-                <span>How might we support IDR rounding / CN to review patients, like daily standup 
+                <span>How might we support charge nurse to review patients during IDR, like daily standup 
                     by the TV and to make a decision, so that patient flow and discharge are streamlined and move patients 
-                    forward in the care process to drive the outcome of reducing length of stay.
+                    forward in the process to drive the outcome of reduced length of stay.
                     </span>
             </>;
 
@@ -177,27 +178,27 @@ const renderSection= (key) => {
                 <p/>
 
                 <h4 className="text-bold mt-40">Experience Goals</h4>
-                <span>As the lead designer, I started the design project by working with PM on the experience goals for the new patient board. </span>
+                <span>As the lead designer, I started the design project by working with PM closely on setting experience goals for the new patient board. </span>
                 <p/>
                 <ContentHighlight attributes={data.highlight2}/>
             </>;
 
         case "Solution Framework":
             return <>
-                <span>Our approaches to solve the design challenge and meet experience goals can be summarized in three themes:</span>
+                <span>Our approaches to solve the design challenge and meet experience goals can be summarized into three themes:</span>
                 <p/>
 
-                <h4 className="text-bold">- Modularize and scalable board</h4>
+                <h4 className="text-bold">- Modularized and scalable board</h4>
                 <h4 className="text-bold">- Actionable component</h4>
                 <h4 className="text-bold">- UI exploration for stellar visual</h4>
             </>;
 
-        case "Modularize and scalable board":
+        case "Modularized and scalable board":
             return <>
                 <h4 className="text-bold mt-0">Patient Data Taxonomy - IA</h4>
                 
                 <span>To make sure the board design meets configuration requirements, I’m working closely with BE and FE to layout the information architecutre, so that each column and field is aligned with how
- data is presented and to better support user interaction.</span>
+ data is presented to support user interaction.</span>
  <p/>
  <span>The taxonomy table below helps the team understand different categories of data, whether it requires user input or read only, or whether it supports special style or data validation.</span>
                
@@ -210,7 +211,7 @@ const renderSection= (key) => {
                 <img alt="" className="img-responsive" src={Wf1}/>
                 <p/>
                 <h4 className="text-bold mt-40">Focus on list view design</h4>
-                <span className="row">After the first iteration, we narrowed down to three options because of the project timeline and technical constraints. The list view became the unification point where data was presented in a progressive way, and also with the advantage to sort and filter. 
+                <span>After the first iteration, we narrowed down to three options because of the project timeline and technical constraints. The list view became the unification point where data was presented in a progressive way, and also with the advantage to sort and filter. 
                 We also constructed the low-fi mockup covering data structure, so that moving forward we could valid both layout and data with end users.</span>
                 <p/>
                 <img alt="" className="img-responsive" src={Wf2}/>
@@ -331,7 +332,7 @@ const renderSection= (key) => {
                 <p/>
                 <span>“Finally, I have a technology that makes my job easier.”    - Charge Nurse</span>
 
-                <h4 className="text-bold mt-40">Design System Development</h4>
+                <h4 className="text-bold mt-40">Design system development</h4>
 
                 <span>Because PathFinder UX/UI received a lot of positive feedback, our design team proposed to 
                     establish the design system to generalize the stellar UX across products and provide an enterprise suite experience. 

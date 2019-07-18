@@ -201,16 +201,16 @@ const renderSection= (key) => {
             return <>
                 <span>After reviewing customer interview notes with the team, we identified a few key areas to improve the app usability: </span>
                 <p/>
-                <span>1. Difficult login with URL and credential required</span>
+                <span>1. Difficult login flow with hospital url and credential required</span>
                 <p/>
-                <span>2. Overwhelmed notifications and home feed</span>
+                <span>2. Overwhelmed notifications and home feed view</span>
                 <p/>
-                <span>3. Not able to mute notifications even when off-shift</span>
+                <span>3. Not able to mute notifications even when off shift</span>
                 <p/>
-                <span>4. Among hundreds of messages, Which one is important?</span>
+                <span>4. Among hundreds of messages, which one is important?</span>
 
-                <h4 className="text-bold mt-40">Login Flow Diagram</h4>
-                <span>Current flow requires the user to enter hospital URL and then directs them to the login section. As the tracking data shows that more than half of users gave up at step one of entering URL, it’s a friction point which is removable by binding user email with the domain URL so that it's more efficient to login. </span>
+                <h4 className="text-bold mt-40">Login flow redesign</h4>
+                <span>Current flow requires the user to enter hospital url and then directs them to the login section. As the tracking data shows that more than half of users gave up at the step one of entering URL, it’s a friction point which is removable by binding user email with the domain URL so that it's more efficient to login. </span>
                 <p/>
                 <img alt="" className="img-responsive" src={Login}/>
                 <img alt="" className="img-responsive mt-20" src={Login2}/>
@@ -236,13 +236,14 @@ const renderSection= (key) => {
                     </div>
                 </div>
                 <h4 className="text-bold mt-40">Results of improved usability</h4>
-                <span>Most of these incremental changes got implemented by two mobile engineers and released to customers within 3 months. The archive feature is well received by end users and data indicates a growing number of users interacting with the feature on a daily basis. In addition, as I’m driving these changes to happen wearing the hat of both designer and PM, my coworkers from customer success team gave me “all about outcome” internal reward.</span>
+                <span>Most of these incremental changes were implemented by two mobile engineers and released to customers within 3 months. The archive feature is well received by end users and usage data indicates a growing number of users interacting with the feature on a daily basis. 
+                    In addition, as I was making these changes into the product wearing the hat of both designer and PM, my coworkers gave me the “all about outcome” internal reward as a recognition for improving mobile app.</span>
                 <p/>
             </>;
 
         case "Increase value":
             return <>
-                <span>Aside from improving current mobile app usability, how might we augment mobile app to do more than chatting? Below are three areas that mobile team brainstormed together based on input from different stakeholders.</span>
+                <span>Aside from improving usability, how might we augment mobile app to do more than chatting? Below are three areas that mobile team brainstormed together based on input from different stakeholders.</span>
                 <p/>
                 <ContentHighlight attributes={data.highlight2}/>
                 <h4 className="text-bold mt-40">Enriched nudge detail</h4>

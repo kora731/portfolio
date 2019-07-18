@@ -174,7 +174,7 @@ const renderSection= (key) => {
         case "Design challenge":
             return <>
                 <ContentHighlight attributes={data.highlight1}/>
-                <h4 className="text-bold mt-40">Experience Goals</h4>
+                <h4 className="text-bold mt-20">Experience Goals</h4>
                 <span>Alleviate the user burden - redesign configuration flow to make it much easier and automate unnecessary steps</span>
                 <p/>
                 <span>Transparent system status - monitor the system changes, visualize the progress up-front for the user</span>
@@ -202,7 +202,7 @@ const renderSection= (key) => {
                 <img alt="" className="img-responsive" src={Sync}/> 
 
                 <h4 className="text-bold mt-40">Final product focusing on download feature</h4>
-                <span>Although synchronization model between local and cloud is desirable, it poses huge technical challenges for the team. Given the limited engineering resources, we re-define the download feature scope to focus on patch download. After talking to more editors and data wranglers, we learnt that users mostly will gather the same type of media during each session. With default setup to most frequent use cases, the user is still able to customize to their special case needs.
+                <span className="row">Although synchronization model between local and cloud is desirable, it poses huge technical challenges for the team. Given the limited engineering resources, we re-define the download feature scope to focus on patch download. After talking to more editors and data wranglers, we learnt that users mostly will gather the same type of media during each session. With default setup to most frequent use cases, the user is still able to customize to their special case needs.
                     </span>
                     <img alt="" className="img-responsive" src={Download}/> 
 
@@ -224,7 +224,7 @@ const renderSection= (key) => {
 
             <h4 className="text-bold mt-40">Design Iterations</h4>
             
-            <span>Iteration 1:
+            <span><b>Iteration 1</b>:
                 <p/>My first iteration is to design the button group, which helps prioritize functions. But the introduction of modes is making design more complicated. The coupling relationship makes users more confused with the view and action dependency. Also the location of the customization view is not scalable, and taking up the valuable screen space. 
                 </span>
                 <div className="row mt-20 mb-20">
@@ -232,7 +232,7 @@ const renderSection= (key) => {
                     <img alt="" className="img-responsive col-lg-6" src={TriV1B}/> 
                 </div>
 
-                <span> Iteration 2:<p/>
+                <span> <b>Iteration 2</b>:<p/>
                For the next iteration, I tried to have the left sidebar showing the default parameters while expanding to edit: powerful but also too complicated, not mapping to camera controller mental model. Live feed as a separate way to streaming views, is designed with more visual emphasis to encourage user interaction to try it out.
 
                 </span>
@@ -241,7 +241,7 @@ const renderSection= (key) => {
                     <img alt="" className="img-responsive col-lg-6" src={TriV2B}/> 
                 </div>
 
-                <span>Iteration 3:<p/>
+                <span><b>Iteration 3</b>:<p/>
                 While research and keep trying out different layout, it's critical to remember the base principle of balancing simplicity with being powerful. Then I introduce the toggle control of camera settings to allow for hide / show components.
                 </span>
                 <div className="row mt-20 mb-20">

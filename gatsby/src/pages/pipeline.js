@@ -183,13 +183,17 @@ const renderSection= (key) => {
 
         case "User onboarding flow":
             return <>
-
+                <span>Jaunt Cloud Services is targeted at indie video producers who may not be familiar with the workflow at all. I proposed to design the user onboarding flow to
+                    help introduce each step to the user in an intuitive way. It helps users follow through the production flow and reduce support tickets we received. 
+                    <p/></span>
                 <img alt="" className="img-responsive" src={Tour}/>
             </>;
 
 
         case "Publishing and analytics":
             return <>
+                <span> 
+                    <p/></span>
                 <img alt="" className="img-responsive" src={Sketch}/>
                 <img alt="" className="img-responsive" src={Pub}/>
             </>;
