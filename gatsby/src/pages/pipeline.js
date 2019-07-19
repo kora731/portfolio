@@ -121,7 +121,7 @@ const renderSection= (key) => {
 
         case "VR video pipeline":
             return <>
-                <span>With Jaunt Cloud Services(JCS), users can apply cloud rendering to stitch 24 footage together, and transcode them into different formats. The cloud services help prepare video media for distribution on all VR platforms instead of managing files one by one. Along with the rendering, JCS also provides the service modules of Publishing and Analytics to help creators distribute videos and track the audience engagement.</span>
+                <span>With Jaunt Cloud Services (JCS), users can apply cloud rendering to stitch 24 footage together, and transcode them into different formats. The cloud services help prepare video media for distribution on all VR platforms instead of managing files one by one. Along with the rendering, JCS also provides the service modules of Publishing and Analytics to help creators distribute videos and track the audience engagement.</span>
                 <p/>
 
                 <img alt="" className="img-responsive" src={System}/>
@@ -136,7 +136,7 @@ const renderSection= (key) => {
                 <p/>
 
                 <img alt="" className="img-responsive" src={ExMap}/>
-                <h4 className="text-bold mt-40">Key problems of production pipelinet</h4>
+                <h4 className="text-bold mt-40">Key problems of production pipeline</h4>
                 <span>1. Media centric UI rather than project based. Users have a hard time managing media across projects and the naming of media is hard to manage and often lead to errors.</span>
                 <p/>
                 <span>2. No transparency on the rendering status, and upload/download sessions are complicated.</span>
@@ -149,7 +149,7 @@ const renderSection= (key) => {
             return <>
                 <ContentHighlight attributes={data.highlight1}/>
                 <h4 className="text-bold mt-40">Design Process</h4>
-                <span>I’m the only product designer working with a team of four engineers and two product managers. We’re moving fast on shipping incremental features. Meanwhile PM and I are working on the next version of the JCS platform to help prioritize features.</span>
+                <span>I’m working with a team of four engineers and two product managers. We’re moving fast on shipping incremental features. Meanwhile PM and I are working on the next version of the JCS platform to help prioritize features.</span>
                 <p/>
                 <span>When there is request or complaint from end users, we started by talking to our internal production team to understand the problem better. If we have enough confidence, then the team will sketch out various solutions and discuss their feasibility.</span>
                 <p/>

@@ -163,7 +163,7 @@ const renderSection= (key) => {
                 <img alt="" className="img-responsive" src={System}/>
 
                 <h4 className="text-bold mt-40">Camera Controller App Pain Points</h4>
-                <span>Overloaded with lots of features and tangled statuses, the users had a hard time understanding all the modes and controls. Also the camera has 24 modules which may need to manual exposure adjustment of specific modules. How to design the viewport layout to support both global and individual camera view?</span>
+                <span>Overloaded with lots of features and tangled statuses, the users had a hard time understanding all the modes and controls. In addition, the camera has 24 modules and each one may need manual adjustment. How to design the viewport layout to support both global and individual camera view for adjustment?</span>
                 <p/>
 
                 <h4 className="sectionTitle text-bold mt-40">Media Manager App Pain Points</h4>
@@ -175,11 +175,11 @@ const renderSection= (key) => {
             return <>
                 <ContentHighlight attributes={data.highlight1}/>
                 <h4 className="text-bold mt-20">Experience Goals</h4>
-                <span>Alleviate the user burden - redesign configuration flow to make it much easier and automate unnecessary steps</span>
+                <span>Alleviate the user burden - simplify configuration flow and automate unnecessary steps</span>
                 <p/>
-                <span>Transparent system status - monitor the system changes, visualize the progress up-front for the user</span>
+                <span>Transparent system status - monitor the system changes, visualize and update the progresses up-front</span>
                 <p/>
-                <span>Balance advanced powerful settings with simplicity to support various user needs</span>
+                <span>Balance advanced settings with simplicity to support diverse user needs</span>
                 <p/>
                 <span>Fluid and scalable UI to support newly added features and long term vision</span>
                 <p/>
@@ -187,7 +187,7 @@ const renderSection= (key) => {
 
         case "Solution framework":
             return <>
-                <img alt="" className="img-responsive" src={IA}/>
+                
             </>;
 
         case "Media manager":
@@ -201,7 +201,7 @@ const renderSection= (key) => {
                 <h4 className="text-bold mt-40">Cloud Sync Model</h4>
                 <img alt="" className="img-responsive" src={Sync}/> 
 
-                <h4 className="text-bold mt-40">Final product focusing on download feature</h4>
+                <h4 className="text-bold mt-40">MVP with a focus on download feature</h4>
                 <span className="row">Although synchronization model between local and cloud is desirable, it poses huge technical challenges for the team. Given the limited engineering resources, we re-define the download feature scope to focus on patch download. After talking to more editors and data wranglers, we learnt that users mostly will gather the same type of media during each session. With default setup to most frequent use cases, the user is still able to customize to their special case needs.
                     </span>
                     <img alt="" className="img-responsive" src={Download}/> 

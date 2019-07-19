@@ -33,7 +33,7 @@ const data = {
         href: "/project/smx/index.html"
     },
     title: "First Experience: User Onboard Journey of Autodesk Infraworks",
-    subTitle: "How to engage users at installation and introduce new features?",
+    subTitle: "How to engage users along installation and onboarding new features?",
     briefAttribute: [
         {
             label: "Timeline",
