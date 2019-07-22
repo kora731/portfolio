@@ -3,6 +3,7 @@ import React from "react"
 import Brief from "../components/brief"
 import Template from "../components/template"
 import ContentHighlight from "../components/content-highlight"
+import LightboxImage from  "../components/lightbox-image"
 
 /* Image Assets */
 import Cover from "../images/pf-cs-cover.png"
@@ -41,7 +42,7 @@ const data = {
     },
     title: "PathFinder: patient board to facilitate discharge planning",
     subTitle: "Actionable Data Delivered in a Delightful Humane Way",
-    highlight1: ["Redesign the patient board to enable proactive discharge planning"],
+    highlight1: ["How might we redesign the patient board to enable proactive discharge planning"],
     highlight2: [
         "Easy to configure and reuse",
         "Actionable and transparent",
@@ -234,8 +235,10 @@ const renderSection= (key) => {
                     Among the solutions I explored, we chose Option D for the short term MVP solution based on the data availability. </span>
                 <p/>
 
-                <img alt="" className="img-responsive" src={Edd1}/>
-                <img alt="" className="img-responsive" src={Edd2}/>
+                
+                <LightboxImage className="img-responsive m-hover" src={Edd1}/>
+                
+                <LightboxImage className="img-responsive m-hover" src={Edd2}/>
 
                 <h4 className="text-bold mt-40">Disposition flow indicator</h4>
                 <span>When the care team are trying to decide where the patient is going post hospital visit,
@@ -243,13 +246,13 @@ const renderSection= (key) => {
                     the care team to check for orders so that patients will not be delayed for disposition.</span>
                 <p/>
 
-                <img alt="" className="img-responsive" src={Dispo}/>
+                <LightboxImage className="img-responsive" src={Dispo}/>
 
                 <h4 className="text-bold mt-40">Barrier design</h4>
                 <span>Design problem of managing barrier is: how could care teams quickly identify important barriers and easily manage an updating list? After I explored different barrier list UI, our team decided on the solution to combine Option B and C to show an easy-to-scan and scalable list.</span>
                 <p/>
 
-                <img alt="" className="img-responsive" src={Barrier}/>
+                <LightboxImage className="img-responsive" src={Barrier}/>
 
                 <h4 className="text-bold mt-40">Outcome</h4>
                 <span>During our internal feedback with clinical team, we got a lot of positive feedback. Also from tracking usage data at Amplitude, we found completion rate of these fields general high along with increasing DAU. These indicators help show a more engaged user group.</span>

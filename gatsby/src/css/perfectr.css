@@ -4377,3 +4377,8 @@ DEVICES STYLES
 {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
+
+.m-hover:hover
+{
+  cursor:pointer;
+}

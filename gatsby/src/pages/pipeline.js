@@ -139,7 +139,7 @@ const renderSection= (key) => {
                 <h4 className="text-bold mt-40">Key problems of production pipeline</h4>
                 <span>1. Media centric UI rather than project based. Users have a hard time managing media across projects and the naming of media is hard to manage and often lead to errors.</span>
                 <p/>
-                <span>2. No transparency on the rendering status, and upload/download sessions are complicated.</span>
+                <span>2. Video editing within the browser: how to make the process smooth and efficient to product video clips?</span>
                 <p/>
                 <span>3. How to onboard new users who don’t have video editing or production experiences?</span>
                 <p/>
