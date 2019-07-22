@@ -325,9 +325,9 @@ const renderSection= (key) => {
 
                 <img alt="" className="img-responsive" src={Hook}/>
 
-            <div class="row mt-40">
-                <LightboxImage className="img-responsive col-lg-6" src={NFFlow}/>
-                <LightboxImage className="img-responsive col-lg-6" src={NFMock}/>
+            <div className="row mt-40">
+                <LightboxImage className="col-lg-6" src={NFFlow}/>
+                <LightboxImage className="col-lg-6" src={NFMock}/>
             </div>
                 <h4 className="text-bold mt-40">Key takeaways</h4>
                 <span>From coordinating the design sprint, I have learnt a lot about how to run design workshops to solve problems with the team, also the power of diverging and converging along the problem space. It also makes me believe creativity and the best solution comes from joint efforts of the team rather than any individual. I’m truly inspired to continue applying design sprint model to more collaborative design sessions. </span>
@@ -349,13 +349,13 @@ const renderSection= (key) => {
                 <span>4. Collaborate with the team about problems/requests</span>
 
                 <h4 className="text-bold mt-40">Information architecture</h4>
-                <LightboxImage className="img-responsive" src={RedesignIA}/>
+                <LightboxImage src={RedesignIA}/>
 
                 <h4 className="text-bold mt-40">Wireframes</h4>
-                <LightboxImage className="img-responsive" src={RedesignWire}/>
+                <LightboxImage src={RedesignWire}/>
 
                 <h4 className="text-bold mt-40">Hi-fi Mockups and Visual Exploration</h4>
-                <LightboxImage className="img-responsive" src={Hifi}/>
+                <LightboxImage src={Hifi}/>
 
                 <h4 className="text-bold mt-40">Prototype</h4>
                 <div className="row bg-gray pt-40 pb-40">

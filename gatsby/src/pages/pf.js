@@ -130,7 +130,7 @@ const renderSection= (key) => {
         case "Why PathFinder":
             return <>
                 <span>Today’s healthcare systems are increasingly focused on reducing patient flow efficiency to save costs and capital spending. Managing patient flows are shouldered by frontline care teams, who are already overwhelmed with increasing patient demands, and complex dashboards and reports. </span>
-                <p class="mt-6"/>
+                <p className="mt-6"/>
                 <span>Qventus offers <b>PathFinder solution to optimize patient flow in realtime while reducing the cognitive burden of care team</b>. With a dedicated product focus on modern, user-centric design, PathFinder intends to engage the whole team to streamline the patient flow and reduce length of stay.</span>
             </>;
 
@@ -236,9 +236,9 @@ const renderSection= (key) => {
                 <p/>
 
                 
-                <LightboxImage className="img-responsive m-hover" src={Edd1}/>
+                <LightboxImage src={Edd1}/>
                 
-                <LightboxImage className="img-responsive m-hover" src={Edd2}/>
+                <LightboxImage src={Edd2}/>
 
                 <h4 className="text-bold mt-40">Disposition flow indicator</h4>
                 <span>When the care team are trying to decide where the patient is going post hospital visit,
@@ -246,13 +246,13 @@ const renderSection= (key) => {
                     the care team to check for orders so that patients will not be delayed for disposition.</span>
                 <p/>
 
-                <LightboxImage className="img-responsive" src={Dispo}/>
+                <LightboxImage src={Dispo}/>
 
                 <h4 className="text-bold mt-40">Barrier design</h4>
                 <span>Design problem of managing barrier is: how could care teams quickly identify important barriers and easily manage an updating list? After I explored different barrier list UI, our team decided on the solution to combine Option B and C to show an easy-to-scan and scalable list.</span>
                 <p/>
 
-                <LightboxImage className="img-responsive" src={Barrier}/>
+                <LightboxImage src={Barrier}/>
 
                 <h4 className="text-bold mt-40">Outcome</h4>
                 <span>During our internal feedback with clinical team, we got a lot of positive feedback. Also from tracking usage data at Amplitude, we found completion rate of these fields general high along with increasing DAU. These indicators help show a more engaged user group.</span>
@@ -341,7 +341,7 @@ const renderSection= (key) => {
                     establish the design system to generalize the stellar UX across products and provide an enterprise suite experience. 
                     Below is the diagram representing our approaches to design system, which includes cycles of auditing, unification and inspiration. 
                 </span>
-                <p class="mt-20"/>
+                <p className="mt-20"/>
                 <img alt="" className="img-responsive" src={DSM}/>
 
             </>;

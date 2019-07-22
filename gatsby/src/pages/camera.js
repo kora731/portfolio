@@ -9,7 +9,6 @@ import Template from "../components/template";
 /* Image Assets */
 import Cover from "../images/cam/cam-cover.png"
 import System from "../images/cam/jaunt-pipeline.png"
-import IA from "../images/cam/jaunt-ia.png"
 import DozerIXD from "../images/cam/dozer-ixd.png"
 import DozerUI from "../images/cam/dozer-ui.png"
 import Sync from "../images/cam/dozer-syncmedia.png"

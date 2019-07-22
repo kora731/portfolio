@@ -1,7 +1,6 @@
 import React from "react"
 
 import Brief from "../components/brief"
-import ContentHighlight from "../components/content-highlight"
 import Template from "../components/template";
 import ImageGallery from 'react-image-gallery';
 

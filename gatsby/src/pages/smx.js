@@ -171,7 +171,7 @@ const renderSection= (key) => {
                 <h4 className="text-bold mt-20">Product Demo</h4>
 
                 <div className="embed-responsive embed-responsive-16by9 mt-20 mb-20">
-  							<iframe className="embed-responsive-item" src="https://player.vimeo.com/video/68538011?title=0&byline=0&portrait=0" allowfullscreen></iframe>
+  							<iframe title="Demo" className="embed-responsive-item" src="https://player.vimeo.com/video/68538011?title=0&byline=0&portrait=0" allowfullscreen></iframe>
 
 							</div>
 

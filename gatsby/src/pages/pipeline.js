@@ -174,7 +174,7 @@ const renderSection= (key) => {
                 <span>I lead the design of improving timeline editor where the users can quickly trim the video beginning and end points to reduce rendering cost. Below is the interaction diagram of time scrub and player handle to propose a simplified editing and saving process.
                 <p/>Once the feature is released to our users, they shared back that editing and saving clips have been much faster and they like the ability to easily modify the scrub and time handle.
                 </span>
-                <div class="row">
+                <div className="row">
                     <img alt="" className="img-responsive col-lg-6 col-sm-12" src={Timeline1}/>
                     <img alt="" className="img-responsive col-lg-6 col-sm-12" src={Timeline2}/>
                 </div>
