@@ -67,7 +67,7 @@ const data = {
         },
         {
             label: "Outcome",
-            value: "Very well received app releases. Timelapse and live feed features are top rated functions by Jaunt camera users"
+            value: "Well received app releases. Timelapse and live feed are top rated features by Jaunt camera users"
         }
     ],
     aTitle: [
@@ -156,27 +156,27 @@ const renderSection= (key) => {
 
         case "Capture recordings":
             return <>
-                <span>Jaunt flagship product Jaunt One camera is paired with the camera controller application to access a wide variety of features. While connecting to the camera, users can adjust the camera exposure, capture preview and even get real time views. Jaunt media manager is the gateway tool to transfer recordings between VR camera, cloud services and user local data. It organizes 24 camera footage into formats ready for ingestion, to upload and download from the cloud.</span>
+                <span>Jaunt flagship product Jaunt One camera is paired with the camera controller app to access a wide variety of features. While connecting to the camera, users can adjust the camera exposure, capture preview and even get real time views. Jaunt media manager is the gateway tool to transfer recordings between VR camera, cloud services and user local data. It organizes 24 camera footage into formats ready for ingestion, to upload and download from the cloud.</span>
                 <p/>
 
                 <img alt="" className="img-responsive" src={System}/>
 
-                <h4 className="text-bold mt-40">Camera Controller App Pain Points</h4>
-                <span>Overloaded with lots of features and tangled statuses, the users had a hard time understanding all the modes and controls. In addition, the camera has 24 modules and each one may need manual adjustment. How to design the viewport layout to support both global and individual camera view for adjustment?</span>
+                <h4 className="text-bold mt-40">Camera controller app pain points</h4>
+                <span>Overloaded with lots of features and tangled statuses, the users had a hard time understanding all the modes and controls. In addition, the camera has 24 modules and each one may need manual adjustment. How to design the viewport layout to support both global and individual camera adjustments?</span>
                 <p/>
 
-                <h4 className="sectionTitle text-bold mt-40">Media Manager App Pain Points</h4>
-                <span>VR video data size is very large at 50+ GB level sheer size with 4+ formats of stitched results. Long download time and internet connection stability are also challenging to manage the media in a secure and stable way.</span>
+                <h4 className="sectionTitle text-bold mt-40">Media manager app pain points</h4>
+                <span>VR video data is very large at 50+ GB level sheer size with 4+ formats of stitched results. Long download time and internet connection stability are also challenging to manage the media in a secure and stable way.</span>
                 <p/>
             </>;
 
         case "Design challenge":
             return <>
                 <ContentHighlight attributes={data.highlight1}/>
-                <h4 className="text-bold mt-20">Experience Goals</h4>
-                <span>Alleviate the user burden - simplify configuration flow and automate unnecessary steps</span>
+                <h4 className="text-bold mt-20">Experience goals</h4>
+                <span>Alleviate the user burden: simplify configuration flow and automate unnecessary steps</span>
                 <p/>
-                <span>Transparent system status - monitor the system changes, visualize and update the progresses up-front</span>
+                <span>Transparent system status: monitor changes, visualize and update the progresses up-front</span>
                 <p/>
                 <span>Balance advanced settings with simplicity to support diverse user needs</span>
                 <p/>
@@ -197,11 +197,14 @@ const renderSection= (key) => {
                     <img alt="" className="img-responsive col-lg-4" src={DozerUI}/> 
                 </div>
 
-                <h4 className="text-bold mt-40">Cloud Sync Model</h4>
+                <h4 className="text-bold mt-40">Cloud-local sync model</h4>
                 <img alt="" className="img-responsive" src={Sync}/> 
 
                 <h4 className="text-bold mt-40">MVP with a focus on download feature</h4>
-                <span className="row">Although synchronization model between local and cloud is desirable, it poses huge technical challenges for the team. Given the limited engineering resources, we re-define the download feature scope to focus on patch download. After talking to more editors and data wranglers, we learnt that users mostly will gather the same type of media during each session. With default setup to most frequent use cases, the user is still able to customize to their special case needs.
+                <span className="row">Although synchronization model between local and cloud is desirable, it poses huge technical challenges for the team. Given the limited engineering resources, 
+                we re-define the project scope to focus on batch download. After talking to more editors and data wranglers, 
+                we learnt that users usually gather the same type of media for each session. 
+                Hence the design introduces the default setup to cater to most frequent use cases, while the user is able to customize settings to their occasional needs.
                     </span>
                     <img alt="" className="img-responsive" src={Download}/> 
 
@@ -209,7 +212,7 @@ const renderSection= (key) => {
 
         case "Camera controller":
             return <>
-            <h4 className="text-bold mt-40">Experience Framework</h4>
+            <h4 className="text-bold mt-40">Experience goals</h4>
             <p>How to provide a more fluid and scalable UI with new added features
                 <br/>- to adopt a similar mental model to DSLR camera operation: switch between commands and actions, instead of showing all buttons and UI at once, prioritize and group functions.</p>
             <p>How to make widgets more accessible and efficient
@@ -253,16 +256,19 @@ const renderSection= (key) => {
             
             
             <span>
-            When I shared the proposal via InVision prototype with creators remotely, they are very excited about the upcoming timelapse new feature. I worked tightly with the app engineer to prepare all the assets and UI specs, and got the app released in May 2017. It was well received among creators using Jaunt camera.
+            When I shared the proposal via InVision prototype with creators remotely, they are very excited about the upcoming timelapse feature. I worked tightly with the app engineer to prepare all the assets and UI specs, and got the app released in May 2017. It was well received among creators using Jaunt camera.
             </span>
             <ImageGallery items={data.images}/>
 
         </>;
         case "Takeaway":
             return <>
-                <span>Fast and slow:  During the first week of joining Jaunt, I was able to design the download module right away. However, in the following months, I start learning more about how users actually interact with the Media Manager, only to discover the initial download dialog is not addressing the key pain points. Then I started slow iteration of the download dialog, to craft each interaction to support the user tasks better. The easiest and most accessible, right at hand, solution always poses high risk to actually solving the problem. Because it mostly overlooks the factors and edge cases, and that's where UX matters most. It has to be thought through with all use cases, and test against all possible routes.</span>
+                <span>Fast and slow:  During the first week of joining Jaunt, I started designing the download module right away. However, in the following months, I learnt more about how users actually interacted with the Media Manager, only to discover the initial download dialog is not addressing the key pain points. 
+                    Then I started iteration of the download dialog based on user input, to craft each interaction to support the user tasks better. The easiest and most accessible right at hand solution always turned out not a best solution to solve the problem. Because it might overlook the real priority and edge cases, and where UX matters most. 
+                    It has to be thought through with all use cases, and tested against all possible routes to ensure a successful design solution.</span>
                 <p/>
-                <span>Camera is very prevalent in our daily life. But the adjustable controls vary a lot between mobile and professional cameras. Optimizing the UI layout alone doesn’t help address the workflow problem. Also with so much customization involved, how to uncover the mental model is also critical.</span>
+                <span>Camera is very prevalent in our daily life. But the adjustable controls vary a lot between mobile and professional cameras. Optimizing the UI layout alone doesn’t help address the workflow problem.
+                     Also with so much camera configuration work involved, how to uncover the user mental model is critical.</span>
                 <p/>
             </>;
 

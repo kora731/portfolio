@@ -42,7 +42,7 @@ const data = {
     },
     title: "PathFinder: patient board to facilitate discharge planning",
     subTitle: "Actionable Data Delivered in a Delightful Humane Way",
-    highlight1: ["How might we redesign the patient board to enable proactive discharge planning"],
+    highlight1: ["How might we redesign the patient board to enable proactive discharge planning?"],
     highlight2: [
         "Easy to configure and reuse",
         "Actionable and transparent",
@@ -129,26 +129,33 @@ const renderSection= (key) => {
 
         case "Why PathFinder":
             return <>
-                <span>Today’s healthcare systems are increasingly focused on reducing patient flow efficiency to save costs and capital spending. Managing patient flows are shouldered by frontline care teams, who are already overwhelmed with increasing patient demands, and complex dashboards and reports. </span>
-                <p className="mt-6"/>
-                <span>Qventus offers <b>PathFinder solution to optimize patient flow in realtime while reducing the cognitive burden of care team</b>. With a dedicated product focus on modern, user-centric design, PathFinder intends to engage the whole team to streamline the patient flow and reduce length of stay.</span>
+                <span>Today’s healthcare systems are increasingly focused on reducing patient flow efficiency to save costs and capital spending. Managing patient flows are shouldered by frontline care teams, who are already overwhelmed with increasing patient demands, complex dashboards and reports. </span>
+                <p className="mt-10"/>
+                <span>Qventus offers <b>PathFinder solution to optimize patient flow in real time while reducing the cognitive burden of care teams</b>.</span>
             </>;
 
         case "Product Goals":
-            return <img alt="" className="img-responsive" src={Goal}/>;
-
+            return <>
+                    <span>When I got onboard with PathFinder project, PM and I set up meetings with key stakeholders within the company
+                        to understand both business and product strategies. I also initiated the competitive research to understand the
+                        dashboards and existing solutons of patient data display. Below are the main goals we summarized based on the internal input and 
+                        market landscape.
+                        <p className="mt-20"/>
+                    </span>
+                    <img alt="" className="img-responsive" src={Goal}/>
+            </>;
         case "Understand Users":
             return <>
-                <span>We shadowed multiple hospitals to observe how frontline nurses handled the patient flow in their day to day job. It helps uncover potential touchpoints where PathFinder could facilitate care teams to improve discharge process. 
-                    I consolidated our learnings into the persona and flow diagram so that the whole team can leverage these user insights to understand problems better.</span>
+                <span>We shadowed multiple hospitals to observe how frontline nurses handled the patient flows in their day to day work. Onsite interviews and observations helped uncover touchpoints where PathFinder could facilitate care teams to improve discharge process. 
+                    I consolidated our learnings into the persona and flow diagram so that the whole team can leverage these user data to understand problems with enough context.</span>
                 <h4 className="text-bold mt-40">Stakeholder mapping and key persona</h4>
                 <img alt="" className="img-responsive" src={User}/>
                 <p/>
-                <h4 className="text-bold mt-40">Patient Discharge Flow</h4>
+                <h4 className="text-bold mt-40">Patient discharge flow diagram</h4>
                 <img alt="" className="img-responsive" src={flow}/>
 
 
-                <h4 className="text-bold mt-40">Targeted Use Case: IDR (Interdisciplinary Rounding)</h4>
+                <h4 className="text-bold mt-40">Targeted use case: IDR (Interdisciplinary Rounding)</h4>
                 <span>How might we support charge nurse to review patients during IDR, like daily standup 
                     by the TV and to make a decision, so that patient flow and discharge are streamlined and move patients 
                     forward in the process to drive the outcome of reduced length of stay.
@@ -163,7 +170,7 @@ const renderSection= (key) => {
                 <p/>
                 <h4 className="text-bold mt-40">Gap of the previous patient board</h4>
                 <img alt="" className="img-responsive mb-20 mt-10" src={Before}/>
-                <span>Before I joint the team, there was already a patient board for IDR use case. After talking to Qventus internal stakeholders, we identified a few gaps:</span>
+                <span>Before I joint the team, there was already a patient board for IDR use case. After talking to customer success teams who have experiences implementing the board, we identified a few gaps:</span>
                 <p/>
                 <p className="text-bold mt-10">1. Not configurable</p>
                 <span>Data columns on the board were manually written with SQL and it took a long time to configure every board and test the schemas.</span>
@@ -179,14 +186,14 @@ const renderSection= (key) => {
                 <p/>
 
                 <h4 className="text-bold mt-40">Experience Goals</h4>
-                <span>As the lead designer, I started the design project by working with PM closely on setting experience goals for the new patient board. </span>
+                <span>Based on these insights, I started the design project by establishing explicit experience goals for the new patient board:</span>
                 <p/>
                 <ContentHighlight attributes={data.highlight2}/>
             </>;
 
         case "Solution Framework":
             return <>
-                <span>Our approaches to solve the design challenge and meet experience goals can be summarized into three themes:</span>
+                <span>In terms of approaches to solve the design challenge and meet experience goals, my design processes can be summarized into three themes:</span>
                 <p/>
 
                 <h4 className="text-bold">- Modularized and scalable board</h4>
@@ -196,12 +203,12 @@ const renderSection= (key) => {
 
         case "Modularized and scalable board":
             return <>
-                <h4 className="text-bold mt-0">Patient Data Taxonomy - IA</h4>
+                <h4 className="text-bold mt-0">Patient data taxonomy - IA</h4>
                 
-                <span>To make sure the board design meets configuration requirements, I’m working closely with BE and FE to layout the information architecutre, so that each column and field is aligned with how
- data is presented to support user interaction.</span>
+                <span>To make sure the board design meets configuration requirements, I worked closely with BE and FE to layout the information architecutre, so that each column and field aligned with how
+ data would be presented to support user interaction.</span>
  <p/>
- <span>The taxonomy table below helps the team understand different categories of data, whether it requires user input or read only, or whether it supports special style or data validation.</span>
+ <span>The taxonomy table below helps the team catalog different categories of data, whether it requires user input or read only, or whether it supports special style or data validation.</span>
                
 
                 <img alt="" className="img-responsive" src={Idr}/>
@@ -213,19 +220,20 @@ const renderSection= (key) => {
                 <p/>
                 <h4 className="text-bold mt-40">Focus on list view design</h4>
                 <span>After the first iteration, we narrowed down to three options because of the project timeline and technical constraints. The list view became the unification point where data was presented in a progressive way, and also with the advantage to sort and filter. 
-                We also constructed the low-fi mockup covering data structure, so that moving forward we could valid both layout and data with end users.</span>
+                We also constructed the low-fi mockup covering data structure, so that moving forward we could validate both layout and data with end users.</span>
                 <p/>
                 <img alt="" className="img-responsive" src={Wf2}/>
 
                 <h4 className="text-bold mt-40">User testing findings</h4>
-                <span>When we presented the three options to end users, 4 out of 5 users chose Option Two because of it being clean and familiar. Expanding the row rather than replacing/relocating information was preferred, which made it easy to scan and compare data across rows.</span>
+                <span>When we presented three options above to end users, 4 out of 5 users chose Option Two because of it being clean and familiar. Expanding the row rather than replacing/relocating information was preferred, which made it easy to scan and compare data across rows.</span>
                 <p/>
-                <span>After I brought these findings back to the team, we decided on constructing the list view first. Later we would investigate further into the expansion view as the version two. </span>
+                <span>After I brought these findings back to the team, we decided on constructing the list view first. Later we would investigate further into the expansion view as V2. </span>
             </>;
 
         case "Actionable Component":
             return <>
-                <span>PathFinder boards serve as the data source to prompt care team to enter patient dicharge plan, and collaborate on resolving barriers. User-entry data on the board is the most valuable information set. How might we design the data columns to encourage user input?</span>
+                <span>PathFinder boards serve as the single data source to prompt care teams to enter patient dicharge plan, and collaborate on resolving barriers. 
+                    User-entry data on the board is critical to patient discharge plan and also to train Qventus machine learning models to improve prediction. How might we design the data columns to encourage user input?</span>
                 <p/>
 
                 <img alt="" className="img-responsive" src={Ixd}/>
@@ -255,13 +263,15 @@ const renderSection= (key) => {
                 <LightboxImage src={Barrier}/>
 
                 <h4 className="text-bold mt-40">Outcome</h4>
-                <span>During our internal feedback with clinical team, we got a lot of positive feedback. Also from tracking usage data at Amplitude, we found completion rate of these fields general high along with increasing DAU. These indicators help show a more engaged user group.</span>
+                <span>During our internal feedback with clinical team, we got a lot of positive feedback. Also from tracking usage data at Amplitude, we found completion rate of these fields general high along with increasing DAU. 
+                    These indicators helped validated the design improvements to prompt user input and enhance engagement.</span>
             </>;
 
         case "UI Exploration":
             return <>
-                <h4 className="text-bold mt-0">Visual identity Criteria</h4>
-                <span>We started exploring the visual redesign by construct the moodboard, identifying a few dimensions to push forward in the UI iteractions and finally converge to one design. Dimensions of visual divergence include color, layout and data highlight patterns.
+                <h4 className="text-bold mt-0">Visual identity criteria</h4>
+                <span>We started exploring the visual identity by collaboraing on the moodboard, identifying a few dimensions to explore different themes and finally converge to one design that the whole team is happy with. 
+                    Dimensions of visual divergence include color, layout and data highlight patterns.
                 </span>
                 <p/>
                 <img alt="" className="img-responsive" src={UI1}/>
@@ -272,14 +282,14 @@ const renderSection= (key) => {
 
                 <h4 className="text-bold mt-40">Review and feedback</h4>
 
-                <span>Along the visual exploration, our product team did a few rounds of reviews. The team arrived at the concensus that we want to convey intelligent and dynamic data feeling. Wave provides a lot of possibilities for data related animation</span>
+                <span>Along the exploration process, our product team do daily reviews to help visual direction move fast. The team arrived at the concensus that we want to convey intelligent and energetic feelings. Among these, blue wave pattern provides a lot of possibilities for animation and user delights.</span>
             </>;
 
         case "Final Product UI":
             return <>
                 
-                <span>After three months of design work focusing on modular, actionable and aesthetic boards, we put together all the interaction and UI pattterns into one demo board. 
-                    Sales team have been able to leverage the board to introduce to potential clients as well. 
+                <span>After three months of design work focused on modular, actionable and aesthetic boards, we put together all the interaction and UI pattterns into one demo board. 
+                   Sales team have been resuing the demo board to pitch to potential clients for various use cases. 
                 <p/></span>
                 <video className="img-responsive" controls>
                     <source src={Demo} type="video/mp4"/>
@@ -289,9 +299,9 @@ const renderSection= (key) => {
         case "UI Delivery":
             return <>
 
-                <span>During the PathFinder development, I was working closely with our frontend and backend engineers to deliver the UI specs and 
-                    get better understanding of technical constraints. Thanks to our closely collaborative team, I was able to do the design QA of the product
-                    early and get the final developed board aligned with the design proposal. 
+                <span>During the PathFinder development, I worked closely with our frontend and backend engineers to deliver the UI specs and 
+                    understand technical constraints. Thanks to the close collaborative team, I was able to conduct design QA of the product
+                    early and ensure that the final delivered board aligned with the design solution. 
                 <p/></span>
                 <div className="col-lg-6">
                     <img alt="" className="img-responsive" src={Specs1}/>
@@ -308,7 +318,8 @@ const renderSection= (key) => {
                 </div>
 
                 <h4 className="text-bold mt-40 mb-10">Responsive design</h4>
-                <span>In the later stage of introducing PathFinder to more users and use cases, ability to view the list on the mobile devices becomes a prominent request. I started cataloging all the data by priority group, and designed the wireframes first. This approach makes sure important are consistantly emphasized across different channels. Next step is to validate with care team, and explore unique use cases for mobile usage.</span>
+                <span>In the later stage of introducing PathFinder to more users and use cases, there is a prominent request to view the list on mobile devices. 
+                    I started cataloging all the patient data by priority groups to guide the wireframe design. Next step is to validate with care team, and explore unique use cases for mobile usage.</span>
                 <p/>
 
                 <img alt="" className="img-responsive" src={RWD1}/>
@@ -322,11 +333,11 @@ const renderSection= (key) => {
                 <h4 className="text-bold">Widely deployed at client hospitals </h4>
                 <span>Since the new PathFinder was launched in June 2018, 20+ leading hospitals and health systems are streamlining patient flow with the product, achieving results including:</span>
                 <p/>
-                <span className="mt-10">- 0.5+ day reduction in in-patient length of stay</span>
+                <span className="mt-10">0.5+ day reduction in in-patient length of stay</span>
                 <p/>
-                <span className="">- 20%+ decrease in postop transfer delays</span>
+                <span className="">20%+ decrease in postop transfer delays</span>
                 <p/>
-                <span className="">- 20%+ increase in patient satisfaction</span>
+                <span className="">20%+ increase in patient satisfaction</span>
 
                 <h4 className="text-bold mt-40">Frontline user feedback</h4>
                 <span>“With Qventus you have a snapshot of a patient without digging through any charts and without having to ask a lot of questions. You know what the plan is, where they are going, and what's keeping them here.”</span>

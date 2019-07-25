@@ -3,6 +3,7 @@ import React from "react"
 import Brief from "../components/brief"
 import ContentHighlight from "../components/content-highlight"
 import Template from "../components/template";
+import LightboxImage from  "../components/lightbox-image"
 
 /* Image Assets */
 import Cover from "../images/jcs/jcs-cover.png"
@@ -131,15 +132,15 @@ const renderSection= (key) => {
                 <p/>
                 <img alt="" className="img-responsive" src={User}/>
 
-                <h4 className="sectionTitle text-bold mt-40">Experience Map of today’s production</h4>
+                <h4 className="sectionTitle text-bold mt-40">Experience map of today’s production</h4>
                 <span>I started the project by interviewing in-house production team. Together we mapped out the full journey of creating videos, so that we could have a holistic view to prioritize breakdown points.</span>
                 <p/>
 
                 <img alt="" className="img-responsive" src={ExMap}/>
                 <h4 className="text-bold mt-40">Key problems of production pipeline</h4>
-                <span>1. Media centric UI rather than project based. Users have a hard time managing media across projects and the naming of media is hard to manage and often lead to errors.</span>
+                <span>1. Media centric UI rather than project based. Users have a hard time managing media across projects and the naming of media is hard to track and often lead to errors.</span>
                 <p/>
-                <span>2. Video editing within the browser: how to make the process smooth and efficient to product video clips?</span>
+                <span>2. Video editing within the browser: how to make the process smooth and efficient to produce video clips?</span>
                 <p/>
                 <span>3. How to onboard new users who don’t have video editing or production experiences?</span>
                 <p/>
@@ -149,11 +150,12 @@ const renderSection= (key) => {
             return <>
                 <ContentHighlight attributes={data.highlight1}/>
                 <h4 className="text-bold mt-40">Design Process</h4>
-                <span>I’m working with a team of four engineers and two product managers. We’re moving fast on shipping incremental features. Meanwhile PM and I are working on the next version of the JCS platform to help prioritize features.</span>
+                <span>I’m working with the team of four engineers and two product managers. We moved fast on shipping incremental features. Meanwhile PM and I were working on the next version of the JCS platform to help prioritize features and target at long term vision.</span>
                 <p/>
-                <span>When there is request or complaint from end users, we started by talking to our internal production team to understand the problem better. If we have enough confidence, then the team will sketch out various solutions and discuss their feasibility.</span>
+                <span>When there was a request or complaint from end users, we started by talking to our internal production team who are subject masters to understand the problem scope. If we had enough context about the problem, the team would sketch out various solutions and review them together.</span>
                 <p/>
-                <span>I’ll lead the next step to visualize top two solutions with wireframes and flow charts. Then our team will share these two low-fi solutions with external users for feedback. Once we confirmed on the use case and solution, technical lead will start building the structure while I’m working on the UI delivery to ensure usability and quality of the solution design.</span>
+                <span>I’d lead the next step to visualize top two solutions with wireframes and flow charts. Then our team would share these two prototypes with external users for feedback. Once we confirmed on the use case and solution, technical lead would start building the structure 
+                    while I worked on the UI delivery to ensure usability and quality of the solution design.</span>
                 <p/>
             </>;
 
@@ -171,8 +173,9 @@ const renderSection= (key) => {
 
         case "Improve video editing experience":
             return <>
-                <span>I lead the design of improving timeline editor where the users can quickly trim the video beginning and end points to reduce rendering cost. Below is the interaction diagram of time scrub and player handle to propose a simplified editing and saving process.
-                <p/>Once the feature is released to our users, they shared back that editing and saving clips have been much faster and they like the ability to easily modify the scrub and time handle.
+                <span>I lead the design of improving timeline editor where the users could quickly trim the video 
+                    start and end points to reduce rendering cost. Below is the interaction diagram of time scrub and player handle where I proposed a simplified editing and saving process.
+                <p/>When the feature was released to our users, they shared that editing and saving clips had been much faster and they liked the ability to easily modify the scrub and player handle.
                 </span>
                 <div className="row">
                     <img alt="" className="img-responsive col-lg-6 col-sm-12" src={Timeline1}/>
@@ -184,7 +187,7 @@ const renderSection= (key) => {
         case "User onboarding flow":
             return <>
                 <span>Jaunt Cloud Services is targeted at indie video producers who may not be familiar with the workflow at all. I proposed to design the user onboarding flow to
-                    help introduce each step to the user in an intuitive way. It helps users follow through the production flow and reduce support tickets we received. 
+                    help introduce the workflow to the user in an intuitive way. It helps users follow through the production flow and could reduce support tickets we received. 
                     <p/></span>
                 <img alt="" className="img-responsive" src={Tour}/>
             </>;
@@ -205,11 +208,11 @@ const renderSection= (key) => {
 
         case "Living style guide":
             return <>
-                <span>While I were producing more pages, the team feel we need a redesign of the whole product UI.
-            To start I decided to catalog current design tokens and components used, as well as page layout.
-            In addition, there is a growing request for dark themed UI because most video production software are in dark mode already.
-            Dark theme is easier on the eyes while presenting rich media data. I lead the style guide design outside project work, and document the final style
-            guide online. It leads to our frontend engineers complete the dark themed UI within two weeks. </span>
+                <span>While I were producing more pages, the team felt we needed a redesign of the whole product UI.
+            I decided to catalog current design tokens and components used, as well as page layout to get started.
+            In addition, there were a growing requests for dark themed UI because most video production software are in dark mode already.
+            Dark theme is easier on the eyes while presenting rich media data. I lead the style guide design outside project work, and documented the final style
+            guide online. It helped our frontend engineers completed the dark themed UI within two weeks. </span>
 
                 <img alt="" className="img-responsive" src={StyleGuide}/>
                 <p className="text-center mt-20">
@@ -219,17 +222,20 @@ const renderSection= (key) => {
 
         case "Visualize the blackbox":
             return <>
-                <span>Having a super talented technical artist in the team (Rory), I invited him to collaborate on a hackathon project to visualize how the video were brought into final production ready. The robot metaphor helps onboard not only internal team but also external new users to understand the whole video pipeline.</span>
+                <span>Having a super talented technical artist in the team, I invited him to collaborate on a hackathon project to visualize how the video were brought into final production ready. The robot metaphor helps onboard not only internal team but also external new users to understand the whole video pipeline.</span>
             </>;
 
         case "Image":
-            return <img alt="" className="img-responsive" src={Robot}/>;
+            return <LightboxImage className="img-responsive" src={Robot}/>;
 
         case "Takeaway":
             return <>
-                <span>Design solution needs to balance between future long-term goal and current iterations, how to handle user feedback and understand the insights instead of only following features asked for. To come up with effective solutions, designers need to learn about and prepare for the big picture and understand the why better. For example, a large part of the system today is built upon request, but what turned out happening is that the features built are not used by the end user.
+                <span>Design solution needs to balance between future long-term goal and current iterations, how to handle user feedback and understand the insights instead of only following features asked for? To come up with effective solutions, 
+                    designers need to learn about and prepare for the big picture and understand the why better. For example, a large part of the system today is built upon user requests, 
+                    but what actually happened is that the features we built were not used by the end user asked for it.
                  <p/>
-                When users ask for certain features, should we really follow the comments? or we need to rethink through the deeper reason and flow, why they are like this today. Remind me of Ford’s faster horse theory. Designers need to consolidate the insights, collaboratively define the vision we’re heading towards.
+                When users ask for certain features, should we simply follow the comments? Or we could rethink through the deeper reason and flow, why they are asking for the feature today. The challenge reminds me of Ford’s faster horse theory. 
+                Designers need to consolidate the insights from different sources, work collaboratively with the team to define the vision we’re heading towards.
                </span>
 
             </>;

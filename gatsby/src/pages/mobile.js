@@ -49,7 +49,7 @@ const data = {
     },
     title: "Qventus app: deliver real-time nudges to patient care team",
     subTitle: "Right data for the right people at the right time",
-    highlight1: ["How to reduce the mobile app usage friction and increase value delivered to ED nurses?"],
+    highlight1: ["How might we reduce the mobile app usage friction and increase value delivered to ED nurses?"],
     highlight2: [ "Enable collaboration and decision making", "Deliver contextual and actionable data", "Transparent outcome and motivated teams"],
     highlight3: ["How to come up with a nudge framework to enable and motivate care teams to improve healthcare operations?"],
 
@@ -60,11 +60,11 @@ const data = {
         },
         {
             label: "Team",
-            value: "BE, FE"
+            value: "PM and 2 Engineers"
         },
         {
             label: "Role",
-            value: "Lead Designer / PM"
+            value: "Lead Designer / Quasi-PM"
         },
         {
             label: "Targeted Users",
@@ -72,7 +72,7 @@ const data = {
         },
         {
             label: "Design Scope",
-            value: "Full design lifecycle (UXR, UX/UI) \nDesign Sprint\nRedesign Concept"
+            value: "Full design lifecycle (UXR, UX/UI) \nDesign sprint\nRedesign concept"
         },
         {
             label: "Outcome",
@@ -132,7 +132,7 @@ const renderSection= (key) => {
 
         case "Product suite and mobile app":
             return <>
-                <span>Qventus is the first system of action, from historic analytical data to predictive recipe, trying to simplify healthcare operations by empowering teams to excel in real-time. The solutions include dashboard for root cause analysis, patient board for proactive planning, system operational board for situational awareness, and mobile app to deliver real-time interventions. </span>
+                <span>Qventus is the first system of action, from historic analytical data to predictive recipe, trying to simplify healthcare operations by empowering teams to excel in real time. The solutions include dashboard for root cause analysis, patient board for proactive planning, system operational board for situational awareness, and mobile app to deliver real-time interventions. </span>
                 <img alt="" className="img-responsive" src={Soa}/>
 
                 <h4 className="text-bold mt-40">Mobile app for the care team in the ED</h4>
@@ -155,35 +155,36 @@ const renderSection= (key) => {
             return <>
                 <span>Experience goals of the mobile app are to reduce cognitive burden and engage frontline care team. But data tells us another story.</span>
                 <p/>
-                <span>Started from early 2018 Qventus set up the infrastructure to collect usage data and tracking funnels through Amplitude, and we found mobile usage dropped continuously to our surprise. After the app launched at the hospital site, less and less users came back after one month. </span>
+                <span>Started from early 2018 Qventus set up the infrastructure to collect usage data and there are tracking funnels through Amplitude. Mobile data showed the usage were dropping continuously to our surprise. After the app was launched at the hospital site, fewer users came back to use the app after a month or so. </span>
                 <p/>
                 <span>To find out the root caues of the usage drop, we started setting up onsite interviews and partnered with customer success team to collect feedback from our users. </span>
                 <div className="row mt-40">
                     <div className="col-lg-6">
-                        <h4 className="text-bold">Targeted Users - ED Nurses</h4>
-                        <span>Through talking to different ED nurses, we captured their characteristics and touchpoints with Qventus products in the persona format. It helps align the whole team on the user empathy and acts as a reference point when we’re talking about user problems. </span>
+                        <h4 className="text-bold">Targeted users - ED nurses</h4>
+                        <span>Through talking to different ED nurses, we captured their workflows and touchpoints in the persona format. It helps align the whole team on the user empathy and acts as a reference point when we’re talking about user problems. </span>
                         <p/>
-                        <span>Below are the two main feedback themes in terms of using Qventus products.</span>
+                        <span>Below are the two main problems indentified from the user feedback.</span>
                         <p/>
                     </div>
                     <div className="col-lg-6">
                         <img alt="" className="img-responsive" src={User}/>
                     </div>
                 </div>
-                <h4 className="text-bold mt-40">Friction through using the app</h4>
-                <span>During the interview, users shared that they’re having trouble logging into the app. Nurses are using all different information systems at work, and Qventus required them to remember another set of credentials which is quite challenging.</span>
+                <h4 className="text-bold mt-40">Friction while using the app</h4>
+                <span>During the interview, users shared that they’re having trouble logging into the app. Nurses are interacting with different information systems at work, and Qventus required them to remember another set of credentials which is quite challenging.</span>
                 <p/>
                 <span>Second, users got overwhelmed with all the notifications coming in, but no way to clear up the thread  or see which one is important. When they got off work, mobile app still buzzed with all notifications which then forced them to log out of the app. Then it circled back to the login problem. </span>
 
                 <h4 className="text-bold mt-20">“Now what?”</h4>
-                <span>Another important finding from the interviews is that care teams don’t know what to do with all the notifications. “I’ve got these alerts, but I don’t know what to do with them”, quoted from a charge nurse. We realized that prompts are not providing enough context or actinable items to solve the problem. Compared with what care team already know, it doesn’t add enough value to their operations. Nudges starts losing interests from the care team and thus less engaged users.</span>
+                <span>Another important finding from the interviews is that care teams don’t know what to do with all the notifications received. “I’ve got these alerts, but I don’t know what to do with them”, quoted from a charge nurse. We realized that prompts are not providing enough context or actinable items to solve the problem. 
+                    Compared with what care team already know, they don't add enough value to their operations. Nudges start losing interests from the care team and thus less engaged users.</span>
             </>;
 
         case "Design challenge":
             return <>
                 <ContentHighlight attributes={data.highlight1}/>
 
-                <h4 className="text-bold mt-40">Experience Goals</h4>
+                <h4 className="text-bold mt-40">Experience goals</h4>
                 <span>- Delightful to engage users, helpful while not intrusive</span>
                 <p/>
                 <span>- Foster collaboration and positive mindset within the care team</span>
@@ -193,7 +194,9 @@ const renderSection= (key) => {
 
         case "Solution framework":
             return <>
-                <span>I worked closely with two mobile engineers, and also acted as the quasi PM role as the team is going through transitions. Through design workshop with the team and key stakeholders, we came up with the list of work items as our mobile roadmap. It’s targeted at delivering incremental improvements while setting up framework for long term redesign of the mobile app.</span>
+                <span>I worked closely with two mobile engineers, and also acted as the quasi PM role in the beginning of the project. 
+                    Through design workshops with the team and key stakeholders, we came up with our mobile roadmap. 
+                    It’s targeted at delivering incremental improvements, while setting up framework for the long term redesign of mobile app.</span>
                 <p/>
             </>;
 
@@ -299,9 +302,9 @@ const renderSection= (key) => {
 
         case "Design sprint":
             return <>
-                <span>Outside working on incremental changes to mobile app today, we started the nudge framework project, as the data to action is a company stratigic priority. It’s better to reimagine how nudge could have been done without limits and build the roadmap to get there later. </span>
+                <span>Outside working on incremental changes to mobile app today, we started the nudge framework project, as the data to action got ranked higher as a company stratigic priority. It would be better to reimagine how nudge could have been done without limits and build the roadmap to deliver the ideal experience step by step. </span>
                 <p/>
-                <span>As I read and learnt a lot of design sprint, I think it is a great design tool to help lay down the nudge framework foundation. So I proposed to facilitate 5-day design sprint session with the help from another designer and two other PMs. </span>
+                <span>As the team planned on tackling the challenge, we thought design sprint would be great to help lay down the nudge framework foundation. I proposed to facilitate 5-day design sprint session with the help from another designer and two PMs. </span>
 
                 <h4 className="text-bold mt-40">Design sprint goal</h4>
                 <ContentHighlight attributes={data.highlight3}/>
@@ -336,7 +339,10 @@ const renderSection= (key) => {
 
         case "Redesign concept":
             return <>
-                <span>Why I initiated the mobile app redesign is that the current version has limited capabilities to be a core intervention delivery channel. Post the nudge design sprint, we found there are quite a few promising directions for mobile app to evolve into. My design process composes of four parts:  1) use case analysis, 2) information architecture, 3) wireframe, 4) hi-fi mockups and prototype for validation. After one month of completing these designs, I presented them to different stakeholders to get buy-in to include the redesign in the mobile app roadmap. </span>
+                <span>Why I initiated the mobile app redesign is that the current version has limited capabilities to be a core intervention delivery channel. Post the nudge design sprint, we found there are quite a few
+                     promising directions for mobile app to evolve towards. My design process composes of four parts:  
+                     1) use case analysis, 2) information architecture, 3) wireframe, 4) hi-fi mockups and prototype for validation. 
+                     After one month of completing these designs, I presented them to different stakeholders to get buy-in so that we could include the redesign in the mobile app roadmap. </span>
                 <h4 className="text-bold mt-40">Targeted users and core use cases</h4>
                 <span>The four main uses cases for frontline nurses and leadership teams are:</span>
                 <p/>
