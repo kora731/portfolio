@@ -138,7 +138,7 @@ const renderSection= (key) => {
             return <>
                     <span>When I got onboard with PathFinder project, PM and I set up meetings with key stakeholders within the company
                         to understand both business and product strategies. I also initiated the competitive research to understand the
-                        dashboards and existing solutons of patient data display. Below are the main goals we summarized based on the internal input and 
+                        dashboards and existing solutions of patient data display. Below are the main goals we summarized based on the internal input and 
                         market landscape.
                         <p className="mt-20"/>
                     </span>
