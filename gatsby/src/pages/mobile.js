@@ -56,7 +56,7 @@ const data = {
     briefAttribute: [
         {
             label: "Timeline",
-            value: "Nov. 2018 - Present"
+            value: "Nov. 2018 - Jul. 2019"
         },
         {
             label: "Team",
