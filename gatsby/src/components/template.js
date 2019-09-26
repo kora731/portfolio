@@ -14,20 +14,36 @@ import Lock from "./lock";
 import {Anchor} from "antd";
 import ContentSection from "./content-section";
 import Layout from "./layout";
+import $ from "jquery";
 
 const { Link } = Anchor;
 
-const Template = ({ data, renderSection, lock }) => {
+class Template extends React.Component {
+    constructor(props){
 
-    return (
-        <Layout pri={data.pri} next={data.next}>
+        super(props);
+        this.state = {
+            lock: props.lock
+        }
+    }
+
+    unlock() {
+        this.setState({
+            lock: false
+        })
+    }
+    render() {
+        const data = this.props.data;
+        const lock = this.state.lock;
+        const renderSection = this.props.renderSection;
+        return <Layout pri={data.pri} next={data.next}>
             <SEO title={data.name} />
 
             <ContentHeader title={data.title} subTitle={data.subTitle}/>
 
-            {lock && <Lock/>}
+            {lock && <Lock unlock={this.unlock.bind(this)}/>}
 
-            <div className={lock ? "password-protected" : ""}>
+            {!lock && <div className={lock ? "password-protected" : ""}>
                 <div className="AnchorPosition">
                     <Anchor>
                         {
@@ -56,10 +72,10 @@ const Template = ({ data, renderSection, lock }) => {
                         </div>
                     ))
                 }
-            </div>
+            </div>}
 
-        </Layout>
-    )
+        </Layout>;
+    }
 }
 
 Template.propTypes = {
